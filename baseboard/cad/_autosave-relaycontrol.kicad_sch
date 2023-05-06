@@ -1,0 +1,25 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 0d9ed98c-389f-4871-826f-9f45f793a078)
+
+  (paper "USLetter")
+
+  (title_block
+    (title "Baseboard")
+    (date "2023-04-28")
+    (rev "A")
+    (company "Alessandro Rizzoni")
+    (comment 1 "SCHEMATIC")
+    (comment 2 "DRAFT")
+    (comment 3 "AIR")
+    (comment 5 "1: ALL COMPONENTS 25V RATING OR GREATER")
+    (comment 6 "2: ALL RESISTORS LOW NOISE THIN FILM, 1% TOLERANCE OR SMALLER, 1/10W RATING OR GREATER")
+    (comment 7 "3: ALL CAPACITORS MLCC, X5R OR X7R DIELECTRIC, 10% TOLERANCE OR SMALLER")
+    (comment 8 "4: DO NOT POPULATE NOTE --TODO--")
+    (comment 9 "5: PCB LAYOUT ACCORDING TO DATASHEET FOR ALL COMPONENTS")
+  )
+
+  (lib_symbols
+  )
+
+)

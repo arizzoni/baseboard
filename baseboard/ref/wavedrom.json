@@ -1,0 +1,9 @@
+{signal: [
+  {name: '   Footswitch', wave: '0.1.0.....1.0...'},
+  {name: 'H-Bridge In 1', wave: '1.0...1.........'},
+  {name: 'H-Bridge In 2', wave: '1.........0...1.'},
+  {name: '  Relay State', wave: '2.2...2...2...2.', 
+   data: 'Floating Forward Floating Reverse Floating'}
+	],
+  head:{text:['tspan', {class:'h3'}, 'Relay Control Logic']
+       }  , config:{skin:"lowkey"}}
