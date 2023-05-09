@@ -2092,8 +2092,8 @@
     (property "Part Number" "N/A" (at 73.66 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid ec968f68-cfeb-46ed-affa-901c324156d5))
-    (pin "" (uuid ec968f68-cfeb-46ed-affa-901c324156d5))
+    (pin "" (uuid ec968f68-cfeb-46ed-affa-901c324156d7))
+    (pin "" (uuid ec968f68-cfeb-46ed-affa-901c324156d7))
     (instances
       (project "1590N1 IO Board"
         (path "/190888c1-6ce2-4681-a836-dc477e444e49/e436358c-d730-4540-92b5-b7475a7c4a63"
@@ -2286,8 +2286,8 @@
     (property "Part Number" "N/A" (at 69.85 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 99b13cd9-9672-4754-b412-f97e4a88050f))
-    (pin "" (uuid 99b13cd9-9672-4754-b412-f97e4a88050f))
+    (pin "" (uuid 99b13cd9-9672-4754-b412-f97e4a880511))
+    (pin "" (uuid 99b13cd9-9672-4754-b412-f97e4a880511))
     (instances
       (project "1590N1 IO Board"
         (path "/190888c1-6ce2-4681-a836-dc477e444e49/e436358c-d730-4540-92b5-b7475a7c4a63"
@@ -2431,8 +2431,8 @@
     (property "Part Number" "N/A" (at 162.56 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 8303123b-4695-45cb-9335-b1b8e34c874f))
-    (pin "" (uuid 8303123b-4695-45cb-9335-b1b8e34c874f))
+    (pin "" (uuid 8303123b-4695-45cb-9335-b1b8e34c8751))
+    (pin "" (uuid 8303123b-4695-45cb-9335-b1b8e34c8751))
     (instances
       (project "1590N1 IO Board"
         (path "/190888c1-6ce2-4681-a836-dc477e444e49/e436358c-d730-4540-92b5-b7475a7c4a63"
@@ -2609,8 +2609,8 @@
     (property "Part Number" "N/A" (at 59.69 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 594ea7df-4d08-495e-acc6-3c69a35bdced))
-    (pin "" (uuid 594ea7df-4d08-495e-acc6-3c69a35bdced))
+    (pin "" (uuid 594ea7df-4d08-495e-acc6-3c69a35bdcef))
+    (pin "" (uuid 594ea7df-4d08-495e-acc6-3c69a35bdcef))
     (instances
       (project "1590N1 IO Board"
         (path "/190888c1-6ce2-4681-a836-dc477e444e49/e436358c-d730-4540-92b5-b7475a7c4a63"
@@ -3053,8 +3053,8 @@
     (property "Part Number" "N/A" (at 59.69 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 4e7dba8d-8b48-4a5f-8ec0-c1f58174a848))
-    (pin "" (uuid 4e7dba8d-8b48-4a5f-8ec0-c1f58174a848))
+    (pin "" (uuid 4e7dba8d-8b48-4a5f-8ec0-c1f58174a84a))
+    (pin "" (uuid 4e7dba8d-8b48-4a5f-8ec0-c1f58174a84a))
     (instances
       (project "1590N1 IO Board"
         (path "/190888c1-6ce2-4681-a836-dc477e444e49/e436358c-d730-4540-92b5-b7475a7c4a63"
@@ -3271,8 +3271,8 @@
     (property "Part Number" "N/A" (at 146.05 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 34036ec7-3aab-4786-8634-ddec9771f296))
-    (pin "" (uuid 34036ec7-3aab-4786-8634-ddec9771f296))
+    (pin "" (uuid 34036ec7-3aab-4786-8634-ddec9771f298))
+    (pin "" (uuid 34036ec7-3aab-4786-8634-ddec9771f298))
     (instances
       (project "1590N1 IO Board"
         (path "/190888c1-6ce2-4681-a836-dc477e444e49/e436358c-d730-4540-92b5-b7475a7c4a63"
