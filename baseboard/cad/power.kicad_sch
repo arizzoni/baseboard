@@ -3062,7 +3062,7 @@
     (property "Value" "LT3463" (at 69.85 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm" (at 67.818 50.292 0)
+    (property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias" (at 67.818 50.292 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.mouser.com/datasheet/2/609/3463f-2954801.pdf" (at 67.31 50.038 0)
