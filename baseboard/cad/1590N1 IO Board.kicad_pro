@@ -11,7 +11,7 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.049999999999999996,
-        "dimension_precision": 4,
+        "dimension_precision": 2,
         "dimension_units": 3,
         "dimensions": {
           "arrow_length": 1270000,
@@ -512,7 +512,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "/home/air/Projects/baseboard/US_Letter_Template_Rev_A.kicad_wks"
+    "page_layout_descr_file": "/home/air/.kicad/kicad-templates/US_Letter_Template_Rev_A.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
