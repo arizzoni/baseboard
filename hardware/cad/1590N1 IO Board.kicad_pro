@@ -56,12 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "lib_footprint_mismatch|70500000|143381250|7d5ec100-9a85-4eb8-94e7-d0a2cf619f24|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|84825000|78681250|5ab3bfb5-ba7e-4350-adfe-b25c1c230497|00000000-0000-0000-0000-000000000000",
-        "missing_courtyard|83500000|129300000|fc90bb2d-7264-4af2-8f2d-a16843f6e026|00000000-0000-0000-0000-000000000000",
-        "missing_courtyard|93500000|129300000|fc458a77-0b46-4df0-9c69-748ea6e6e4f7|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -121,7 +116,7 @@
         "max_error": 0.005,
         "min_clearance": 0.19999999999999998,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 1.16,
+        "min_copper_edge_clearance": 1.25,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.19999999999999998,
@@ -181,9 +176,10 @@
       ],
       "track_widths": [
         0.0,
-        0.2,
-        0.254,
-        0.508
+        0.25,
+        0.5,
+        0.6,
+        1.2
       ],
       "via_dimensions": [
         {

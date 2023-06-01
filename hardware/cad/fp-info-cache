@@ -1,4 +1,4 @@
-21791061891818591
+21805641648974128
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -50175,6 +50175,20 @@ DCDC-Converter XP_POWER JTE06 Dual
 0
 8
 8
+Converter_DCDC
+Converter_DCDC_muRata_MEJ1DxxxxSC_THT
+muRata MEJ1DxxxxSC, 19.5x9.8x12.5mm, 5.2kVDC Isolated, 1W, dual output, SIP package style, https://power.murata.com/data/power/ncl/kdc_mej1.pdf
+muRata MEJ1D DCDC-Converter
+0
+5
+5
+Converter_DCDC
+Converter_DCDC_muRata_MEJ1SxxxxSC_THT
+muRata MEJ1SxxxxSC, 19.5x9.8x12.5mm, 5.2kVDC Isolated, 1W, single output, SIP package style, https://power.murata.com/data/power/ncl/kdc_mej1.pdf
+muRata MEJ1S DCDC-Converter
+0
+4
+4
 Crystal
 Crystal_AT310_D3.0mm_L10.0mm_Horizontal
 Crystal THT AT310 10.0mm-10.5mm length 3.0mm diameter http://www.cinetech.com.tw/upload/2011/04/20110401165201.pdf
@@ -60830,34 +60844,6 @@ ALPHA_RV112
 6
 6
 Library
-ALPHA_SS70020F-0202
-
-
-0
-6
-6
-Library
-AZ934
-
-
-0
-10
-10
-Library
-AZ9891
-
-
-0
-10
-10
-Library
-Alpine_Slide_Switch_8.5mm
-
-
-0
-8
-7
-Library
 Amphenol_ACJM-IHS
 
 
@@ -60871,6 +60857,13 @@ Amphenol_ACJS-IHS
 0
 6
 6
+Library
+BOURNS_DR331-113BE
+
+
+0
+4
+4
 Library
 C&K_AYZ0202AGRLC
 
@@ -60890,7 +60883,7 @@ DE14MA
 
 
 0
-32
+33
 16
 Library
 DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias
@@ -60970,13 +60963,6 @@ LFCSP NoLead
 25
 21
 Library
-LT3032
-
-
-0
-24
-16
-Library
 LT3463
 
 
@@ -60991,25 +60977,18 @@ inductor taiyo-yuden nr smd
 2
 2
 Library
-MountingHole_3.2mm_M3_DIN965_Pad_NO_SILKS
-Mounting Hole 3.2mm, M3, DIN965
-mounting hole 3.2mm m3 din965
-0
-1
-1
-Library
 OPA1679
 
 
 0
-34
+30
 17
 Library
 OPA1679_NO_THERMAL_VIAS
 
 
 0
-26
+21
 17
 Library
 Panasonic_TQ2-L2-5V
@@ -61116,13 +61095,6 @@ ULN2003F12FN-7
 0
 11
 11
-Library
-Via_0.4mm
-
-
-0
-1
-0
 Library
 WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias
 WSON, 6 Pin (http://www.ti.com/lit/ds/symlink/tps61040.pdf#page=35), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -70244,6 +70216,13 @@ Texas RSE0010 UQFN NoLead
 0
 10
 10
+Package_DFN_QFN
+Texas_VQFN-HR-20_3x2.5mm_P0.5mm_RQQ0011A
+Texas  VQFN-HR, 11 Pin, https://www.ti.com/lit/ml/mpqf579/mpqf579.pdf
+RQQ0011A
+0
+15
+11
 Package_DFN_QFN
 Texas_VQFN-RHL-20
 http://www.ti.com/lit/ds/symlink/bq51050b.pdf
@@ -81676,8 +81655,8 @@ Kemet EC2 signal relay DPDT double dual coil latching through hole THT
 10
 10
 Relay_THT
-Relay_DPDT_Omron_G2RL
-Omron Relay DPDT, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
+Relay_DPDT_Omron_G2RL-2
+Omron Relay, DPDT, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
 Omron Relay DPDT
 0
 8
@@ -81749,6 +81728,13 @@ Relay_THT
 Relay_DPST_Fujitsu_FTR-F1A
 https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf
 relay dpst fujitsu tht
+0
+6
+6
+Relay_THT
+Relay_DPST_Omron_G2RL-2A
+Omron Relay, DPST, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
+Omron Relay DPST
 0
 6
 6
@@ -81842,6 +81828,20 @@ Relay SPDT Omron Serie G5Q, http://omronfs.omron.com/en_US/ecb/products/pdf/en-g
 Relay SPDT Omron Serie G5Q
 0
 5
+5
+Relay_THT
+Relay_SPDT_Omron_G2RL-1
+Omron Relay, SPDT, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
+Omron Relay SPDT
+0
+5
+5
+Relay_THT
+Relay_SPDT_Omron_G2RL-1-E
+Omron Relay, SPDT, High Capacity, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
+Omron Relay SPDT High Capacity
+0
+8
 5
 Relay_THT
 Relay_SPDT_Omron_G5V-1
@@ -81961,6 +81961,20 @@ Relay SPST-NO Omron Serie G5Q, http://omronfs.omron.com/en_US/ecb/products/pdf/e
 Relay SPST-NO Omron Serie G5Q
 0
 4
+4
+Relay_THT
+Relay_SPST_Omron_G2RL-1A
+Omron Relay, SPST, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
+Omron Relay SPST
+0
+4
+4
+Relay_THT
+Relay_SPST_Omron_G2RL-1A-E
+Omron Relay, SPST, High Capacity,  https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf
+Omron Relay SPST High Capacity
+0
+6
 4
 Relay_THT
 Relay_SPST_Panasonic_JW1_FormA
