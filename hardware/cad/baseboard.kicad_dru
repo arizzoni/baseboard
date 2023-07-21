@@ -1,0 +1,173 @@
+(version 1)
+
+##################
+# Drill/Hole Size
+
+(rule "Drill Hole Size"
+	(constraint hole_size (min 0.15mm) (max 6.30mm))
+)
+#(rule "Drill Hole Size"
+#	(constraint hole_size (min 0.3mm) (max 6.30mm))
+#)
+(rule "Min. Via Hole Size, Multilayer"
+	(constraint hole_size (min 0.15mm))
+	(condition "A.type == 'Via'")
+)
+#(rule "Min. Via Diameter, 1-2 Layer"
+#	(constraint via_diameter (min 0.5mm))
+#)
+(rule "Min. Via Diameter, Multilayer"
+	(constraint via_diameter (min 0.25mm))
+)
+(rule "PTH hole Size"
+	(constraint hole_size (min 0.25mm) (max 6.35mm))
+	(condition "A.Pad_Type == 'Through-hole'")
+)
+(rule "Pad Size"
+	(constraint annular_width (min 0.25mm))
+	(condition "A.Pad_Type == 'Through-hole'")
+)
+(rule "Min. Through-holes And Slots"
+	(constraint hole_size (min 0.5mm))
+	(condition "A.Pad_Type == 'Through-hole'")
+)
+(rule "Min. Non-plated Holes And Slots"
+	(constraint hole_size (min 1mm))
+	(condition "A.Pad_Type == 'NPTH, Mechanical'")
+)
+(rule "Castellated Pads"
+	(constraint hole_size (min 0.60mm))
+	(condition "A.Fabrication_Property == 'Castellated pad'")
+	(condition "A.Pad_Type == 'Through-hole' && B.Layer == 'Edge.Cuts'")
+)
+
+#######################
+# Minimum Annular Ring
+
+#(rule "Minimum Annular Ring, 1oz Copper"
+#	(constraint annular_width (min 0.13mm))
+
+(rule "Minimum Annular Ring, 2oz Copper"
+	(constraint annular_width (min 0.2mm))
+)
+(rule "Minimum Annular Ring, PTH"
+	(constraint annular_width (min 0.3mm))
+	(condition "A.Pad_Type == 'Through-hole'")
+)
+
+####################
+# Minimum clearance
+
+(rule "Hole to Hole Clearance, Different Nets"
+	(constraint hole_to_hole (min 0.5mm))
+	(condition "A.Type == 'Hole' && B.Type == 'Hole' && A.Net != B.Net")
+)
+(rule "Via to Via Clearance, Same Nets"
+	(constraint hole_to_hole (min 0.5mm))
+	(condition "A.Type == 'Via' && B.Type == 'Via' && A.Net != B.Net")
+)
+(rule "Via to Via clearance, Same Nets"
+	(constraint hole_to_hole (min 0.254mm))
+	(condition "A.Type == 'Via' && B.Type == 'Via' && A.Net == B.Net")
+)
+(rule "Pad to Pad clearance, Pad Without Hole, Different Nets"
+	(constraint clearance (min 0.127mm))
+	(condition "A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD' && A.Net != B.Net")
+)
+(rule "Pad to Pad clearance (Pad with hole, Different nets)"
+	(constraint hole_to_hole (min 0.5mm))
+	(condition "A.Pad_Type == 'Through-hole' && B.Pad_Type == 'Through-hole' && A.Net != B.Net")
+)
+(rule "Via to Track"
+	(constraint hole_clearance (min 0.254mm))
+	(condition "A.Type == 'Via' && B.Type == 'Track'")
+)
+(rule "PTH to Track"
+	(constraint hole_clearance (min 0.33mm))
+	(condition "A.Pad_Type == 'Through-hole' && B.Type == 'Track'")
+)
+(rule "NPTH to Track"
+	(constraint hole_clearance (min 0.254mm))
+	(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type == 'Track'")
+)
+(rule "Pad to Track"
+	(constraint clearance (min 0.2mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Track'")
+)
+
+##################################
+# Minimum trace width and spacing
+
+#(rule "Min. Trace width (1-2 Layer)"
+#	(constraint track_width (min 0.127mm))
+#)
+#(rule "Min. Spacing (1-2 Layer)"
+#	(constraint clearance (min 0.127mm))
+#)
+(rule "Min. Trace width (Multilayer)"
+	(constraint track_width (min 0.09mm))
+)
+(rule "Min. Spacing (Multilayer)"
+	(constraint clearance (min 0.09mm))
+)
+#(rule "Min. Trace width (2oz Copper Weight)"
+#	(constraint track_width (min 0.2mm))
+#)
+#(rule "Min. Spacing (2oz Copper Weight)"
+#	(constraint clearance (min 0.2mm))
+#)
+
+##############
+# BGA
+
+# TODO
+# I can't figure out how to implement this yet - worry about it when I need to use BGA
+
+#################
+# Solder Mask
+
+#(rule "Soldermask Expansion, 1-2 Layer" # no solder mask expansion for multilayer
+#	(constraint assertion "A.Soldermask_Margin_Override == 0.038mm")
+#)
+	
+(rule "Min. Solder Bridge"
+	(constraint clearance (min 0.10mm))
+	(condition "A.Layer == 'F.Mask' || 'B.Mask'")
+)
+(rule "Via-in-Pad Size"
+	(constraint hole_size (min 0.2mm) (max 0.5mm))
+
+	(condition "A.Fabrication_Property == 'Heatsink pad'")
+)
+(rule "Via-in-Pad Clearance"
+	(constraint hole_to_hole (min 1.0mm))
+	(condition "A.Fabrication_Property == 'Heatsink pad'")
+)	
+
+#######################
+# Legend (Silkscreen)
+
+(rule "Minimum Text Size"
+	(constraint text_thickness (min 0.153mm))
+	(constraint text_height (min 1.0mm))
+)
+(rule "Silkscreen Clearance"
+	(constraint silk_clearance (min 0.15mm))
+)
+
+#################
+# Board Outlines
+
+(rule "Trace to Outline"
+	(constraint edge_clearance (min 0.3mm))
+)
+#(rule "Trace to V-cut line"
+#	(constraint edge_clearance (min 0.4mm))
+#)
+#(rule "Trace to Mousebites"
+#	(constraint edge_clearance (min 0.3mm))
+#)
+
+################
+# TODO:
+#	PANELIZATION
