@@ -578,6 +578,10 @@
       {
         "netclass": "Power",
         "pattern": "*VSW2*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*RAW"
       }
     ]
   },
@@ -643,15 +647,15 @@
     ],
     [
       "e436358c-d730-4540-92b5-b7475a7c4a63",
-      "Audio"
-    ],
-    [
-      "229a97b2-4425-47f7-b588-f32dc6b9bc79",
-      "Microcontroller"
+      "AUDIO"
     ],
     [
       "2e4f7641-7de0-4dea-9f64-f5ec09624375",
-      "Power"
+      "POWER"
+    ],
+    [
+      "229a97b2-4425-47f7-b588-f32dc6b9bc79",
+      "MICROCONTROLLER"
     ]
   ],
   "text_variables": {}
