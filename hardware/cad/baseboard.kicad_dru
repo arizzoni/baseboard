@@ -1,5 +1,7 @@
 (version 1)
 
+# All rules have severity 'Error'
+
 ##################
 # Drill/Hole Size
 
@@ -10,7 +12,7 @@
 #	(constraint hole_size (min 0.3mm) (max 6.30mm))
 #)
 (rule "Min. Via Hole Size, Multilayer"
-	(constraint hole_size (min 0.15mm))
+	(constraint hole_size (min 0.20mm)) 
 	(condition "A.type == 'Via'")
 )
 #(rule "Min. Via Diameter, 1-2 Layer"
@@ -30,6 +32,7 @@
 (rule "Min. Through-holes And Slots"
 	(constraint hole_size (min 0.5mm))
 	(condition "A.Pad_Type == 'Through-hole'")
+	(condition "A.Hole_Size_X != A.Hole_Size_Y")
 )
 (rule "Min. Non-plated Holes And Slots"
 	(constraint hole_size (min 1mm))
@@ -44,15 +47,16 @@
 #######################
 # Minimum Annular Ring
 
-#(rule "Minimum Annular Ring, 1oz Copper"
-#	(constraint annular_width (min 0.13mm))
-
-(rule "Minimum Annular Ring, 2oz Copper"
-	(constraint annular_width (min 0.2mm))
+(rule "Minimum Annular Ring, 1oz Copper"
+	(constraint annular_width (min 0.13mm))
 )
+#(rule "Minimum Annular Ring, 2oz Copper"
+#	(constraint annular_width (min 0.2mm))
+#)
 (rule "Minimum Annular Ring, PTH"
 	(constraint annular_width (min 0.3mm))
 	(condition "A.Pad_Type == 'Through-hole'")
+	(condition "A.Fabrication_Property != 'Heatsink pad'")
 )
 
 ####################
@@ -61,10 +65,6 @@
 (rule "Hole to Hole Clearance, Different Nets"
 	(constraint hole_to_hole (min 0.5mm))
 	(condition "A.Type == 'Hole' && B.Type == 'Hole' && A.Net != B.Net")
-)
-(rule "Via to Via Clearance, Same Nets"
-	(constraint hole_to_hole (min 0.5mm))
-	(condition "A.Type == 'Via' && B.Type == 'Via' && A.Net != B.Net")
 )
 (rule "Via to Via clearance, Same Nets"
 	(constraint hole_to_hole (min 0.254mm))
@@ -147,12 +147,23 @@
 #######################
 # Legend (Silkscreen)
 
-(rule "Minimum Text Size"
+(rule "Minimum Silkscreen Text Thickness"
 	(constraint text_thickness (min 0.153mm))
+	(condition "A.Layer == 'F.Silkscreen' || 'B.Silkscreen'")
+)
+(rule "Minimum Text Thickness"
+	(constraint text_thickness (min 0.1mm))
+	(condition "A.Layer != 'F.Silkscreen' || 'B.Silkscreen'")
+	(condition "A.Layer != 'F.Fab' || 'B.Fab'")
+)
+(rule "Minimum Text Height"
 	(constraint text_height (min 1.0mm))
+	(condition "A.Layer == 'F.Silkscreen' || 'B.Silkscreen'")
 )
 (rule "Silkscreen Clearance"
-	(constraint silk_clearance (min 0.15mm))
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'Pad'")
+	(condition "B.Layer == 'F.Silkscreen' || 'B.Silkscreen'")
 )
 
 #################
