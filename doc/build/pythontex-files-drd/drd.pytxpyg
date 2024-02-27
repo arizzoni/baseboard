@@ -1,0 +1,290 @@
+
+\makeatletter
+\def\PYG@reset{\let\PYG@it=\relax \let\PYG@bf=\relax%
+    \let\PYG@ul=\relax \let\PYG@tc=\relax%
+    \let\PYG@bc=\relax \let\PYG@ff=\relax}
+\def\PYG@tok#1{\csname PYG@tok@#1\endcsname}
+\def\PYG@toks#1+{\ifx\relax#1\empty\else%
+    \PYG@tok{#1}\expandafter\PYG@toks\fi}
+\def\PYG@do#1{\PYG@bc{\PYG@tc{\PYG@ul{%
+    \PYG@it{\PYG@bf{\PYG@ff{#1}}}}}}}
+\def\PYG#1#2{\PYG@reset\PYG@toks#1+\relax+\PYG@do{#2}}
+
+\@namedef{PYG@tok@w}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\@namedef{PYG@tok@c}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PYG@tok@cp}{\def\PYG@tc##1{\textcolor[rgb]{0.61,0.40,0.00}{##1}}}
+\@namedef{PYG@tok@k}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@kp}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@kt}{\def\PYG@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\@namedef{PYG@tok@o}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@ow}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\@namedef{PYG@tok@nb}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@nf}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PYG@tok@nc}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PYG@tok@nn}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PYG@tok@ne}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.80,0.25,0.22}{##1}}}
+\@namedef{PYG@tok@nv}{\def\PYG@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PYG@tok@no}{\def\PYG@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\@namedef{PYG@tok@nl}{\def\PYG@tc##1{\textcolor[rgb]{0.46,0.46,0.00}{##1}}}
+\@namedef{PYG@tok@ni}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.44,0.44,0.44}{##1}}}
+\@namedef{PYG@tok@na}{\def\PYG@tc##1{\textcolor[rgb]{0.41,0.47,0.13}{##1}}}
+\@namedef{PYG@tok@nt}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@nd}{\def\PYG@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\@namedef{PYG@tok@s}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@sd}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@si}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.64,0.35,0.47}{##1}}}
+\@namedef{PYG@tok@se}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.67,0.36,0.12}{##1}}}
+\@namedef{PYG@tok@sr}{\def\PYG@tc##1{\textcolor[rgb]{0.64,0.35,0.47}{##1}}}
+\@namedef{PYG@tok@ss}{\def\PYG@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PYG@tok@sx}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@m}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@gh}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\@namedef{PYG@tok@gu}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\@namedef{PYG@tok@gd}{\def\PYG@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\@namedef{PYG@tok@gi}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.52,0.00}{##1}}}
+\@namedef{PYG@tok@gr}{\def\PYG@tc##1{\textcolor[rgb]{0.89,0.00,0.00}{##1}}}
+\@namedef{PYG@tok@ge}{\let\PYG@it=\textit}
+\@namedef{PYG@tok@gs}{\let\PYG@bf=\textbf}
+\@namedef{PYG@tok@ges}{\let\PYG@bf=\textbf\let\PYG@it=\textit}
+\@namedef{PYG@tok@gp}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\@namedef{PYG@tok@go}{\def\PYG@tc##1{\textcolor[rgb]{0.44,0.44,0.44}{##1}}}
+\@namedef{PYG@tok@gt}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\@namedef{PYG@tok@err}{\def\PYG@bc##1{{\setlength{\fboxsep}{\string -\fboxrule}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}}
+\@namedef{PYG@tok@kc}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@kd}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@kn}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@kr}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@bp}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PYG@tok@fm}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PYG@tok@vc}{\def\PYG@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PYG@tok@vg}{\def\PYG@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PYG@tok@vi}{\def\PYG@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PYG@tok@vm}{\def\PYG@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PYG@tok@sa}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@sb}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@sc}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@dl}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@s2}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@sh}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@s1}{\def\PYG@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PYG@tok@mb}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@mf}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@mh}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@mi}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@il}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@mo}{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PYG@tok@ch}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PYG@tok@cm}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PYG@tok@cpf}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PYG@tok@c1}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PYG@tok@cs}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+
+\def\PYGZbs{\char`\\}
+\def\PYGZus{\char`\_}
+\def\PYGZob{\char`\{}
+\def\PYGZcb{\char`\}}
+\def\PYGZca{\char`\^}
+\def\PYGZam{\char`\&}
+\def\PYGZlt{\char`\<}
+\def\PYGZgt{\char`\>}
+\def\PYGZsh{\char`\#}
+\def\PYGZpc{\char`\%}
+\def\PYGZdl{\char`\$}
+\def\PYGZhy{\char`\-}
+\def\PYGZsq{\char`\'}
+\def\PYGZdq{\char`\"}
+\def\PYGZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGZat{@}
+\def\PYGZlb{[}
+\def\PYGZrb{]}
+\makeatother
+
+\makeatletter
+\def\PYGbw@reset{\let\PYGbw@it=\relax \let\PYGbw@bf=\relax%
+    \let\PYGbw@ul=\relax \let\PYGbw@tc=\relax%
+    \let\PYGbw@bc=\relax \let\PYGbw@ff=\relax}
+\def\PYGbw@tok#1{\csname PYGbw@tok@#1\endcsname}
+\def\PYGbw@toks#1+{\ifx\relax#1\empty\else%
+    \PYGbw@tok{#1}\expandafter\PYGbw@toks\fi}
+\def\PYGbw@do#1{\PYGbw@bc{\PYGbw@tc{\PYGbw@ul{%
+    \PYGbw@it{\PYGbw@bf{\PYGbw@ff{#1}}}}}}}
+\def\PYGbw#1#2{\PYGbw@reset\PYGbw@toks#1+\relax+\PYGbw@do{#2}}
+
+\@namedef{PYGbw@tok@c}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@k}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@ow}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@nc}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@nn}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@ne}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@ni}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@nt}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@s}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@si}{\let\PYGbw@bf=\textbf\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@se}{\let\PYGbw@bf=\textbf\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@gh}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@gu}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@ge}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@gs}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@ges}{\let\PYGbw@bf=\textbf\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@gp}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@err}{\def\PYGbw@bc##1{{\setlength{\fboxsep}{\string -\fboxrule}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}}
+\@namedef{PYGbw@tok@kc}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@kd}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@kn}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@kr}{\let\PYGbw@bf=\textbf}
+\@namedef{PYGbw@tok@sa}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@sb}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@sc}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@dl}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@sd}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@s2}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@sh}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@sx}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@sr}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@s1}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@ss}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@ch}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@cm}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@cpf}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@c1}{\let\PYGbw@it=\textit}
+\@namedef{PYGbw@tok@cs}{\let\PYGbw@it=\textit}
+
+\def\PYGbwZbs{\char`\\}
+\def\PYGbwZus{\char`\_}
+\def\PYGbwZob{\char`\{}
+\def\PYGbwZcb{\char`\}}
+\def\PYGbwZca{\char`\^}
+\def\PYGbwZam{\char`\&}
+\def\PYGbwZlt{\char`\<}
+\def\PYGbwZgt{\char`\>}
+\def\PYGbwZsh{\char`\#}
+\def\PYGbwZpc{\char`\%}
+\def\PYGbwZdl{\char`\$}
+\def\PYGbwZhy{\char`\-}
+\def\PYGbwZsq{\char`\'}
+\def\PYGbwZdq{\char`\"}
+\def\PYGbwZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGbwZat{@}
+\def\PYGbwZlb{[}
+\def\PYGbwZrb{]}
+\makeatother
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@1}
+\PYG{n}{V\PYGZus{}POS} \PYG{o}{=} \PYG{l+m+mi}{12}
+\PYG{n}{V\PYGZus{}NEG} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{12}
+\PYG{n}{V\PYGZus{}IN} \PYG{o}{=} \PYG{l+m+mf}{8.55}
+\PYG{n}{V\PYGZus{}FB1} \PYG{o}{=} \PYG{l+m+mf}{0.8}
+\PYG{n}{V\PYGZus{}FB2} \PYG{o}{=} \PYG{l+m+mf}{0.8}
+\PYG{n}{V\PYGZus{}REF} \PYG{o}{=} \PYG{l+m+mf}{1.6}
+\PYG{n}{I\PYGZus{}OUT1} \PYG{o}{=} \PYG{l+m+mf}{200E\PYGZhy{}3}
+\PYG{n}{I\PYGZus{}OUT2} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{200E\PYGZhy{}3}
+\PYG{n}{R\PYGZus{}FT1} \PYG{o}{=} \PYG{l+m+mf}{1E6}
+\PYG{n}{R\PYGZus{}FT2} \PYG{o}{=} \PYG{l+m+mf}{1E6}
+\PYG{n}{R\PYGZus{}FB1} \PYG{o}{=} \PYG{n}{R\PYGZus{}FT1} \PYG{o}{/} \PYG{p}{(} \PYG{p}{(}\PYG{n}{V\PYGZus{}POS} \PYG{o}{/} \PYG{n}{V\PYGZus{}FB1}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1} \PYG{p}{)}
+\PYG{n}{R\PYGZus{}FB2} \PYG{o}{=} \PYG{n}{R\PYGZus{}FT2} \PYG{o}{*} \PYG{p}{(}\PYG{n}{V\PYGZus{}REF} \PYG{o}{\PYGZhy{}} \PYG{n}{V\PYGZus{}FB2}\PYG{p}{)} \PYG{o}{/} \PYG{p}{(}\PYG{n}{V\PYGZus{}FB2} \PYG{o}{\PYGZhy{}} \PYG{n}{V\PYGZus{}NEG}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}R\PYGZus{}}\PYG{l+s+si}{\PYGZob{}FT1\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZbs{}}\PYG{l+s+s2}{Omega\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{R\PYGZus{}FT1}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}R\PYGZus{}}\PYG{l+s+si}{\PYGZob{}FB1\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZbs{}}\PYG{l+s+s2}{Omega\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{R\PYGZus{}FB1}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}R\PYGZus{}}\PYG{l+s+si}{\PYGZob{}FT2\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZbs{}}\PYG{l+s+s2}{Omega\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{R\PYGZus{}FT2}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}R\PYGZus{}}\PYG{l+s+si}{\PYGZob{}FB2\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZbs{}}\PYG{l+s+s2}{Omega\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{R\PYGZus{}FB2}\PYG{p}{)}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@2}
+\PYG{n}{C\PYGZus{}OUT} \PYG{o}{=} \PYG{l+m+mf}{20E\PYGZhy{}6}
+\PYG{n}{D\PYGZus{}TEMP} \PYG{o}{=} \PYG{l+m+mf}{0.014}
+\PYG{n}{D\PYGZus{}BIAS} \PYG{o}{=} \PYG{l+m+mf}{0.120}
+\PYG{n}{D\PYGZus{}TOL} \PYG{o}{=} \PYG{l+m+mf}{0.200}
+\PYG{n}{C\PYGZus{}OUT\PYGZus{}ESR} \PYG{o}{=} \PYG{l+m+mf}{2.5E\PYGZhy{}3}
+\PYG{n}{C\PYGZus{}OUT\PYGZus{}EFF} \PYG{o}{=} \PYG{n}{C\PYGZus{}OUT} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{D\PYGZus{}TEMP} \PYG{p}{)} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{D\PYGZus{}BIAS} \PYG{p}{)} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{D\PYGZus{}TOL} \PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZdl{}\PYGZdl{}C\PYGZus{}}\PYG{l+s+s1}{\PYGZob{}}\PYG{l+s+s1}{OUT\PYGZus{}}\PYG{l+s+si}{\PYGZob{}EFF\PYGZcb{}}\PYG{l+s+s1}{\PYGZcb{} = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{C\PYGZus{}OUT\PYGZus{}EFF}\PYG{p}{)}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@3}
+\PYG{n}{C\PYGZus{}PV\PYGZus{}IN} \PYG{o}{=} \PYG{l+m+mf}{22E\PYGZhy{}6}
+\PYG{n}{C\PYGZus{}PV\PYGZus{}INSYS} \PYG{o}{=} \PYG{l+m+mf}{22E\PYGZhy{}6}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@4}
+\PYG{n}{C\PYGZus{}VREG} \PYG{o}{=} \PYG{l+m+mf}{1E\PYGZhy{}6}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@5}
+\PYG{n}{C\PYGZus{}VREG} \PYG{o}{=} \PYG{l+m+mf}{1E\PYGZhy{}6}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@6}
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{R\PYGZus{}SOFT\PYGZus{}START} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{50E3}\PYG{p}{,} \PYG{l+m+mf}{268E3}\PYG{p}{,} \PYG{l+m+mi}{800}\PYG{p}{)}
+\PYG{n}{t\PYGZus{}SOFT\PYGZus{}START} \PYG{o}{=} \PYG{l+m+mf}{38.4E\PYGZhy{}3} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{1.28E\PYGZhy{}7} \PYG{o}{*} \PYG{n}{R\PYGZus{}SOFT\PYGZus{}START}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{R\PYGZus{}SOFT\PYGZus{}START}\PYG{p}{,} \PYG{n}{t\PYGZus{}SOFT\PYGZus{}START}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Soft Start Resistor Values}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{R\PYGZus{}SOFT\PYGZus{}START} \PYG{o}{=} \PYG{l+m+mf}{71.5E3}
+\PYG{n}{t\PYGZus{}SOFT\PYGZus{}START} \PYG{o}{=} \PYG{l+m+mf}{38.4E\PYGZhy{}3} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{1.28E\PYGZhy{}7} \PYG{o}{*} \PYG{n}{R\PYGZus{}SOFT\PYGZus{}START}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{R\PYGZus{}SOFT\PYGZus{}START}\PYG{p}{,} \PYG{n}{t\PYGZus{}SOFT\PYGZus{}START}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Selected Resistance}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{yaxis}\PYG{o}{.}\PYG{n}{set\PYGZus{}major\PYGZus{}formatter}\PYG{p}{(}\PYG{n}{eng\PYGZus{}format}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{unit}\PYG{l+s+s1}{\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{second\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{xaxis}\PYG{o}{.}\PYG{n}{set\PYGZus{}major\PYGZus{}formatter}\PYG{p}{(}\PYG{n}{eng\PYGZus{}format}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{unit}\PYG{l+s+s1}{\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{ohm\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{save\PYGZus{}pythontex\PYGZus{}figure}\PYG{p}{(}\PYG{n}{fig}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{psu\PYGZus{}softstart}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@7}
+\PYG{n}{V\PYGZus{}DF} \PYG{o}{=} \PYG{l+m+mf}{450E\PYGZhy{}3}
+\PYG{n}{C\PYGZus{}D} \PYG{o}{=} \PYG{l+m+mf}{90E\PYGZhy{}12}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@8}
+\PYG{n}{f\PYGZus{}SW} \PYG{o}{=} \PYG{l+m+mf}{2.4E6}
+\PYG{n}{DUTY\PYGZus{}1} \PYG{o}{=} \PYG{p}{(} \PYG{n}{V\PYGZus{}POS} \PYG{o}{\PYGZhy{}} \PYG{n}{V\PYGZus{}IN} \PYG{o}{+} \PYG{n}{V\PYGZus{}DF} \PYG{p}{)} \PYG{o}{/} \PYG{p}{(}\PYG{n}{V\PYGZus{}POS} \PYG{o}{+} \PYG{n}{V\PYGZus{}DF}\PYG{p}{)}
+\PYG{n}{I\PYGZus{}IN} \PYG{o}{=} \PYG{n}{I\PYGZus{}OUT1} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}1} \PYG{p}{)}
+\PYG{n}{T\PYGZus{}ON1} \PYG{o}{=} \PYG{n}{DUTY\PYGZus{}1} \PYG{o}{/} \PYG{n}{f\PYGZus{}SW}
+\PYG{n}{L1} \PYG{o}{=} \PYG{n}{V\PYGZus{}IN} \PYG{o}{*} \PYG{n}{T\PYGZus{}ON1} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}1}\PYG{p}{)} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mf}{0.3} \PYG{o}{*} \PYG{n}{I\PYGZus{}OUT1}\PYG{p}{)}
+\PYG{n}{L1\PYGZus{}MIN} \PYG{o}{=} \PYG{l+m+mf}{1E\PYGZhy{}6} \PYG{o}{*} \PYG{n}{V\PYGZus{}IN} \PYG{o}{*} \PYG{p}{(} \PYG{p}{(} \PYG{l+m+mf}{0.27} \PYG{o}{/} \PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}1}\PYG{p}{)}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{0.33}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}L1 = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{L1}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}L\PYGZus{}}\PYG{l+s+s2}{\PYGZob{}}\PYG{l+s+s2}{1\PYGZus{}}\PYG{l+s+si}{\PYGZob{}MIN\PYGZcb{}}\PYG{l+s+s2}{\PYGZcb{} = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{L1\PYGZus{}MIN}\PYG{p}{)}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@9}
+\PYG{n}{DUTY\PYGZus{}2} \PYG{o}{=} \PYG{p}{(} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{V\PYGZus{}NEG}\PYG{p}{)} \PYG{o}{+} \PYG{n}{V\PYGZus{}DF} \PYG{p}{)} \PYG{o}{/} \PYG{p}{(} \PYG{n}{V\PYGZus{}IN} \PYG{o}{+} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{V\PYGZus{}NEG}\PYG{p}{)} \PYG{o}{+} \PYG{n}{V\PYGZus{}DF} \PYG{p}{)}
+\PYG{n}{I\PYGZus{}L2} \PYG{o}{=} \PYG{n}{I\PYGZus{}OUT2} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}2} \PYG{p}{)}
+\PYG{n}{t\PYGZus{}ON2} \PYG{o}{=} \PYG{n}{DUTY\PYGZus{}2} \PYG{o}{/} \PYG{n}{f\PYGZus{}SW}
+\PYG{n}{L2} \PYG{o}{=} \PYG{n}{V\PYGZus{}IN} \PYG{o}{*} \PYG{n}{t\PYGZus{}ON2} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}2} \PYG{p}{)} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mf}{0.3} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{I\PYGZus{}OUT2}\PYG{p}{)} \PYG{p}{)}
+\PYG{n}{L2\PYGZus{}MIN} \PYG{o}{=} \PYG{l+m+mf}{1E\PYGZhy{}6} \PYG{o}{*} \PYG{n}{V\PYGZus{}IN} \PYG{o}{*} \PYG{p}{(} \PYG{p}{(} \PYG{l+m+mf}{0.27} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}2}\PYG{p}{)}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{0.33} \PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}L2 = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{L2}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}L2\PYGZus{}MIN = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{L2\PYGZus{}MIN}\PYG{p}{)}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@10}
+\PYG{n}{R\PYGZus{}LOAD1} \PYG{o}{=} \PYG{n}{V\PYGZus{}POS} \PYG{o}{/} \PYG{n}{I\PYGZus{}OUT1}
+\PYG{n}{f\PYGZus{}Z1\PYGZus{}RHP} \PYG{o}{=} \PYG{p}{(} \PYG{n}{R\PYGZus{}LOAD1} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}1} \PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi} \PYG{o}{*} \PYG{n}{L1} \PYG{p}{)}
+\PYG{n}{f\PYGZus{}C1} \PYG{o}{=} \PYG{n}{f\PYGZus{}Z1\PYGZus{}RHP} \PYG{o}{*} \PYG{l+m+mf}{95E\PYGZhy{}3}
+\PYG{n}{V\PYGZus{}FB1} \PYG{o}{=} \PYG{n}{V\PYGZus{}POS} \PYG{o}{*} \PYG{n}{R\PYGZus{}FB1} \PYG{o}{/} \PYG{p}{(} \PYG{n}{R\PYGZus{}FB1} \PYG{o}{+} \PYG{n}{R\PYGZus{}FT1} \PYG{p}{)}
+\PYG{n}{G\PYGZus{}M1} \PYG{o}{=} \PYG{l+m+mf}{300E\PYGZhy{}6} \PYG{c+c1}{\PYGZsh{} from datasheet}
+\PYG{n}{G\PYGZus{}CS1} \PYG{o}{=} \PYG{l+m+mf}{6.25} \PYG{c+c1}{\PYGZsh{} from datasheet}
+\PYG{n}{R\PYGZus{}C1} \PYG{o}{=} \PYG{p}{(} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi} \PYG{o}{*} \PYG{n}{f\PYGZus{}C1} \PYG{o}{*} \PYG{n}{C\PYGZus{}OUT\PYGZus{}EFF} \PYG{o}{*} \PYG{n}{V\PYGZus{}POS}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{/} \PYG{p}{(} \PYG{n}{V\PYGZus{}FB1} \PYG{o}{*} \PYG{n}{V\PYGZus{}IN} \PYG{o}{*} \PYG{n}{G\PYGZus{}M1} \PYG{o}{*} \PYG{n}{G\PYGZus{}CS1} \PYG{p}{)}
+\PYG{n}{C\PYGZus{}C1} \PYG{o}{=} \PYG{l+m+mi}{2} \PYG{o}{/} \PYG{p}{(} \PYG{n}{np}\PYG{o}{.}\PYG{n}{pi} \PYG{o}{*} \PYG{n}{f\PYGZus{}C1} \PYG{o}{*} \PYG{n}{R\PYGZus{}C1} \PYG{p}{)}
+\PYG{n}{C\PYGZus{}B1} \PYG{o}{=} \PYG{n}{C\PYGZus{}OUT\PYGZus{}ESR} \PYG{o}{*} \PYG{n}{C\PYGZus{}OUT} \PYG{o}{/} \PYG{n}{R\PYGZus{}C1}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}R\PYGZus{}}\PYG{l+s+si}{\PYGZob{}C1\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{R\PYGZus{}C1}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}C\PYGZus{}}\PYG{l+s+si}{\PYGZob{}C1\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{C\PYGZus{}C1}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}C\PYGZus{}}\PYG{l+s+si}{\PYGZob{}B1\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{C\PYGZus{}B1}\PYG{p}{)}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
+\begin{pytx@SaveVerbatim}[commandchars=\\\{\}]{pytx@py@default@default@11}
+\PYG{n}{R\PYGZus{}LOAD2} \PYG{o}{=} \PYG{n}{V\PYGZus{}NEG} \PYG{o}{/} \PYG{n}{I\PYGZus{}OUT2}
+\PYG{n}{f\PYGZus{}Z2\PYGZus{}RHP} \PYG{o}{=} \PYG{p}{(} \PYG{n}{R\PYGZus{}LOAD2} \PYG{o}{*} \PYG{p}{(} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{DUTY\PYGZus{}2} \PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2} \PYG{p}{)} \PYG{o}{/} \PYG{p}{(} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi} \PYG{o}{*} \PYG{n}{L2} \PYG{o}{*} \PYG{n}{DUTY\PYGZus{}2} \PYG{p}{)}
+\PYG{n}{f\PYGZus{}C2} \PYG{o}{=} \PYG{n}{f\PYGZus{}Z2\PYGZus{}RHP} \PYG{o}{*} \PYG{l+m+mf}{95E\PYGZhy{}3}
+\PYG{n}{V\PYGZus{}FB2} \PYG{o}{=} \PYG{n}{V\PYGZus{}NEG} \PYG{o}{*} \PYG{n}{R\PYGZus{}FT2} \PYG{o}{/} \PYG{p}{(} \PYG{n}{R\PYGZus{}FB2} \PYG{o}{+} \PYG{n}{R\PYGZus{}FT2} \PYG{p}{)}
+\PYG{n}{G\PYGZus{}M2} \PYG{o}{=} \PYG{l+m+mf}{300E\PYGZhy{}6} \PYG{c+c1}{\PYGZsh{} from datasheet}
+\PYG{n}{G\PYGZus{}CS2} \PYG{o}{=} \PYG{l+m+mf}{6.25} \PYG{c+c1}{\PYGZsh{} from datasheet}
+\PYG{n}{R\PYGZus{}C2} \PYG{o}{=} \PYG{p}{(} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi} \PYG{o}{*} \PYG{n}{f\PYGZus{}C2} \PYG{o}{*} \PYG{n}{C\PYGZus{}OUT\PYGZus{}EFF} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{V\PYGZus{}NEG}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(} \PYG{n}{V\PYGZus{}IN} \PYG{o}{+} \PYG{p}{(} \PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{V\PYGZus{}NEG}\PYG{p}{)} \PYG{p}{)} \PYG{p}{)} \PYG{p}{)}
+\PYG{n}{R\PYGZus{}C2} \PYG{o}{=} \PYG{n}{R\PYGZus{}C2} \PYG{o}{/} \PYG{p}{(} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{V\PYGZus{}FB2}\PYG{p}{)} \PYG{o}{*} \PYG{n}{V\PYGZus{}IN} \PYG{o}{*} \PYG{n}{G\PYGZus{}M2} \PYG{o}{*} \PYG{n}{G\PYGZus{}CS2} \PYG{p}{)}
+\PYG{n}{C\PYGZus{}C2} \PYG{o}{=} \PYG{l+m+mi}{2} \PYG{o}{/} \PYG{p}{(} \PYG{n}{np}\PYG{o}{.}\PYG{n}{pi} \PYG{o}{*} \PYG{n}{f\PYGZus{}C2} \PYG{o}{*} \PYG{n}{R\PYGZus{}C2} \PYG{p}{)}
+\PYG{n}{C\PYGZus{}B2} \PYG{o}{=} \PYG{n}{C\PYGZus{}OUT\PYGZus{}ESR} \PYG{o}{*} \PYG{n}{C\PYGZus{}OUT} \PYG{o}{/} \PYG{n}{R\PYGZus{}C2}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}R\PYGZus{}}\PYG{l+s+si}{\PYGZob{}C2\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{R\PYGZus{}C2}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}C\PYGZus{}}\PYG{l+s+si}{\PYGZob{}C2\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{C\PYGZus{}C2}\PYG{p}{)}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}C\PYGZus{}}\PYG{l+s+si}{\PYGZob{}B2\PYGZcb{}}\PYG{l+s+s2}{ = }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdl{}\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{C\PYGZus{}B2}\PYG{p}{)}\PYG{p}{)}
+\end{pytx@SaveVerbatim}
+
