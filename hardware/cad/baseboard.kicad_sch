@@ -10,9 +10,8 @@
 		(rev "A")
 		(company "Alessandro Rizzoni")
 		(comment 1 "SCHEMATIC")
-		(comment 2 "RELEASED")
+		(comment 2 "DRAFT")
 		(comment 3 "AIR")
-		(comment 4 "AIR")
 	)
 	(lib_symbols)
 	(polyline
