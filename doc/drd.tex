@@ -1,806 +1,640 @@
-\documentclass[12pt, titlepage]{article}
+\documentclass[12pt, titlepage]{tex-template}
 \newcommand{\theauthor}{Alessandro Rizzoni}
-\newcommand{\thedoctitle}{Baseboard Design Document}
+\newcommand{\thedoctitle}{Baseboard Design Reference Document}
 
-\newenvironment{revisionhistory}
-    {\setcounter{secnumdepth}{0}}
-    {\setcounter{secnumdepth}{3}}
-
-\usepackage{hyperref}
-
-% Code Execution and Typesetting
-\usepackage[%
-    pygopt={
-        style=bw
-        },
-    upquote=true
-    ]{pythontex}
-\setpythontexfv{%
-    breaklines,
-    breakanywhere,
-    frame=leftline,
-    framerule=0.8pt,
-    firstnumber=last,
-    numbers=left,
-    numbersep=0pt
-    }
-\renewcommand{\FancyVerbFormatLine}[1]{\small #1}
-\renewcommand{\theFancyVerbLine}{%
-    \tiny\rmfamily{\arabic{FancyVerbLine}\,}
-    }
-
-% Page Layout
-\usepackage[%
-    letterpaper, % 8.5" x 11" paper size
-    margin=1in
-    ]{geometry}
-
-% Mathematics
-\usepackage{mathtools} % Mathematics typesetting
-\usepackage[% Mathematics with modern fonts
-    warnings-off={% Turn off default always-on warnings
-        mathtools-colon,
-        mathtools-overbracket
-        }
-    ]{unicode-math} 
-\usepackage{lualatex-math} % Math fixes for LuaLaTeX
-\usepackage{siunitx} % Handy typesetting of units
-
-% Font
-\usepackage{fontspec} % Modern .ttc, .ttf, and .otf fonts
-\setmathfont{STIXTwoMath-Regular.otf}
-\setmainfont{STIXTwoText-Regular.otf}[%
-    Ligatures=TeX,
-    ItalicFont=STIXTwoText-Italic.otf,
-    BoldFont=STIXTwoText-Bold.otf,
-    BoldItalicFont=STIXTwoText-BoldItalic.otf,
-    ]
-\setsansfont{Iosevka Aile}[%
-    Ligatures=TeX,
-    Scale=MatchLowercase
-    ]
-\setmonofont{Iosevka Fixed}[%
-    Ligatures=TeX,
-    Scale=MatchLowercase
-    ]
-
-% Localization
-\usepackage[% American English localization
-    USenglish
-    ]{babel} 
-\usepackage[% Localized context-sensitive quotes
-    autostyle=true
-    ]{csquotes}
-
-% Headers
-\usepackage{fancyhdr}
-\renewcommand{\sectionmark}[1]{\markright{#1}}
-\setlength{\headheight}{24pt}
-\fancypagestyle{fancy}{
-    \fancyhf{}
-    \renewcommand{\headrulewidth}{0.8pt}
-    \renewcommand{\footrulewidth}{0pt}
-    \fancyhead[L]{\sffamily\thedoctitle}
-    \fancyhead[R]{\sffamily\small\rightmark}
-    \fancyfoot[C]{\sffamily\small\thepage}
-}
-\pagestyle{fancy}
-
-% Section Title Formatting
-\usepackage{titlesec}
-\titleformat{\section}{\Large\sffamily}{\thesection}{1em}{\Large\sffamily}
-\titleformat{\subsection}{\large\sffamily}{\thesubsection}{1em}{\large\sffamily}
-\titleformat{\subsubsection}{\normalsize\sffamily}{\thesubsubsection}{1em}{\normalsize\sffamily}
-% \AddToHook{cmd/section/before}{\clearpage}
-
-% Table of Contents Formatting
-\usepackage{titletoc}
-\dottedcontents{section}[1em]{}{1em}{0.5em}
-\dottedcontents{subsection}[3em]{}{2em}{0.5em}
-\dottedcontents{subsubsection}[5em]{}{3em}{0.5em}
-
-% Tables and Lists
-\usepackage{tabularray} % Tables and Arrays
-\usepackage{enumitem} % Reformat Enumerated Lists
-
-% Graphics
-\usepackage{pgf} % Base graphics package
-\usepackage{blox} % System block diagrams
-\usepackage{tikz-timing} % Timing diagram graphics
+% Circuit and Block Diagrams
 \usepackage[siunitx]{circuitikz} % Electrical circuit graphics
 \ctikzloadstyle{romano} % Better styling for CircuiTikz
 \tikzset{romano circuit style} % Apply the style
 
-%% Pythontex 
-% Get lengths (in LaTeX points)
-\newlength\inlength \inlength=1in
-\newlength\cmlength \cmlength=1cm
-\newlength\mmlength \mmlength=1mm
-\newlength\emlength \emlength=1em
-\newlength\exlength \exlength=1ex
-\newlength\bplength \bplength=1bp
-\newlength\ddlength \ddlength=1dd
-\newlength\pclength \pclength=1pc
-
-% Get font parameters
-\makeatletter
-
-% Font Sizes
-\tiny\xdef\thetinysize{\f@size}
-\scriptsize\xdef\thescriptsize{\f@size}
-\footnotesize\xdef\thefootnotesize{\f@size}
-\small\xdef\thesmallsize{\f@size}
-\normalsize\xdef\thenormalsize{\f@size}
-\large\xdef\thelargesize{\f@size}
-\Large\xdef\theLargesize{\f@size}
-\LARGE\xdef\theLARGEsize{\f@size}
-\huge\xdef\thehugesize{\f@size}
-\Huge\xdef\theHugesize{\f@size}
-
-% Fonts 
-\sffamily\mdseries\upshape\xdef\thesffont{\expandafter\string\the\font}
-\ttfamily\mdseries\upshape\xdef\thettfont{\expandafter\string\the\font}
-\rmfamily\mdseries\upshape\xdef\thermfont{\expandafter\string\the\font}
-\sffamily\bfseries\upshape\xdef\theboldsffont{\expandafter\string\the\font}
-\ttfamily\bfseries\upshape\xdef\theboldttfont{\expandafter\string\the\font}
-\rmfamily\bfseries\upshape\xdef\theboldrmfont{\expandafter\string\the\font}
-\sffamily\mdseries\itshape\xdef\theitalicsffont{\expandafter\string\the\font}
-\ttfamily\mdseries\itshape\xdef\theitalicttfont{\expandafter\string\the\font}
-\rmfamily\mdseries\itshape\xdef\theitalicrmfont{\expandafter\string\the\font}
-\sffamily\bfseries\itshape\xdef\thebolditalicsffont{\expandafter\string\the\font}
-\ttfamily\bfseries\itshape\xdef\thebolditalicttfont{\expandafter\string\the\font}
-\rmfamily\bfseries\itshape\xdef\thebolditalicrmfont{\expandafter\string\the\font}
-\sffamily\mdseries\scshape\xdef\thesmallcapssffont{\expandafter\string\the\font}
-\ttfamily\mdseries\scshape\xdef\thesmallcapsttfont{\expandafter\string\the\font}
-\rmfamily\mdseries\scshape\xdef\thesmallcapsrmfont{\expandafter\string\the\font}
-\sffamily\bfseries\scshape\xdef\theboldsmallcapssffont{\expandafter\string\the\font}
-\ttfamily\bfseries\scshape\xdef\theboldsmallcapsttfont{\expandafter\string\the\font}
-\rmfamily\bfseries\scshape\xdef\theboldsmallcapsrmfont{\expandafter\string\the\font}
-\sffamily\mdseries\slshape\xdef\theslantedsffont{\expandafter\string\the\font}
-\ttfamily\mdseries\slshape\xdef\theslantedttfont{\expandafter\string\the\font}
-\rmfamily\mdseries\slshape\xdef\theslantedrmfont{\expandafter\string\the\font}
-\sffamily\bfseries\slshape\xdef\theboldslantedsffont{\expandafter\string\the\font}
-\ttfamily\bfseries\slshape\xdef\theboldslantedttfont{\expandafter\string\the\font}
-\rmfamily\bfseries\slshape\xdef\theboldslantedrmfont{\expandafter\string\the\font}
-
-% Math Fonts
-\xdef\themathfont{\expandafter\string\the\textfont0}
-\xdef\themathfontone{\expandafter\string\the\textfont1}
-\xdef\themathfonttwo{\expandafter\string\the\textfont2}
-\xdef\themathfontthree{\expandafter\string\the\textfont3}
-
-\makeatother
-
-% Define Python Context
-\setpythontexcontext{%
-    romanfont=\thermfont,
-    romanboldfont=\theboldrmfont,
-    romanitalicfont=\theitalicrmfont,
-    romanbolditalicfont=\thebolditalicrmfont,
-    sansfont=\thesffont,
-    sansboldfont=\theboldsffont,
-    sansitalicfont=\theitalicsffont,
-    sansbolditalicfont=\thebolditalicsffont,
-    monofont=\thettfont,
-    monoboldfont=\theboldttfont,
-    monoitalicfont=\theitalicttfont,
-    monobolditalicfont=\thebolditalicttfont,
-    mathfont=\themathfont,
-    mathfontone=\themathfontone,
-    mathfonttwo=\themathfonttwo,
-    mathfontthree=\themathfontthree,
-    scsansfont = \thesmallcapssffont,
-    scromanfont = \thesmallcapsrmfont,
-    scmonofont = \thesmallcapsttfont,
-    scsansboldfont = \theboldsmallcapssffont,
-    scromanboldfont = \theboldsmallcapsrmfont,
-    scmonoboldfont = \theboldsmallcapsttfont,
-    slantedsansfont = \theslantedsffont,
-    slantedromanfont = \theslantedrmfont,
-    slantedmonofont = \theslantedttfont,
-    slantedsansboldfont = \theboldslantedsffont,
-    slantedromanboldfont = \theboldslantedrmfont,
-    slantedmonoboldfont = \theboldslantedttfont,
-    tiny=\thetinysize,
-    scriptsize=\thescriptsize,
-    footnotesize=\thefootnotesize,
-    small=\thesmallsize,
-    normalsize=\thenormalsize,
-    large=\thelargesize,
-    Large=\theLargesize,
-    LARGE=\theLARGEsize,
-    huge=\thehugesize,
-    Huge=\theHugesize,
-    baselineskip=\the\baselineskip,
-    % baselinestretch=\the\baselinestretch,
-    columnsep=\the\columnsep,
-    columnwidth=\the\columnwidth,
-    evensidemargin=\the\evensidemargin,
-    linewidth=\the\linewidth,
-    oddsidemargin=\the\oddsidemargin,
-    paperwidth=\the\paperwidth,
-    paperheight=\the\paperheight,
-    parindent=\the\parindent,
-    parskip=\the\parskip,
-    textheight=\the\textheight,
-    textwidth=\the\textwidth,
-    topmargin=\the\topmargin,
-    unitlength=\the\unitlength,
-    in=\the\inlength,
-    cm=\the\cmlength,
-    mm=\the\mmlength,
-    em=\the\emlength,
-    ex=\the\exlength,
-    bp=\the\bplength,
-    dd=\the\ddlength,
-    pc=\the\pclength
-}
-
-\AtBeginDocument{
-    \renewcommand{\abstractname}{Introduction}
-    \addtocontents{toc}{\protect\thispagestyle{empty}}
-}
-
-\begin{pythontexcustomcode}{py}
-import os
-
-import numpy as np # Python numerical computing library
-import matplotlib as mpl
-
-from cycler import cycler # Property cycler utilities
-from matplotlib import pyplot as plt # Pyplot API
-from matplotlib import rcParams as rc # Matplotlib plot styling
-from matplotlib.ticker import EngFormatter # Plot tick formatting
-
-class Environment():
-
-    build_directory = os.path.abspath(os.getcwd())
-    output_directory = os.sep.join(build_directory.split(os.sep)[:-1])
-    figures_directory = os.path.join(output_directory, 'figures')
-    pgf_directory = os.path.join(figures_directory, 'pgf')
-    pdf_directory = os.path.join(figures_directory, 'pdf')
-
-    def __init__(self):
-        figure_directories = [ self.figures_directory, self.pgf_directory, self.pdf_directory ]
-        for directory in figure_directories:
-            if not os.path.exists(directory):
-                os.mkdir(directory)
-
-environment = Environment()
-
-def metallic_ratio(n):
-    return 0.5 * ( n + np.sqrt(n**2 + 4) )
-    
-def eng_format(arg: str):
-    return EngFormatter(unit=arg, sep=r'\,')
-
-def save_pythontex_figure(figure, figure_name):
-    if type(figure) == mpl.figure.Figure:
-        figure.savefig(os.path.join(environment.pgf_directory, f'{figure_name}.pgf'))
-        figure.savefig(os.path.join(environment.pdf_directory, f'{figure_name}.pdf'))
-    return figure
-
-class Geometry():
-
-    # Convert from (LaTeX!) points to inches 
-    # There is ~ 0.14 micron floating point error here
-    in_length = float(pytex.context['in'][:-2]) / 72.27
-    cm_length = float(pytex.context['cm'][:-2]) / 72.27
-    mm_length = float(pytex.context['mm'][:-2]) / 72.27
-    em_length = float(pytex.context['em'][:-2]) / 72.27
-    ex_length = float(pytex.context['ex'][:-2]) / 72.27
-    bp_length = float(pytex.context['bp'][:-2]) / 72.27
-    dd_length = float(pytex.context['dd'][:-2]) / 72.27
-    pc_length = float(pytex.context['pc'][:-2]) / 72.27
-
-    column_width = float(pytex.context['columnwidth'][:-2]) / 72.27
-    text_width = float(pytex.context['textwidth'][:-2]) / 72.27
-    text_height = float(pytex.context['textheight'][:-2]) / 72.27
-    figure_width = column_width - 2 * em_length
-    figure_height = figure_width / metallic_ratio(1) # Define figure height as a function of the figure width and the golden ratio
-
-    axis_dimensions = (0, 0, 1, 1) # 0 lr margin, 0 tb margin, 100% figure size
-
-geometry = Geometry()
-
-# Determine font parameters
-class Font():
-    # Font faces
-    roman = pytex.context['romanfont'].split('/')[1][:-3]
-    bold_roman = pytex.context['romanboldfont'].split('/')[1][:-3]
-    bold_italic_roman = pytex.context['romanbolditalicfont'].split('/')[1][:-3]
-    italic_roman = pytex.context['romanitalicfont'].split('/')[1][:-3]
-    sans = pytex.context['sansfont'].split('/')[1][:-3]
-    mono = pytex.context['monofont'].split('/')[1][:-3]
-    math = pytex.context['mathfont'].split('/')[1][:-3]
-    
-    # Font sizes
-    tiny = pytex.context['tiny']
-    script_size = pytex.context['scriptsize']
-    footnote_size = pytex.context['footnotesize']
-    small = pytex.context['small']
-    normal_size = pytex.context['normalsize']
-    large = pytex.context['large']
-    llarge = pytex.context['Large']
-    lllarge = pytex.context['LARGE']
-    huge = pytex.context['huge']
-    hhuge = pytex.context['Huge']
-
-font = Font() # Instantiate the class for use
-
-# figure settings
-cmap = plt.get_cmap('grey') # Select colormap
-num_plot_styles = 4 # number of colors for plotting
-
-# Initialize empty lists for plot colors and styles
-plot_colors = []
-line_styles = []
-for i in range(num_plot_styles): # Populate the color and style lists
-    plot_colors.append(cmap(1.0 * i/num_plot_styles))
-    line_styles.append((0, (i+1, i)))
-
-# Define the main cycler with the two component lists 
-style_cycler = cycler(color=plot_colors, linestyle=line_styles)
-
-# Document-wide Matplotlib Configuration
-rc.update({
-        'backend': 'pgf',
-        'lines.linewidth': 1,
-        'font.family': 'serif',
-        'font.size': font.footnote_size,
-        'text.usetex': True,
-        'axes.prop_cycle': style_cycler,
-        'axes.labelsize': font.footnote_size,
-        'axes.linewidth': 0.8,
-        'xtick.direction': 'in',
-        'xtick.top': True,
-        'xtick.bottom': True,
-        'xtick.minor.visible': True,
-        'ytick.direction': 'in',
-        'ytick.left': True,
-        'ytick.right': True,
-        'ytick.minor.visible': True,
-        'legend.fontsize': font.footnote_size,
-        'legend.fancybox': False,
-        'figure.figsize': (geometry.figure_width, geometry.figure_height),
-        'figure.dpi': 600,
-	'figure.constrained_layout.use': True,
-        'figure.constrained_layout.hspace': 0,
-        'figure.constrained_layout.wspace': 0,
-        'figure.constrained_layout.w_pad': 0,
-        'figure.constrained_layout.h_pad': 0,
-        'savefig.format': 'pgf',
-        'savefig.bbox': 'tight',
-        'savefig.transparent': True,
-        'pgf.rcfonts': False,
-	'pgf.preamble': '\n'.join([
-                r'\usepackage{mathtools}',
-                r'\usepackage[warnings-off={mathtools-colon, mathtools-overbracket}]{unicode-math}',
-                r'\usepackage{lualatex-math}',
-                r'\usepackage{siunitx}',
-                r'\usepackage{fontspec}',
-                r'\setmainfont{%s}[Ligatures=TeX, ItalicFont=%s, BoldFont=%s, BoldItalicFont=%s]' %(font.roman, font.italic_roman, font.bold_roman, font.bold_italic_roman),
-                r'\setmathfont{%s}' %(font.math),
-                r'\setsansfont{%s}[Ligatures=TeX, Scale=MatchLowercase]' %(font.sans),
-                r'\setmonofont{%s}[Ligatures=TeX, Scale=MatchLowercase]' %(font.mono),
-		r'\usepackage[USenglish]{babel}',
-                r'\usepackage[autostyle=true]{csquotes}'
-	]),
-        'pgf.texsystem': 'lualatex', # default is xetex, but lualatex is preferred
-})
-
-\end{pythontexcustomcode}
-
 \begin{document}
-
-\title{\textsf{\textbf{Baseboard\\Design Report}}}
-\author{\textsf{Alessandro Rizzoni}}
-\date{\textsf{\today}}
 
 \maketitle
 
+\pagebreak
 \tableofcontents
-
 \pagebreak
 
-\vspace*{\fill}
-\begin{center}
-	This page intentionally left blank.
-\end{center}
-\vspace*{\fill}
+\blankpage
 
 \pagebreak
 \begin{revisionhistory}
-\subsection{Revision History}
+    Version 1
 \end{revisionhistory}
 \pagebreak
 
-\vspace*{\fill}
-\begin{center}
-	This page intentionally left blank.
-\end{center}
-\vspace*{\fill}
+\blankpage
 
 \pagebreak
 
 \section{Introduction}
-The baseboard module contains all the signal and power IO for the effects module. Input voltage of \SI{9}{\volt} DC is regulated to \pm 9V to drive an analog switch and the effects board and to \SI{3.3}{\volt} to drive the LED indicators and footswitches. A \SI{16}{\bit} microcontroller manages the switching logic, interfaces with peripherals, and supervises the power supply circuit. The audio input and output are routed to the effects board via the switching circuitry through a flat flex cable.
+The baseboard module contains all the signal and power IO for the effects pedal. Input voltage of \SI{9}{\volt} DC is regulated to 12V to drive an analog switch and the effects board and to \SI{3.3}{\volt} to drive the LED indicators and footswitches. A \SI{16}{\bit} microcontroller manages the switching logic, interfaces with peripherals, and supervises the power supply circuit. The audio input and output are routed to the effects modules via the switching circuitry through a cable.
 
 \section{Specifications}
 \begin{enumerate}
-	\item Power
-	      \begin{pycode}
-min_freq = 0.3
-max_freq = 100E6
-frequency = np.logspace(np.log10(min_freq), np.log10(max_freq), 30000, base=10)
-
-noise_spec_9V = []
-noise_spec_LV = []
-corner_freq_9V = 100
-corner_freq_LV = 100
-
-for freq in frequency:
-    if freq < corner_freq_9V:
-        noise_spec_9V.append(-40)
-    else:
-        noise_spec_9V.append(-60)
-
-    if freq < corner_freq_LV:
-        noise_spec_LV.append(-30)
-    else:
-        noise_spec_LV.append(-55)
-
-fig, ax = plt.subplots(1, 1)
-ax.plot(frequency, noise_spec_9V, label=r'\pm 9V Supply')
-ax.plot(frequency, noise_spec_LV, label=r'+3.3V Supply')
-ax.set_xscale('log')
-ax.xaxis.set_major_formatter(eng_format(r'\unit{\hertz}'))
-ax.yaxis.set_major_formatter(eng_format(r'\unit{\deci\bel\volt}'))
-ax.set_ylim(-100, 0)
-ax.legend()
-save_pythontex_figure(fig, 'psu_noiselim')
-	      \end{pycode}
-	      \begin{enumerate}
-		      \item The Baseboard shall provide a \SI{\pm 9}{\volt} \pm 1\% power supply capable of sourcing \pm \SI{200}{\milli\ampere} peak to the audio effects board
-		      \item The Baseboard shall provide low-voltage power circuitry capable of operation from \SI{1.1}{\volt} \pm 1\% to \SI{3.3}{\volt} \pm 1\%
-		      \item The Baseboard shall be capable of sourcing \SI{150}{\milli\ampere} peak to drive local peripherals
-		      \item Noise from any power supply must be below \SI{-40}{\deci\bel\volt} at all frequencies and below \SI{-60}{\deci\bel\volt} above \SI{100}{\hertz}
-		            \begin{figure}[h!]
-			            \centering
-			            \input{../figures/pgf/psu_noiselim.pgf}
-			            \caption{Power Supply Output Noise Limit}
-		            \end{figure}
-	      \end{enumerate}
-	      \item{Input/Output}
-	      \begin{enumerate}
-		      \item The Baseboard shall route the audio signal to the baseboard while providing a true bypass path directly to the output
-		      \item The Baseboard shall provide input impedance of \SI{1}{\mega\ohm} \pm 1\% and output impedance of \SI{50}{\kilo\ohm} \pm 1\%
-		      \item Input Filter
-		      \item Output Filter
-	      \end{enumerate}
-	      \item{Switching}
-	      \begin{enumerate}
-		      \item The audio signal shall be switched using high quality analog switches to maximize durability and signal integrity
-		      \item The switches shall have an input impedance of no greater than \SI{500}{\ohm} to minimize impedance matching losses
-	      \end{enumerate}
+    \item Power
+          \begin{enumerate}
+              \item The Baseboard shall provide a \qtyrange[range-units = single, range-phrase = --]{9}{12}{\volt} \pm 1\% power supply capable of sourcing \pm \SI{50}{\milli\ampere} each to the audio effect modules
+              \item The Baseboard shall provide low-voltage power circuitry capable of operation from \SI{1.1}{\volt} \pm 1\% to \SI{3.3}{\volt} \pm 1\%
+              \item The Baseboard shall be capable of sourcing \SI{300}{\milli\ampere} peak to drive local peripherals
+          \end{enumerate}
+          \item{Input/Output}
+          \begin{enumerate}
+              \item The Baseboard shall route the audio signal to the baseboard while providing a true bypass path directly to the output
+              \item The Baseboard shall provide input impedance of \SI{1}{\mega\ohm} \pm 1\% and output impedance of \SI{50}{\kilo\ohm} \pm 1\%
+              \item Input Filter
+              \item Output Filter
+          \end{enumerate}
+          \item{Switching}
+          \begin{enumerate}
+              \item The audio signal shall be switched using high quality analog switches to maximize durability and signal integrity
+              \item The switches shall have an input impedance of no greater than \SI{500}{\ohm} to minimize signal degradation
+          \end{enumerate}
 \end{enumerate}
 
 \section{System Architecture}
+\begin{figure}[!ht]
+    \tikzset{
+        block/.style = {draw, fill=white, rectangle, minimum height=3em, minimum width=3em},
+        empty diodes,
+    }
+    \begin{center}
+        \begin{circuitikz}[scale=1, transform shape]
+            \draw 
+            (0, 0) node [bnc, name=audioin, anchor=zero] (audioin) {\textit{Audio In}}
+            ;
+            \draw
+            (audioin.shield) -- ++(0, -0.25) node [tlground] {}
+            ;
+            \draw
+            (audioin.hot) to[highpass=\textit{Input Filter}] ++(4, 0)
+            to[short]++(0, 0)
+            node [muxdemux, muxdemux def={Lh=6, Rh=8, NL=3, NR=6, NT=0, NB=3, square pins=1}, anchor=lpin 1] (mux1) {\textit{MUX 1}}
+            ;
+            \draw
+            (mux1.lpin 2) to[short]++(-0.5, 0)
+            node [label] (atob) {}
+            ;
+            \draw
+            (mux1.lpin 3) to[short]++(-0.5, 0)
+            to[short] (atob.center)
+            ;
+            \draw
+            (mux1.rpin 1) to[short]++(3, 0)
+            node [iecplugR, name=] (effect1out) {\textit{Effect 1 Send}}
+            ;
+            \draw
+            (mux1.rpin 2) to[short]++(0.5, 0)
+            node [label] (bypass1) {}
+            to[open]++(1, 0)
+            node [label] (effect1return) {}
+            ;
+            \draw
+            (mux1.rpin 3) to[short]++(0.5, 0)
+            to[short] (bypass1.center)
+            ;
+            \draw
+            (mux1.rpin 4) to[short]++(1.5, 0)
+            to[short] (effect1return.center)
+            to[short] ++(1.5, 0)
+            node [iecplugR] (effect1in) {\textit{Effect 1 Return}}
+            ;
+            \draw
+            (mux1.rpin 5) to[short]++(1.5, 0)
+            to[short] ++(0, -2.125)
+            to[short] ++(1.5, 0)
+            node [iecplugR] (effect2out) {\textit{Effect 2 Send}}
+            ;
+            \draw
+            (mux1.rpin 6) to[short]++(0.5, 0)
+            node [label] (mux1rpin6) {}
+            ;
+            \draw
+            (mux1.bpin 1) to[short]++(0, 0)
+            node [dipchip, num pins=6, hide numbers, no topmark, rotate=90, anchor=pin 6] (micro) {}
+            ;
+            \draw
+            (micro.center) to[open]++(0, 0)
+            node [label] (uc) {$\mu C$}
+            ;
+            \draw
+            (micro.pin 1) to[short]++(0, 0)
+            node [muxdemux, muxdemux def={Lh=6, Rh=8, NL=3, NR=6, NT=3, NB=0, square pins=1}, anchor=tpin 1] (mux2) {\textit{MUX 2}}
+            ;
+            \draw
+            (mux2.lpin 1) to[short]++(-0.5, 0)
+            node [label] (btoc) {}
+            ;
+            \draw
+            (mux2.lpin 2) to[short]++(-0.5, 0)
+            to[short] (btoc.center)
+            ;
+            \draw
+            (mux2.rpin 1) to[short]++(0.5, 0)
+            to[short] (mux1rpin6.center) {}
+            ;
+            \draw
+            (mux2.rpin 2) to[short]++(1.5, 0)
+            to[short] ++(0, 2.125)
+            to[short] ++(1.5, 0)
+            node [iecplugR] (effect2in) {\textit{Effect 2 Return}}
+            ;
+            \draw
+            (mux2.rpin 5) to[short]++(0.5, 0)
+            node [label] (bypass2) {}
+            to[open] ++(1, 0)
+            node [label] (effect3return) {}
+            ;
+            \draw
+            (mux2.rpin 4) to[short]++(0.5, 0)
+            to[short] (bypass2.center)
+            ;
+            \draw
+            (mux2.rpin 6) to[short]++(3, 0)
+            node [iecplugR] (effect3in) {\textit{Effect 3 Return}}
+            ;
+            \draw
+            (mux2.rpin 3) to[short]++(1.5, 0)
+            to[short] (effect3return.center)
+            to[short] ++(1.5, 0)
+            node [iecplugR] (effect3out) {\textit{Effect 3 Send}}
+            ;
+            \draw
+            (mux2.lpin 3) to[highpass=\textit{Output Filter}] ++(-4, 0)
+            node [bnc, name=audioout, anchor=zero] (audioout) {\textit{Audio Out}}
+            ;
+            \draw
+            (audioout.shield) -- ++(0, -0.25) node [tlground] {}
+            ;
+        \end{circuitikz}
+    \caption{Audio Switching Architecture}
+    \end{center}
+\end{figure}
+\section{Power Supplies}
 
-\subsection{Power Supply Design}
+\subsection{Overview}
 
-\subsubsection{Overview}
+\begin{figure}[!ht]
+    \tikzset{
+        block/.style = {draw, fill=white, rectangle, minimum height=3em, minimum width=3em},
+        empty diodes,
+    }
+    \begin{center}
+        \begin{circuitikz}[scale=1, transform shape]
+            \draw 
+            (0, 0) node [bnc, name=dcinput, anchor=zero, rotate=90, xscale=-1] (dcinput) {}
+            to[open] ++(0, 0.5)
+            node {\qtyrange[range-units = single, range-phrase = --]{9}{12}{\volt}}
+            to[open] ++(0, 0.5)
+            node {DC INPUT}
+            ;
+            \draw
+            (dcinput.hot) -- ++(0, -0.25) node [tlground] {}
+            ;
+            \draw
+            (dcinput.shield) to[thR=PTC] ++(4, 0) 
+            to[D=Bridge Rectifier] ++(1, 0)
+            to[short] ++(1, 0)
+            node [circ, name=upper] {}
+            to[short] ++(1, 0)
+            to[sdcdc=15V DC/DC, blocks dc out segments=3, blocks dc in segments=3] ++(2, 0)
+            to[sdcdc=Linear Regulator, blocks dc in segments=3, -o] ++(4, 0)
+            node [above, name=12Vout] (12Vout) {\SI{12}{\volt} Rail}
+            ;
+            \draw
+            (upper) to[short] ++(0, -2)
+            node [circ, name=lower] {}
+            to[short] ++(1, 0)
+            to[sdcdc=3.3V DC/DC, blocks dc out segments=1, blocks dc in segments=3] ++(2, 0)
+            to[short, -o] ++(4, 0)
+            node [above, name=3V3out] (3V3out) {\SI{3.3}{\volt} Rail}
+            ;
+            \draw
+            (0,-2) node [iecsocketR, name=usbvbus] (usbvbus) {}
+            ;
+            \draw
+            (usbvbus) to[open] ++(0, 0.5)
+            node {\SI{5}{\volt}}
+            to[open] ++(0, 0.5)
+            node {USB VBUS}
+            ;
+            \draw
+            (usbvbus.right) to[thR=PTC] ++(4, 0)
+            to[sD=Schottky] ++(1, 0)
+            to[short] (lower)
+            ;
+        \end{circuitikz}
+    \caption{Power Supply Architecture}
+    \end{center}
+\end{figure}
 
-\begin{pyblock}
-V_POS = 12
-V_NEG = -12
-V_IN = 8.55
-V_FB1 = 0.8
-V_FB2 = 0.8
-V_REF = 1.6
-I_OUT1 = 200E-3
-I_OUT2 = -200E-3
-R_FT1 = 1E6
-R_FT2 = 1E6
-R_FB1 = R_FT1 / ( (V_POS / V_FB1) - 1 )
-R_FB2 = R_FT2 * (V_REF - V_FB2) / (V_FB2 - V_NEG)
-print(r"$$R_{FT1} = %s\Omega$$" %(R_FT1))
-print(r"$$R_{FB1} = %s\Omega$$" %(R_FB1))
-print(r"$$R_{FT2} = %s\Omega$$" %(R_FT2))
-print(r"$$R_{FB2} = %s\Omega$$" %(R_FB2))
-\end{pyblock}
+Input power is provided from the DC input jack or the USB-C port and is fused with PTC thermistors. A full-bridge rectifier at the DC input jack allows for both center-negative and center-positive connections. Both supplies can be powered by either the DC input at \qtyrange[range-units = single, range-phrase = --]{9}{12}{\volt} or the \SI{5}{\volt} USB VBUS supply, with current OR-ing capability provided by the polarity protection rectifier and a schottky diode in series with the USB VBUS. Following the current OR-ing circuitry and overcurrent protection, the input power flows to the DC/DC converters.
 
-\printpythontex
+The Baseboard requires two voltage rails: the analog voltage rail at \SI{12}{\volt} and the digital voltage rail at \SI{3.3}{\volt}. The analog voltage rail is powered by the Texas Instruments TPS61170 and the digital rail is powered using a voltage regulator for simplicity. The coupled-inductor SEPIC topology was selected for its low ripple and for its ability to act as both a step-up and step-down converter. The TPS61170 supports the SEPIC topology and has a high, fixed switching frequency of \SI{1.2}{\mega\hertz}, allowing for small surface-mount passives to reduce cost and simplify assembly. The analog supply, at \SI{12}{\volt}, also employs a linear regulator as a filter to further reduce ripple and improve line regulation. The second regulator stage brings the voltage down to the \SI{12}{\volt} required to power the analog rail.
 
-\subsubsection{Feedback Resistors}
+\subsection{Analog Supply}
 
-To select the appropriate feedback resistors, the following relationships were taken from the datasheet to compute the correct values. The positive output for the boost regulator can be set using the relationship
+\begin{pycode}
+rng = np.random.default_rng()
 
-$$ V_{POS} = V_{FB1} \left( 1 + \frac{R_{FT1}}{R_{FB1}} \right) $$
+ntrials = 100000
 
-where $V_{POS}$ is the positive output voltage, $V_{FB1}$ is the $FB1$ reference voltage, $R_{FT1}$ is the feedback resistor from $V_{POS}$ to $FB1$, and $R_{FB1}$ is the feedback resistor from $FB1$ to $AGND$.
+L = np.zeros(ntrials)
+V_f = np.zeros(ntrials)
+f_s = np.zeros(ntrials)
+eta = np.zeros(ntrials)
+I_lim = np.zeros(ntrials)
+V_ref = np.zeros(ntrials)
+R_2 = np.zeros(ntrials)
+R_1 = np.zeros(ntrials)
+R_1_nom = np.zeros(ntrials)
+V_out = np.zeros(ntrials)
+C_3 = np.zeros(ntrials)
+C_2 = np.zeros(ntrials)
+R_load = np.zeros(ntrials)
+G_ea = np.zeros(ntrials)
+R_sense = np.zeros(ntrials)
+f_P1 = np.zeros(ntrials)
+f_P2 = np.zeros(ntrials)
+I_P_5V = np.zeros(ntrials)
+I_P_9V = np.zeros(ntrials)
+I_P_12V = np.zeros(ntrials)
+I_out_5V = np.zeros(ntrials)
+I_out_9V = np.zeros(ntrials)
+I_out_12V = np.zeros(ntrials)
+C_out_5V = np.zeros(ntrials)
+C_out_9V = np.zeros(ntrials)
+C_out_12V = np.zeros(ntrials)
+duty_5V = np.zeros(ntrials)
+duty_9V = np.zeros(ntrials)
+duty_12V = np.zeros(ntrials)
+C_s_5V = np.zeros(ntrials)
+C_s_9V = np.zeros(ntrials)
+C_s_12V = np.zeros(ntrials)
+f_RHPZ_5V = np.zeros(ntrials)
+f_RHPZ_9V = np.zeros(ntrials)
+f_RHPZ_12V = np.zeros(ntrials)
+A_5V = np.zeros(ntrials)
+A_9V = np.zeros(ntrials)
+A_12V = np.zeros(ntrials)
+V_outs = np.zeros(ntrials)
 
-The negative output for the inverting regulator can be set using the relationship
+tolerance = '1%'
+V_out_nom = 12
+R_2_nom = 10e3 # Texas Instruments TPS61170
+V_ripple = 0.010 # Target ripple voltage = 25mV
 
-$$ V_{NEG} = V_{FB2} - \frac{R_{FT2}}{R_{FB2}} \left( V_{REF} - V_{FB2} \right) $$
+i = 0
+while i < ntrials:
+    L[i] = rng.triangular(0.80*10.3e-6, 10.3e-6, 1.2*10.3e-6) # Eaton DRQ73-100-R
+    V_f[i] = rng.normal(0.20, 0.05/6) # Diodes Inc. DFLS240L-7 or DFLS260L-7
+    f_s[i] = rng.triangular(1e6, 1.25e6, 1.5e6) # Texas Instruments TPS611705
+    eta[i] = rng.normal(0.85, 0.07/3) # Texas Instruments TPS61170
+    I_lim[i] = rng.triangular(0.96, 1.2, 1.44) # Texas Instruments TPS61170
+    V_ref[i] = rng.triangular(1.204, 1.229, 1.254) # Texas Instruments TPS61170
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    R_1_nom[i] = find_closest_e_series_number(R_2[i] * ( (V_out_nom/V_ref[i]) - 1), tolerance)
+    R_1[i] = rng.triangular(0.99*R_1_nom[i], R_1_nom[i], 1.01*R_1_nom[i])
+    V_out[i] = V_ref[i] * ( ( R_1[i] / R_2[i] ) + 1 )
 
-where $V_{NEG}$ is the negative output voltage, $V_{FB2}$ is the $FB2$ reference voltage, $R_{FT2}$ is the feedback resistor from $V_{NEG}$ to $FB2$, $R_{FB2}$ is the feedback resistor from $FB2$ to $V_{REF}$, and $V_{REF}$ is the $V_{REF}$ pin reference voltage.
+    V_ins = [ 5, 9, 12 ]
+    for V_in in V_ins:
+        I_P = 1 / ( L[i] * f_s[i] * ( 1 / ( V_out[i] + V_f[i] - V_in ) + 1 / V_in ) )
+        I_out = V_in * ( I_lim[i] - 0.5*I_P ) * eta[i] / V_out[i]
+        C_out = find_closest_e_series_number(( (V_out[i] - V_in) * I_out ) / ( V_out[i] * f_s[i] * V_ripple ), tolerance)
+        duty = ( V_out[i] - V_in ) / V_out[i]
+        C_s = find_closest_e_series_number(( I_out * duty ) / ( f_s[i] * 0.1 * V_in ), tolerance)
+        f_RHPZ = ( R_load[i] / (2*np.pi*L[i])) * ( V_in / V_out[i] )**2
+        A = ( 1.229 / V_out[i] ) * G_ea[i] * 6e6 * ( V_in / ( V_out[i] * R_sense[i] ) ) * R_load[i] * 1/2
 
-In order to have the correct margin to allow for the linear regulator drop-out voltage, output voltages of $\pm12V$ were selected, yielding the following values for the feedback resistors as taken from the table in the datasheet.
+        if V_in == 5:
+            I_P_5V[i] = I_P
+            I_out_5V[i] = I_out
+            C_out_5V[i] = C_out
+            duty_5V[i] = duty
+            C_s_5V[i] = C_s
+            f_RHPZ_5V[i] = f_RHPZ
+            A_5V[i] = A
+        if V_in == 9:
+            I_P_9V[i] = I_P
+            I_out_9V[i] = I_out
+            C_out_9V[i] = C_out
+            duty_9V[i] = duty
+            C_s_9V[i] = C_s
+            f_RHPZ_9V[i] = f_RHPZ
+            A_9V[i] = A
+        if V_in == 12:
+            I_P_12V[i] = I_P
+            I_out_12V[i] = I_out
+            C_out_12V[i] = C_out
+            duty_12V[i] = duty
+            C_s_12V[i] = C_s
+            f_RHPZ_12V[i] = f_RHPZ
+            A_12V[i] = A
+    i = i + 1
 
-$$R_{FT1} = 1.4M\Omega$$
-$$R_{FB1} = 100k\Omega$$
-$$R_{FT2} = 1.15M\Omega$$
-$$R_{FB2} = 71.5k\Omega$$
+R_1_value = find_closest_e_series_number(np.mean(R_1_nom), tolerance)
 
-The low-noise precision resistors chosen for the design do not support values above $1M\Omega$, so these ratios must be reconfigured to have the largest value resistor be $1M\Omega$. The relationships above can be rewritten to solve for the other resistor value.
+C_out_value = find_closest_e_series_number(np.nanmax(np.concatenate((C_out_5V, C_out_9V, C_out_12V))), tolerance)
+C_s_value = find_closest_e_series_number(np.nanmax(np.concatenate((C_s_5V, C_s_9V, C_s_12V))), tolerance)
 
-$$ R_{FB1} = \frac{R_{FT1}}{\frac{V_{POS}}{V_{FB1}}-1} $$
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(I_out_5V, bins = 'auto', label = r"$I_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(I_out_9V, bins = 'auto', label = r"$I_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(I_out_12V, bins = 'auto', label = r"$I_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'Count $\left(1\right)$')
+ax[2].set_xlabel(r'Output Current $\left(\unit{\ampere}\right)$')
+save_pythontex_figure(fig, 'psu_i_out_monte_carlo')
 
-$$ R_{FB2} = R_{FT2}\frac{V_{REF} - V_{FB2}}{V_{FB2}-V_{NEG}} $$
-
-\subsubsection{Output Capacitors}
-
-The capacitor dielectric is chosen to be X5R or X7R to provide adequate temperature and DC bias characteristics. The worst-case capacitance considering temperature variation, tolerance, and voltage can be found using the following equation from the datasheet
-
-$$ C_{EFF} = C_{NOM} \left(1 - \delta_{TEMP} \right) \left(1 - \delta_{BIAS} \right) \left(1 - \delta_{TOL} \right)$$
-
-where $C_{EFF}$ is the effective capacitance at the specified operating voltage, $C_{NOM}$ is the nominal datasheet capacitance, $\delta_{TEMP}$ is the worst-case capacitor temperature derating coefficient, $\delta_{BIAS}$ is the DC bias derating at the specified output voltage, and $\delta_{TOL}$ is the worst-case component tolerance.
-
-The datasheet suggests a value of $10\mu F$ as a compromise between performance and size - a value of $22\mu F$ was selected to provide additional filtering without compromising performance by a large amount. This value will provide extremely comfortable margins at the worst-case values determined above, and will provide better filtering than the recommended value with better response time. Thus,
-
-$$C_{OUT_+} = C_{OUT_-} = 22\mu F$$
-
-\begin{pyblock}
-C_OUT = 20E-6
-D_TEMP = 0.014
-D_BIAS = 0.120
-D_TOL = 0.200
-C_OUT_ESR = 2.5E-3
-C_OUT_EFF = C_OUT * ( 1 - D_TEMP ) * ( 1 - D_BIAS ) * ( 1 - D_TOL )
-print(r'$$C_{OUT_{EFF}} = %s$$' %(C_OUT_EFF))
-\end{pyblock}
-
-\printpythontex
-
-\subsubsection{Input Capacitors}
-
-Larger value input capacitors reduce input voltage ripple and improve transient response of the system. Component placement should be optimized to minimize supply noise by placing the input capacitors as close as possible to the power input pins. For stability, and effective capacitance of at least $10\mu F$ is required, with a minimum of $5.6\mu F$ required for the PV\_IN1 and PV\_IN2 pins and $3.3\mu F$ required for the PV\_INSYS pin. To minimize the number of componentes in the BOM, the same $22\mu F$ capacitor will be used to decouple the power input pins - one for PV\_IN1 and PV\_IN2 and another for PV\_INSYS.
-
-\begin{pyblock}
-C_PV_IN = 22E-6
-C_PV_INSYS = 22E-6
-\end{pyblock}
-
-\subsubsection{$V_{REG}$ Capacitor}
-
-The datasheet requires a $1.0\mu F$ ceramic capacitor between the VREG pin and AGND.
-
-\begin{pyblock}
-C_VREG = 1E-6
-\end{pyblock}
-
-\subsubsection{$V_{REF}$ Capacitor}
-
-The datasheet requires a $1.0\mu F$ ceramic capacitor between the VREF pin and AGND.
-
-\begin{pyblock}
-C_VREG = 1E-6
-\end{pyblock}
-
-\subsubsection{Soft Start Resistor}
-
-Soft start is not a required feature, but it can be implemented and the resistor DNP'ed to save on cost if desired. The plot below shows the relationship between the soft start time and the value of the timing resistor. A resistor value of $71.5k\Omega$ yields a soft start time of approximately $29ms$ and is already being used in the circuit as $R_{FB2}$.
-
-\begin{pyblock}
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(I_out_5V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(I_out_9V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(I_out_12V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'$P\left(I_{out} \leq I_{out_0}\right)$')
+ax[2].set_xlabel(r'Output Current $\left(\unit{\ampere}\right)$')
+save_pythontex_figure(fig, 'psu_i_out_monte_carlo_cum')
 
 fig, ax = plt.subplots(1, 1)
-R_SOFT_START = np.linspace(50E3, 268E3, 800)
-t_SOFT_START = 38.4E-3 - 1.28E-7 * R_SOFT_START
+ax.hist(V_out, bins = 'auto', label = r"$V_{out}$")
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_ylabel(r'Count $\left(1\right)$')
+ax.set_xlabel(r'Output Voltage $\left(\unit{\volt}\right)$')
+save_pythontex_figure(fig, 'psu_v_out_monte_carlo')
 
-ax.plot(R_SOFT_START, t_SOFT_START, label='Soft Start Resistor Values')
+fig, ax = plt.subplots(1, 1)
+ax.hist(V_out, bins = 'auto', density = True, cumulative = True, label = r"$V_{out}$")
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_ylabel(r'$P\left(V_{out} \leq V_{out_0}\right)$')
+ax.set_xlabel(r'Output Voltage $\left(\unit{\volt}\right)$')
+save_pythontex_figure(fig, 'psu_v_out_monte_carlo_cum')
 
-R_SOFT_START = 71.5E3
-t_SOFT_START = 38.4E-3 - 1.28E-7 * R_SOFT_START
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_out_5V, bins = 'auto', label = r"$C_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(C_out_9V, bins = 'auto', label = r"$C_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(C_out_12V, bins = 'auto', label = r"$C_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'Count $\left(1\right)$')
+ax[2].set_xlabel(r'Output Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_out_monte_carlo')
 
-ax.plot(R_SOFT_START, t_SOFT_START, '.', label='Selected Resistance')
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_out_5V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(C_out_9V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(C_out_12V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'$P\left(C_{out} \leq C_{out_0}\right)$')
+ax[2].set_xlabel(r'Output Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_out_monte_carlo_cum')
 
-ax.yaxis.set_major_formatter(eng_format(r'\unit{\second}'))
-ax.xaxis.set_major_formatter(eng_format(r'\unit{\ohm}'))
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_s_5V, bins = 'auto', label = r"$C_{s}(V_{in}=5V)$")
+ax[1].hist(C_s_9V, bins = 'auto', label = r"$C_{s}(V_{in}=9V)$")
+ax[2].hist(C_s_12V, bins = 'auto', label = r"$C_{s}(V_{in}=12V)$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'Count $\left(1\right)$')
+ax[2].set_xlabel(r'Coupling Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_s_monte_carlo')
 
-ax.legend()
-save_pythontex_figure(fig, 'psu_softstart')
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_s_5V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=5V)$")
+ax[1].hist(C_s_9V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=9V)$")
+ax[2].hist(C_s_12V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=12V)$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'$P\left(C_s \leq C_{s_0}\right)$')
+ax[2].set_xlabel(r'Coupling Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_s_monte_carlo_cum')
 
-\end{pyblock}
+\end{pycode}
 
-\begin{figure}[h!]
-	\centering
-	\input{../figures/pgf/psu_softstart.pgf}
-	\caption{Soft-Start Resistor Chart}
+\subsubsection{Inductor}
+The design for the analog DC/DC converter begins with inductor selection. Output current capacity is largely determined by the inductor size. For this design, a small inductor is sufficient as the amount of current required by the effects is generally small. A standard compact coupled inductor with series inductance of \SI{22}{\micro\henry} and parallel inductance of \SI{11}{\micro\henry} is predicted to be sufficient to drive loads at up to \SI{80}{\milli\ampere} per effects module, worst-case, by the following Monte Carlo analysis with parameters extracted from the relevant component's datasheets and with three modules. The analysis was performed for the three specified input voltages: \SI{5}{\volt}, \SI{9}{\volt}, and \SI{12}{\volt}. Based on the analysis, the supply is able to safely drive \SI{200}{\milli\ampere} per effects module if powered from a \SI{12}{\volt} input, which allows for future expansion using this design.
+
+\begin{figure}[!ht]
+    \centering
+    \input{figures/pgf/psu_i_out_monte_carlo.pgf}
+    \input{figures/pgf/psu_i_out_monte_carlo_cum.pgf}
+    \caption{Power Supply Maximum Output Current}
 \end{figure}
 
-\subsubsection{Diodes}
+The analysis begins by assuming each parameter may be described by a probability distribution function and assigning a reasonable function to each. For the majority of datasheet parameters, the manufacturer only provides three values: an upper bound, a lower bound, and a nominal value - we assume that these datasheet parameters have a triangular PDF based on the given bounds and value for the purpose of this analysis but this may very well not be the case depending on the available components.
 
-A low forward voltage Schottky diode with less than $40pF$ junction capacitance is recommended for D1 and D2. The selected diode, the Diodes Incorporated DFLS240L-7, has a typical forward voltage $V_{DF} = 450mV$ and a typical junction capacitance of $90pF$. This capacitance is higher than recommended, but the efficiency losses will be minimal.
+\subsubsection{Feedback Network}
+The output voltage of the converter is determined by the following expression.
 
-\begin{pyblock}
-V_DF = 450E-3
-C_D = 90E-12
-\end{pyblock}
+$$ V_{out} = V_{ref} \left(\frac{R_1}{R_2} + 1 \right) $$
 
-\subsubsection{Boost Regulator Inductor}
+ The output voltage is a function of $R_1$ and $R_2$, and their tolerances determine the precision of the output voltage. The minimum possible output voltage, assuming all parts are within specifications, is \SI{13.2}{\volt}, so the values shall be chosen to yield an output above that so that \SI{14}{\volt} is beyond the lower tail of the output distribution. The value for $V_{ref}$ comes from the datasheet and is the internal feedback reference voltage of the TPS61170. The values chosen for the feedback resistors are below; a $1\%$ tolerance was chosen as the standard design tolerance to reduce variation.
 
-The datasheet recommends an inductor value between $1\mu H$ and $22\mu H$ as a good compromise between inductor current ripple and efficiency. The inductor ripple current in the worst-case, the continuous conduction mode, can be calculated. The switch duty cycle, $DUTY_1$, can be found from the relationship below.
+$$ R_1 = \py{r'\SI{%s}{%s}' % (signif(R_1_value/1000, 3), r'\kilo\ohm' )} \pm1\% $$
+$$ R_2 = \py{r'\SI{%s}{%s}' % (signif(R_2_nom/1000, 3), r'\kilo\ohm' )} \pm1\% $$
+$$ V_{out,\ min.} \approx \py{r'\SI{%s}{%s}' % (signif(np.min(V_out), 3), r'\volt')} $$
 
-$$ DUTY_1 = \left( \frac{V_{POS} - V_{IN} + V_{DF}}{V_{POS} + V_{DF}} \right)$$
-
-The DC input current during the constant current mode can be found from the equation below.
-
-$$ I_{IN} = \frac{I_{OUT1}}{1 - DUTY_1}$$
-
-Using the duty cycle and switching frequency, the switch on-time can be obtained as follows. The switching frequency is chosen here to be either $1.2MHz$ or $2.4MHz$.
-
-$$ t_{ON1} = \frac{DUTY_1}{f_{SW}} $$
-
-Finally, the on time is then used to find the inductor size as a function of inductor ripple current at steady-state.
-
-$$ L1 = \frac{V_{IN}t_{ON1}}{\Delta I_{L1}} $$
-
-Assuming inductor ripple current of 30\% the maximum DC input current yields the following expression.
-
-$$ L1 = \frac{V_{IN}t_{ON1}\left(1-DUTY_1\right)}{0.3I_{OUT_1}} $$
-
-To ensure stability, the minimum inductance is given by the below equation from the datasheet.
-
-$$ L1_{MIN} = V_{IN} \left( \frac{0.27}{1-DUTY_1} - 0.33\right) \left[ \mu H\right]$$
-
-\begin{pyblock}
-f_SW = 2.4E6
-DUTY_1 = ( V_POS - V_IN + V_DF ) / (V_POS + V_DF)
-I_IN = I_OUT1 / ( 1 - DUTY_1 )
-T_ON1 = DUTY_1 / f_SW
-L1 = V_IN * T_ON1 * ( 1 - DUTY_1) / ( 0.3 * I_OUT1)
-L1_MIN = 1E-6 * V_IN * ( ( 0.27 / (1 - DUTY_1)) - 0.33)
-print(r"$$L1 = %s$$" %(L1))
-print(r"$$L_{1_{MIN}} = %s$$" %(L1_MIN))
-\end{pyblock}
-
-\printpythontex
-
-\subsubsection{Inverting Regulator Inductor}
-
-Similarly, the inductor value for the inverting regulator's inductor can be derived. Again starting with the duty cycle, $DUTY_2$ we obtain the following expression.
-
-$$ DUTY_2 = \left( \frac{|V_{NEG}| + V_{DF}}{V_{IN} + |V_{NEG}| + V_{DF}} \right) $$
-
-The DC current in the constant current mode can then be found as a function of the duty cycle.
-
-$$ I_{L2} = \frac{I_{OUT2}}{1 - DUTY_2} $$
-
-The switch on time is also expressed as a function of the duty cycle.
-
-$$ t_{ON2} = \frac{DUTY_2}{f_{SW}} $$
-
-And again, the inductance value can be obtained from the on time and the inductor ripple current.
-
-$$ L2 = \frac{V_{IN}t_{ON2}}{\Delta I_{L2}} $$
-
-Again assuming a ripple current of $30\%$ the  maximum DC current will allow the expression to be solved as follows.
-
-$$ L2 = \frac{V_{IN}t_{ON2}\left( 1 - DUTY_2\right)}{0.3I_{OUT2}} $$
-
-To ensure stability, the $L2$ inductor value must be greater than the minimum inductance obtained below.
-
-$$ L2_{MIN} = V_{IN}\left( \frac{0.27}{1 - DUTY_2} - 0.33\right) \left[ \mu H\right]$$
-
-\begin{pyblock}
-DUTY_2 = ( np.abs(V_NEG) + V_DF ) / ( V_IN + np.abs(V_NEG) + V_DF )
-I_L2 = I_OUT2 / ( 1 - DUTY_2 )
-t_ON2 = DUTY_2 / f_SW
-L2 = V_IN * t_ON2 * ( 1 - DUTY_2 ) / ( 0.3 * np.abs(I_OUT2) )
-L2_MIN = 1E-6 * V_IN * ( ( 0.27 / ( 1 - DUTY_2)) - 0.33 )
-print(r"$$L2 = %s$$" %(L2))
-print(r"$$L2_MIN = %s$$" %(L2_MIN))
-\end{pyblock}
-
-\printpythontex
-
-\subsubsection{Boost Regulator Compensation}
-
-The ADP5070 allows for external loop compensation to optimize the dynamics for a given application. The design of the compensation network for the boost regulator is performed following the datasheet recommendations as follows.
-
-\begin{figure}[h!]
-	\centering
-	\begin{circuitikz}[]
-		\draw (0, 0) node[above]{FB1} to[short, o-] ++(1,0)
-		node[op amp, anchor=-](OA){$g_{M1}$}
-		(OA.+) -- ++(-1,0) coordinate(REF)
-		to[short, o-] node[above]{REF} ++(0,0)
-		(OA.out) -- ++(1,0) coordinate(VOUT1)
-		to[short, *-] node[above]{COMP1} ++(2,0)
-		(VOUT1) to[R=$R_{C1}$] node[]{} ++(0,-2) coordinate(R1)
-		(R1) to[C=$C_{C1}$] node[ground]{} ++(0,-1)
-		(VOUT1) -- ++(2,0) coordinate(VOUT2)
-		to[C=$C_{B1}$] node[]{} ++(0,-2.8) coordinate(GND)
-		(GND) to[short] node[ground]{} ++(0,0)
-		;
-	\end{circuitikz}
-	\caption{Boost Regulator Compensation Topology}
+\begin{figure}[!ht]
+    \centering
+    \input{figures/pgf/psu_v_out_monte_carlo.pgf}
+    \input{figures/pgf/psu_v_out_monte_carlo_cum.pgf}
+    \caption{Power Supply Output Voltage}
 \end{figure}
 
-The boost regulator requires compensation such that the crossover frequency occurs below the frequency of the right-half plane zero introduced by the topology of the converter. The zero is can be determined as shown below, where $f_{Z1}(RHP)$ is the right half plane zero frequency and $R_{LOAD1}$ is the equivalent load resistance.
+\subsubsection{Diode}
+The switching diode used must have a fast recovery time and support a larger reverse-voltage than that of the TPS61170 (\SI{40}{\volt}). A robust component for this application is the Diodes Incorporated DFLS240L-7 in a PowerDI-123 package, which meets the requirements, has a low forward-voltage of around \SI{20}{\milli\volt} at low currents, and is a standard part with many alternates available. The Diodes Incorporated DFLS260L-7, also in a PowerDI-123 package, is promoted as a robust alternate from the same family with a higher voltage rating.
 
-$$ f_{Z1}(RHP) = \frac{R_{LOAD1}\left( 1 - DUTY_1 \right)^2}{2\pi L1} $$
+% TODO: Diode Analysis
+$$ I_D = I_S\left(e^{\frac{q_{e^-}V_D}{nk_BT}} - 1 \right) $$
+$$ V_D = \frac{nk_BT}{q_{e^-}}  \ln\left(\frac{I_D}{I_S} + 1 \right) $$
 
-The datasheet recommends that the regulator crossover frequency be less than or equal to one-tenth the right half plane zero frequency. The boost regulator loop gain is
+\subsubsection{Input/Output Capacitors}
+Input and output capacitors are selected based on the upper limits of the datasheet recommendations and are chosen to be \SI{12}{\micro\farad} MLCC-type surface-mount capacitors. In order to minimize derating, a medium-voltage and physically large capacitor is selected with a voltage rating of greater than \SI{50}{\volt}.
 
-$$ A_{VL1} = \frac{V_{FB1}V_{IN}}{V_{POS}}G_{M1}|R_{OUT1}||Z_{COMP1}|G_{CS1}|Z_{OUT1}| $$
+$$ C_{out, min.} = \py{r'\SI{%s}{%s}' % (signif(C_out_value*1e6, 3), r'\micro\farad')} $$
 
-where $A_{VL1}$ is the loop gain, $V_{FB1}$ is the feedback regulation voltage, $V_{POS}$ is the regulated positive output voltage, $V_{IN}$ is the input voltage, $G_{M1}$ is the error amplifier transconductance gain, $R_{OUT1}$ is the output impedance of the error amplifier and is $33M\Omega$, $Z_{COMP1}$ is the impedance of the series RC network from $COMP_1$ to $AGND$, $G_{CS1}$ is the current sense transconductance gain (the inductor current divided by the voltage at $COMP_1$), which is internally set by the ADP5070 to 6.25 A/V, and finally $Z_{OUT1}$ is the impedance of the load in parallel with the output capacitor.
+\begin{figure}[!ht]
+    \centering
+    \input{figures/pgf/psu_c_out_monte_carlo.pgf}
+    \input{figures/pgf/psu_c_out_monte_carlo_cum.pgf}
+    \caption{Power Supply Output Capacitor Size}
+\end{figure}
 
-To solve for the crossover frequency, the equation may be simplified to
+\subsubsection{SEPIC Coupling Capacitor}
+The SEPIC coupling capacitor is chosen to be \SI{1}{\micro\farad}. Similar to the output capacitors, to minimize derating due to applied DC bias voltage, a medium-voltage and physically large capacitor is selected with a voltage rating of greater than \SI{50}{\volt}. The figure below suggests that a \SI{500}{\nano\farad} capacitor would be sufficient, but the datasheet recommends \SI{1}{\micro\farad} and there are already other \SI{1}{\micro\farad} capacitors used in the design.
 
-$$ A_{VL1} = \frac{V_{FB1}V_{IN}}{V_{POS}}\frac{G_{M1}R_{C1}G_{CS1}}{2\pi f_{C1}C_{OUT1}} = 1 $$
+$$ C_{s, min.} = \py{r'\SI{%s}{%s}' % (signif(C_s_value*1e6, 3), r'\micro\farad')} $$
 
-where $f_{C1}$ is the crossover frequency.
+\begin{figure}[!ht]
+    \centering
+    \input{figures/pgf/psu_c_s_monte_carlo.pgf}
+    \input{figures/pgf/psu_c_s_monte_carlo_cum.pgf}
+    \caption{Power Supply SEPIC Coupling Capacitor Size}
+\end{figure}
 
-To solve for $R_{C1}$, the datasheet provides the following equation, where $G_{M1} = 6.25 A/V$.
+\subsubsection{Compensation Network}
+% TODO Tune with first board spin
+The compensation network for the DC/DC converter shall be tuned with the first prototypes.
 
-$$ R_{C1} = \frac{2\pi f_{C1}C_{OUT1}V_{POS}^2}{V_{FB1}V_{IN}G_{M1}G_{CS1}} $$
+\subsubsection{Linear Regulator}
+% TODO: Document design of regulator and look into feedback network - is there a more optimal size? Low resistance values will reduce efficiency
+The generic 1117-style three-terminal regulator was chosen as the post-regulator for the analog voltage rail for its low dropout voltage, low cost, and wide availability and compatibility with offerings from several manufacturers. The BOM specifies an Onsemi part number but any \SI{1}{\ampere} 1117-style regulator should be compatible.
 
-From the datasheet, this equation can be simplified.
+The output voltage is determined via the typical three-terminal voltage regulator equation, shown below.
 
-$$ R_{C1} = \frac{4188 f_{C1}C_{OUT1}V_{POS}^2}{V_{IN}} $$
+$$ V_{out} = V_{ref}\left(1+\frac{R_2}{R_1}\right) + I_{adj}R_2 $$
 
-For best accuracy, the datasheet recommends using the effective capacitance of the output capacitor under DC bias conditions that will be seen in operation.
+Setting $R_1=\SI{120}{\ohm}$ sets the current through the feedback network to \SI{10}{\milli\ampere}, which is nominally twice the required current to maintain regulation. With $R_1$ defined, the other parameters are determined from the datasheet and a value for $R_2$ is obtained.
 
-Once the compensation resistor has been found, the zero can be set to one-fourth the crossover frequency, per the datasheet's recommendation.
+\begin{pycode}
+V_out_nom = 12
+R_1 = np.zeros(ntrials)
+V_ref = np.zeros(ntrials)
+I_adj = np.zeros(ntrials)
+R_2 = np.zeros(ntrials)
+V_out = np.zeros(ntrials)
 
-$$ C_{C1} = \frac{2}{\pi f_{C1}R_{C1}} $$
+i = 0
+while i < ntrials: 
+    R_1[i] = rng.triangular(1000*0.99, 1000, 1000*1.01)
+    V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
+    I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
+    R_2_nom = find_closest_e_series_number((V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]), '1%')
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
+    i += 1
 
-The parallel capacitor is then chosen to cancel the zero introduced by the output capacitor ESR.
+fig, ax = plt.subplots(1, 1)
+ax.hist(V_out, bins='auto', label=r"$V_{out}=\SI{12}{\volt}_{nom.}$")
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_xlabel(r'Post-Regulator Output Voltage')
+ax.set_ylabel(r'Count $\left(1\right)$')
+save_pythontex_figure(fig, 'analog_supply_post_reg_output_voltage')
+\end{pycode}
 
-$$ C_{B1} = \frac{R_{ESR} C_{OUT1}}{R_{C1}} $$
+\begin{figure}[!ht]
+    \centering
+    \input{figures/pgf/analog_supply_post_reg_output_voltage.pgf}
+    \caption{Analog Supply Post-Regulator Output Voltage}
+\end{figure}
 
-From the datasheet, for most applications, $R_{C1}$ must be within the range of $1 k\Omega$ to $200 k\Omega$, and $C_{C1}$ must be within the range of $1 nF$ to $68 nF$.
+\subsection{Low-Voltage Supply}
+\subsubsection{Linear Regulator}
 
-\begin{pyblock}
-R_LOAD1 = V_POS / I_OUT1
-f_Z1_RHP = ( R_LOAD1 * ( 1 - DUTY_1 )**2 ) / ( 2*np.pi * L1 )
-f_C1 = f_Z1_RHP * 95E-3
-V_FB1 = V_POS * R_FB1 / ( R_FB1 + R_FT1 )
-G_M1 = 300E-6 # from datasheet
-G_CS1 = 6.25 # from datasheet
-R_C1 = ( 2*np.pi * f_C1 * C_OUT_EFF * V_POS**2 ) / ( V_FB1 * V_IN * G_M1 * G_CS1 )
-C_C1 = 2 / ( np.pi * f_C1 * R_C1 )
-C_B1 = C_OUT_ESR * C_OUT / R_C1
-print("$$R_{C1} = %s$$" %(R_C1))
-print("$$C_{C1} = %s$$" %(C_C1))
-print("$$C_{B1} = %s$$" %(C_B1))
-\end{pyblock}
+\begin{pycode}
+V_out_nom = 3.3
+R_1 = np.zeros(ntrials)
+V_ref = np.zeros(ntrials)
+I_adj = np.zeros(ntrials)
+R_2 = np.zeros(ntrials)
+V_out = np.zeros(ntrials)
 
-\printpythontex
+i = 0
+while i < ntrials: 
+    R_1[i] = rng.triangular(120*0.99, 120, 120*1.01)
+    V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
+    I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
+    R_2_nom = find_closest_e_series_number((V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]), '1%')
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
+    i += 1
 
-\subsubsection{Inverting Regulator Compensation}
+fig, ax = plt.subplots(1, 1)
+ax.hist(V_out, bins='auto', label=r"$V_{out}=\SI{12}{\volt}_{nom.}$" )
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_xlabel(r'Digital Supply Output Voltage')
+ax.set_ylabel(r'Count $\left(1\right)$')
+ax.legend(loc='upper left')
+save_pythontex_figure(fig, '3v3_reg_output_voltage')
+\end{pycode}
 
-The design of the inverting regulator compensation network is similar to that of the boost regulator compensation network. For the sake of brevity, the detailed explanation has been omitted, but the process is the same as above.
+The low voltage supply is provided by a linear voltage regulator for simplicity. In the future, a second switching converter may be designed to replace it, in the interest of efficiency. To consolidate the bill of materials the same regulator is used as for the analog supply. The output voltage is determined by the same relationship as that shown above. By letting $V_{out}=\SI{3.3}{\volt}$, $R_1=\SI{120}{\ohm}$, and $I_{adj}=\SI{120}{\micro\ampere}$, the above relationship yields approximately $R_2=\py{r'\SI{%s}{\ohm}' % (round(R_2_nom))}$. The low-voltage supply can be run at lower voltages. A study should be performed to determine how low - \SI{1.8}{\volt} is supported by all digital circuits in the system.
 
-\begin{pyblock}
-R_LOAD2 = V_NEG / I_OUT2
-f_Z2_RHP = ( R_LOAD2 * ( 1 - DUTY_2 )**2 ) / ( 2*np.pi * L2 * DUTY_2 )
-f_C2 = f_Z2_RHP * 95E-3
-V_FB2 = V_NEG * R_FT2 / ( R_FB2 + R_FT2 )
-G_M2 = 300E-6 # from datasheet
-G_CS2 = 6.25 # from datasheet
-R_C2 = ( 2*np.pi * f_C2 * C_OUT_EFF * np.abs(V_NEG) * ( V_IN + ( 2 * np.abs(V_NEG) ) ) )
-R_C2 = R_C2 / ( np.abs(V_FB2) * V_IN * G_M2 * G_CS2 )
-C_C2 = 2 / ( np.pi * f_C2 * R_C2 )
-C_B2 = C_OUT_ESR * C_OUT / R_C2
-print("$$R_{C2} = %s$$" %(R_C2))
-print("$$C_{C2} = %s$$" %(C_C2))
-print("$$C_{B2} = %s$$" %(C_B2))
-\end{pyblock}
 
-\printpythontex
+\begin{figure}[!ht]
+    \centering
+    \input{figures/pgf/3v3_reg_output_voltage.pgf}
+    \caption{\SI{3.3}{\volt} Regulator Output Voltage}
+\end{figure}
+
+\section{Effects Interface}
+
+The effects interface connects three external effects modules through two TMUX4053 analog multiplexers. The TMUX4053 is an upgraded version of the standard 4053 CMOS multiplexer with a higher voltage rating and improved impedance parameters. The signals are sent to the external modules and return via the same connectors, then are routed through the multiplexer circuit to the next effects module or to the main output. 
+
+\subsection{Switching}
+
+The TMUX4053 was selected for two main reasons. Primarily, it supports the 12V supply with comfortable margin. As a second reason, the TMUX4053 is offered in a compact SMD package which improves reliability. The control signals for the multiplexers are generated by the RP2040 microcontroller which polls the footswitches and accordingly manages the switching logic for the multiplexers.
+
+%TODO: Impedance/Attenuation analysis
+
+%TODO: Write truth-table for switches
+
+\subsection{Interface}
+
+%TODO: output/input filtering
+
+\section{Microcontroller}
+
+The Raspberry Pi RP2040 dual-core ARM microcontroller was selected for two primary reasons: its extremely good cost per performance ratio despite being much more powerful than this application demands, and for the excellent documentation provided by the manufacturer.
+
+In this design, the microcontroller performs the functions listed below, along with some other minor tasks.
+
+\begin{itemize}
+    \item Manage audio switching logic and control analog switches
+    \item Monitor footswitch status
+    \item Control indicator LEDs
+    \item USB 2.0 controller
+\end{itemize}
+
+\subsubsection{Power}
+
+The microcontroller has a peak current draw of approximately \SI{100}{\milli\ampere} from the \SI{3.3}{\volt} rail, yielding a power consumption of approximately \SI{330}{\milli\watt}. The RP2040's internal low-voltage levels are generated using the integrated LDO which uses two external capacitors (C411 and C413), shared between pin 45 and pin 23 of the IC. The remaining external capacitors are used as decoupling capacitors for the \SI{3.3}{\volt} rail.
+
+\subsection{Memory}
+
+Any standard AT25xxx memory may be used for this design, assuming it has the correct package and memory layout. A DFN package was selected for mechanical reliability and for being widely available. The design specifies the maximum possible memory of \SI{128}{\mega\bit} to ease the software development process, but may be reduced in the future as an exercise in cost reduction.
+
+\subsection{Clocks and Timing}
+
+The manufacturer's recommend crystal, the ABM8-272-T3, was selected to generate the clock signals. The crystal has an SMD package and is widely available. If unavailable, a new crystal will have to be selected and rigorously tested.
+
+\subsection{GPIO}
+
+
+
+\section{Peripherals}
+
+\subsection{Overview}
+
+\subsection{Footswitches}
+
+\subsection{USB}
 
 \end{document}

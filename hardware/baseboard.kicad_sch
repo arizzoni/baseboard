@@ -1,0 +1,432 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "190888c1-6ce2-4681-a836-dc477e444e49")
+	(paper "USLedger")
+	(title_block
+		(title "Baseboard")
+		(date "2023-08-19")
+		(rev "A")
+		(company "Alessandro Rizzoni")
+		(comment 1 "SCHEMATIC")
+		(comment 2 "DRAFT")
+		(comment 3 "AIR")
+	)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 177.8 121.92) (xy 254 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb63c84-9a41-406d-beb1-27b853c13f16")
+	)
+	(polyline
+		(pts
+			(xy 254 121.92) (xy 254 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d14733-f73b-4ed6-986e-d998c104b28f")
+	)
+	(polyline
+		(pts
+			(xy 177.8 127) (xy 177.8 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5b2b473-ffa1-492f-8374-dff417d2ec16")
+	)
+	(rectangle
+		(start 177.8 127)
+		(end 254 152.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 918f744d-bb5e-4c2a-a87f-8580d90937e0)
+	)
+	(text "PAGE 5"
+		(exclude_from_sim no)
+		(at 179.07 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0891d76b-3d9b-475c-8acf-e2d2d3c5c7dd")
+	)
+	(text "PAGE 2\n"
+		(exclude_from_sim no)
+		(at 179.07 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d5bb796-fd1a-42e6-9f64-ee298edd402e")
+	)
+	(text "TABLE OF CONTENTS"
+		(exclude_from_sim no)
+		(at 207.01 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c100669-0461-407e-b5ce-442b2a99c796")
+	)
+	(text "PAGE 4\n"
+		(exclude_from_sim no)
+		(at 179.07 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "49614a1a-5d98-49cb-8c2c-e0e4e7487dcf")
+	)
+	(text "PAGE 3"
+		(exclude_from_sim no)
+		(at 179.07 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "51222853-286a-4e3f-a990-82cb6539307d")
+	)
+	(text "• • • • • • • • • • • • • • • • \n"
+		(exclude_from_sim no)
+		(at 201.93 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "579186cc-ee35-4be3-a905-75b219008218")
+	)
+	(text "4: PCB LAYOUT ACCORDING TO DATASHEET FOR ALL COMPONENTS\n3: ALL CAPACITORS MLCC, X7R OR X7S DIELECTRIC, 10% TOLERANCE OR SMALLER\n2: ALL RESISTORS LOW NOISE THIN FILM, 1% TOLERANCE OR SMALLER, 1/10W RATING OR GREATER\n1: ALL COMPONENTS 25V RATING OR GREATER"
+		(exclude_from_sim no)
+		(at 293.37 251.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a6b5e31-d19b-4f3a-8978-4e23b187ecd0")
+	)
+	(text "COVER"
+		(exclude_from_sim no)
+		(at 252.73 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "6b1b63e2-632e-4ae8-b4f8-163f39d53134")
+	)
+	(text "• • • • • • • • • • • • • • • • \n"
+		(exclude_from_sim no)
+		(at 201.93 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e7c2928-8a95-4530-bcaf-d6eb6bd25eb9")
+	)
+	(text "AUDIO"
+		(exclude_from_sim no)
+		(at 252.73 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "82dd3ce4-f8a4-47d5-8184-9dc617b900e9")
+	)
+	(text "MICROCONTROLLER"
+		(exclude_from_sim no)
+		(at 252.73 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "84fd55aa-b08f-49cd-9050-584141696e3c")
+	)
+	(text "PERIPHERALS"
+		(exclude_from_sim no)
+		(at 252.73 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "8e84fef9-8334-450b-baa0-0de873417b4a")
+	)
+	(text "• • • • • • • • • • • • • • • • \n"
+		(exclude_from_sim no)
+		(at 201.93 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8eb6511-7f9a-41a3-a9d6-22af0f92f43d")
+	)
+	(text "PAGE 1\n"
+		(exclude_from_sim no)
+		(at 179.07 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0ea079b-f59e-4621-a3ef-a72241952f82")
+	)
+	(text "• • • • • • • • • • • • • • • • \n"
+		(exclude_from_sim no)
+		(at 201.93 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8a2f2c6-3a35-4d58-b5be-fd3153ce11d1")
+	)
+	(text "• • • • • • • • • • • • • • • • \n"
+		(exclude_from_sim no)
+		(at 201.93 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6fd0d50-3e23-468d-b259-d05ea655c6b2")
+	)
+	(text "POWER"
+		(exclude_from_sim no)
+		(at 252.73 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "ef98c03c-b513-443d-8c43-edf25b96a512")
+	)
+	(text "INITIAL RELEASE"
+		(exclude_from_sim no)
+		(at 346.71 26.035 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f36d6b55-ae41-40a0-9fbb-9ae9c8e126b4")
+	)
+	(sheet
+		(at 444.5 88.9)
+		(size 38.1 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "229a97b2-4425-47f7-b588-f32dc6b9bc79")
+		(property "Sheetname" "MICROCONTROLLER"
+			(at 444.5 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 444.5 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "baseboard"
+				(path "/190888c1-6ce2-4681-a836-dc477e444e49"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 444.5 50.8)
+		(size 38.1 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2e4f7641-7de0-4dea-9f64-f5ec09624375")
+		(property "Sheetname" "POWER"
+			(at 444.5 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 444.5 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "baseboard"
+				(path "/190888c1-6ce2-4681-a836-dc477e444e49"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 444.5 127)
+		(size 38.1 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d0056da4-2f4a-44a5-8940-d7387ae0cef4")
+		(property "Sheetname" "Peripherals"
+			(at 444.5 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 444.5 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "baseboard"
+				(path "/190888c1-6ce2-4681-a836-dc477e444e49"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 444.5 12.7)
+		(size 38.1 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e436358c-d730-4540-92b5-b7475a7c4a63")
+		(property "Sheetname" "AUDIO"
+			(at 444.5 11.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 444.5 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "baseboard"
+				(path "/190888c1-6ce2-4681-a836-dc477e444e49"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

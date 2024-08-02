@@ -1,0 +1,27 @@
+** Drc report for baseboard.kicad_pcb **
+** Created on 2024-06-07T21:47:38-0400 **
+
+** Found 0 DRC violations **
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(158.6932 mm, 100.7250 mm): Track [+1V1] on F.Cu, length 1.6625 mm
+    @(160.3557 mm, 98.7250 mm): Pad 45 [+1V1] of U402 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(167.2307 mm, 99.9250 mm): Pad 23 [+1V1] of U402 on F.Cu
+    @(158.6932 mm, 100.7250 mm): Track [+1V1] on F.Cu, length 1.6625 mm
+
+** Found 3 Footprint errors **
+[footprint_symbol_mismatch]: U401 footprint (Library:DFN-8-1EP_6x5mm_P1.27mm_EP4x4mm_Thermal_vias) doesn't match that given by symbol (Package_DFN_QFN:DFN-8-1EP_6x5mm_P1.27mm_EP4x4mm).
+    Local override; error
+    @(154.7932 mm, 106.6250 mm): Footprint U401
+[footprint_symbol_mismatch]: U402 footprint (Library:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_Thermal_Vias) doesn't match that given by symbol (Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm).
+    Local override; error
+    @(163.7932 mm, 100.5250 mm): Footprint U402
+[extra_footprint]: Extra footprint
+    Local override; error
+    @(95.0000 mm, 121.8000 mm): Footprint REF**
+
+** End of Report **

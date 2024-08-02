@@ -1,0 +1,1 @@
+/home/air/projects/tex-template/tex-template.cls

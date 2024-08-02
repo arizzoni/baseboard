@@ -1,9 +1,7 @@
-=>PYTHONTEX#CC:py:begin#none#none#0#code#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=30.0pt, columnsep=10.0pt, columnwidth=390.0pt, evensidemargin=0.0pt, linewidth=390.0pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####244#
-import os
-
+=>PYTHONTEX#CC:py:begin#none#none#0#code#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=30.0pt, columnsep=10.0pt, columnwidth=345.0pt, evensidemargin=0.0pt, linewidth=345.0pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####228#
+import os # File management utilities
 import numpy as np # Python numerical computing library
-import matplotlib as mpl
-
+import matplotlib as mpl # Plotting library
 from cycler import cycler # Property cycler utilities
 from matplotlib import pyplot as plt # Pyplot API
 from matplotlib import rcParams as rc # Matplotlib plot styling
@@ -13,7 +11,7 @@ class Environment():
 
     build_directory = os.path.abspath(os.getcwd())
     output_directory = os.sep.join(build_directory.split(os.sep)[:-1])
-    figures_directory = os.path.join(output_directory, 'figures')
+    figures_directory = os.path.join(build_directory, 'figures')
     pgf_directory = os.path.join(figures_directory, 'pgf')
     pdf_directory = os.path.join(figures_directory, 'pdf')
 
@@ -24,6 +22,12 @@ class Environment():
                 os.mkdir(directory)
 
 environment = Environment()
+
+def signif(x, p):
+    x = np.asarray(x)
+    x_positive = np.where(np.isfinite(x) & (x != 0), np.abs(x), 10**(p-1))
+    mags = 10 ** (p - 1 - np.floor(np.log10(x_positive)))
+    return np.round(x * mags) / mags
 
 def metallic_ratio(n):
     return 0.5 * ( n + np.sqrt(n**2 + 4) )
@@ -36,6 +40,87 @@ def save_pythontex_figure(figure, figure_name):
         figure.savefig(os.path.join(environment.pgf_directory, f'{figure_name}.pgf'))
         figure.savefig(os.path.join(environment.pdf_directory, f'{figure_name}.pdf'))
     return figure
+
+def find_closest_e_series_number(value, target):
+    """
+    Returns closest E-series number to {value}. If {target} (in percent) is not
+    specified, return closest value to an E192 number.
+
+    Numbers from https://en.wikipedia.org/wiki/E_series_of_preferred_numbers
+    """
+
+    # 40% tolerance
+    e_3 = [ 1.0, 2.2, 4.7 ]
+
+    # 20% tolerance
+    e_6 = [ 1.0, 1.5, 2.2, 3.3, 4.7, 6.8 ]
+
+    # 10% tolerance
+    e_12 = [ 1.0, 1.2, 1.5, 1.8, 2.2, 2.7, 3.3, 3.9, 4.7, 5.6, 6.8, 8.2 ]
+
+    # 5% tolerance
+    e_24 = [ 1.0, 1.1, 1.2, 1.3, 1.5, 1.6, 1.8, 2.0, 2.2, 2.4, 2.7, 3.0, 3.3,
+           3.6, 3.9, 4.3, 4.7, 5.1, 5.6, 6.2, 6.8, 7.5, 8.2, 9.1 ]
+
+    # 2% tolerance
+    e_48 = [ 1.00, 1.05, 1.10, 1.15, 1.21, 1.27, 1.33, 1.40, 1.47, 1.54, 1.62,
+           1.69, 1.78, 1.87, 1.96, 2.05, 2.15, 2.26, 2.37, 2.49, 2.61, 2.74,
+           2.87, 3.01, 3.16, 3.32, 3.48, 3.65, 3.83, 4.02, 4.22, 4.42, 4.64,
+           4.87, 5.11, 5.36, 5.62, 5.90, 6.19, 6.49, 6.81, 7.15, 7.50, 7.87,
+           8.25, 8.66, 9.09, 9.53 ]
+
+    # 1% tolerance
+    e_96 = [ 1.00, 1.02, 1.05, 1.07, 1.10, 1.13, 1.15, 1.18, 1.21, 1.24, 1.27,
+           1.30, 1.33, 1.37, 1.40, 1.43, 1.47, 1.50, 1.54, 1.58, 1.62, 1.65,
+           1.69, 1.74, 1.78, 1.82, 1.87, 1.91, 1.96, 2.00, 2.05, 2.10, 2.15,
+           2.21, 2.26, 2.32, 2.37, 2.43, 2.49, 2.55, 2.61, 2.67, 2.74, 2.80,
+           2.87, 2.94, 3.01, 3.09, 3.16, 3.24, 3.32, 3.40, 3.48, 3.57, 3.65,
+           3.74, 3.83, 3.92, 4.02, 4.12, 4.22, 4.32, 4.42, 4.53, 4.64, 4.75,
+           4.87, 4.99, 5.11, 5.23, 5.36, 5.49, 5.62, 5.76, 5.90, 6.04, 6.19,
+           6.34, 6.49, 6.65, 6.81, 6.98, 7.15, 7.32, 7.50, 7.68, 7.87, 8.06,
+           8.25, 8.45, 8.66, 8.87, 9.09, 9.31, 9.53, 9.76 ]
+
+    # 0.5% tolerance
+    e_192 = [ 1.00, 1.01, 1.02, 1.04, 1.05, 1.06, 1.07, 1.09, 1.10, 1.11, 1.13,
+            1.14, 1.15, 1.17, 1.18, 1.20, 1.21, 1.23, 1.24, 1.26, 1.27, 1.29,
+            1.30, 1.32, 1.33, 1.35, 1.37, 1.38, 1.40, 1.42, 1.43, 1.45, 1.47,
+            1.49, 1.50, 1.52, 1.54, 1.56, 1.58, 1.60, 1.62, 1.64, 1.65, 1.67,
+            1.69, 1.72, 1.74, 1.76, 1.78, 1.80, 1.82, 1.84, 1.87, 1.89, 1.91,
+            1.93, 1.96, 1.98, 2.00, 2.03, 2.05, 2.08, 2.10, 2.13, 2.15, 2.18,
+            2.21, 2.23, 2.26, 2.29, 2.32, 2.34, 2.37, 2.40, 2.43, 2.46, 2.49,
+            2.52, 2.55, 2.58, 2.61, 2.64, 2.67, 2.71, 2.74, 2.77, 2.80, 2.84,
+            2.87, 2.91, 2.94, 2.98, 3.01, 3.05, 3.09, 3.12, 3.16, 3.20, 3.24,
+            3.28, 3.32, 3.36, 3.40, 3.44, 3.48, 3.52, 3.57, 3.61, 3.65, 3.70,
+            3.74, 3.79, 3.83, 3.88, 3.92, 3.97, 4.02, 4.07, 4.12, 4.17, 4.22,
+            4.27, 4.32, 4.37, 4.42, 4.48, 4.53, 4.59, 4.64, 4.70, 4.75, 4.81,
+            4.87, 4.93, 4.99, 5.05, 5.11, 5.17, 5.23, 5.30, 5.36, 5.42, 5.49,
+            5.56, 5.62, 5.69, 5.76, 5.83, 5.90, 5.97, 6.04, 6.12, 6.19, 6.26,
+            6.34, 6.42, 6.49, 6.57, 6.65, 6.73, 6.81, 6.90, 6.98, 7.06, 7.15,
+            7.23, 7.32, 7.41, 7.50, 7.59, 7.68, 7.77, 7.87, 7.96, 8.06, 8.16,
+            8.25, 8.35, 8.45, 8.56, 8.66, 8.76, 8.87, 8.98, 9.09, 9.20, 9.31,
+            9.42, 9.53, 9.65, 9.76, 9.88 ]
+
+    match target:
+        case '40%':
+            target = np.array(e_3)
+        case '20%':
+            target = np.array(e_6)
+        case '10%':
+            target = np.array(e_12)
+        case '5%':
+            target = np.array(e_24)
+        case '2%':
+            target = np.array(e_48)
+        case '1%':
+            target = np.array(e_96)
+        case '0.5%':
+            target = np.array(e_192)
+        case _:
+            target = np.array(e_192)
+
+    order = np.floor(np.log10(value))
+    index = np.searchsorted(target, value / 10**order)
+    return target[index-1] * 10**order
 
 class Geometry():
 
@@ -146,134 +231,269 @@ rc.update({
         'pgf.texsystem': 'lualatex', # default is xetex, but lualatex is preferred
 })
 
-=>PYTHONTEX#py#default#default#0#code#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=439.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=0.0pt, parskip=5.0pt plus 2.5pt minus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####432#
-min_freq = 0.3
-max_freq = 100E6
-frequency = np.logspace(np.log10(min_freq), np.log10(max_freq), 30000, base=10)
+=>PYTHONTEX#py#default#default#0#code#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####237#
+rng = np.random.default_rng()
 
-noise_spec_9V = []
-noise_spec_LV = []
-corner_freq_9V = 100
-corner_freq_LV = 100
+ntrials = 100000
 
-for freq in frequency:
-    if freq < corner_freq_9V:
-        noise_spec_9V.append(-40)
-    else:
-        noise_spec_9V.append(-60)
+L = np.zeros(ntrials)
+V_f = np.zeros(ntrials)
+f_s = np.zeros(ntrials)
+eta = np.zeros(ntrials)
+I_lim = np.zeros(ntrials)
+V_ref = np.zeros(ntrials)
+R_2 = np.zeros(ntrials)
+R_1 = np.zeros(ntrials)
+R_1_nom = np.zeros(ntrials)
+V_out = np.zeros(ntrials)
+C_3 = np.zeros(ntrials)
+C_2 = np.zeros(ntrials)
+R_load = np.zeros(ntrials)
+G_ea = np.zeros(ntrials)
+R_sense = np.zeros(ntrials)
+f_P1 = np.zeros(ntrials)
+f_P2 = np.zeros(ntrials)
+I_P_5V = np.zeros(ntrials)
+I_P_9V = np.zeros(ntrials)
+I_P_12V = np.zeros(ntrials)
+I_out_5V = np.zeros(ntrials)
+I_out_9V = np.zeros(ntrials)
+I_out_12V = np.zeros(ntrials)
+C_out_5V = np.zeros(ntrials)
+C_out_9V = np.zeros(ntrials)
+C_out_12V = np.zeros(ntrials)
+duty_5V = np.zeros(ntrials)
+duty_9V = np.zeros(ntrials)
+duty_12V = np.zeros(ntrials)
+C_s_5V = np.zeros(ntrials)
+C_s_9V = np.zeros(ntrials)
+C_s_12V = np.zeros(ntrials)
+f_RHPZ_5V = np.zeros(ntrials)
+f_RHPZ_9V = np.zeros(ntrials)
+f_RHPZ_12V = np.zeros(ntrials)
+A_5V = np.zeros(ntrials)
+A_9V = np.zeros(ntrials)
+A_12V = np.zeros(ntrials)
+V_outs = np.zeros(ntrials)
 
-    if freq < corner_freq_LV:
-        noise_spec_LV.append(-30)
-    else:
-        noise_spec_LV.append(-55)
+tolerance = '1%'
+V_out_nom = 12
+R_2_nom = 10e3 # Texas Instruments TPS61170
+V_ripple = 0.010 # Target ripple voltage = 25mV
+
+i = 0
+while i < ntrials:
+    L[i] = rng.triangular(0.80*10.3e-6, 10.3e-6, 1.2*10.3e-6) # Eaton DRQ73-100-R
+    V_f[i] = rng.normal(0.20, 0.05/6) # Diodes Inc. DFLS240L-7 or DFLS260L-7
+    f_s[i] = rng.triangular(1e6, 1.25e6, 1.5e6) # Texas Instruments TPS611705
+    eta[i] = rng.normal(0.85, 0.07/3) # Texas Instruments TPS61170
+    I_lim[i] = rng.triangular(0.96, 1.2, 1.44) # Texas Instruments TPS61170
+    V_ref[i] = rng.triangular(1.204, 1.229, 1.254) # Texas Instruments TPS61170
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    R_1_nom[i] = find_closest_e_series_number(R_2[i] * ( (V_out_nom/V_ref[i]) - 1), tolerance)
+    R_1[i] = rng.triangular(0.99*R_1_nom[i], R_1_nom[i], 1.01*R_1_nom[i])
+    V_out[i] = V_ref[i] * ( ( R_1[i] / R_2[i] ) + 1 )
+
+    V_ins = [ 5, 9, 12 ]
+    for V_in in V_ins:
+        I_P = 1 / ( L[i] * f_s[i] * ( 1 / ( V_out[i] + V_f[i] - V_in ) + 1 / V_in ) )
+        I_out = V_in * ( I_lim[i] - 0.5*I_P ) * eta[i] / V_out[i]
+        C_out = find_closest_e_series_number(( (V_out[i] - V_in) * I_out ) / ( V_out[i] * f_s[i] * V_ripple ), tolerance)
+        duty = ( V_out[i] - V_in ) / V_out[i]
+        C_s = find_closest_e_series_number(( I_out * duty ) / ( f_s[i] * 0.1 * V_in ), tolerance)
+        f_RHPZ = ( R_load[i] / (2*np.pi*L[i])) * ( V_in / V_out[i] )**2
+        A = ( 1.229 / V_out[i] ) * G_ea[i] * 6e6 * ( V_in / ( V_out[i] * R_sense[i] ) ) * R_load[i] * 1/2
+
+        if V_in == 5:
+            I_P_5V[i] = I_P
+            I_out_5V[i] = I_out
+            C_out_5V[i] = C_out
+            duty_5V[i] = duty
+            C_s_5V[i] = C_s
+            f_RHPZ_5V[i] = f_RHPZ
+            A_5V[i] = A
+        if V_in == 9:
+            I_P_9V[i] = I_P
+            I_out_9V[i] = I_out
+            C_out_9V[i] = C_out
+            duty_9V[i] = duty
+            C_s_9V[i] = C_s
+            f_RHPZ_9V[i] = f_RHPZ
+            A_9V[i] = A
+        if V_in == 12:
+            I_P_12V[i] = I_P
+            I_out_12V[i] = I_out
+            C_out_12V[i] = C_out
+            duty_12V[i] = duty
+            C_s_12V[i] = C_s
+            f_RHPZ_12V[i] = f_RHPZ
+            A_12V[i] = A
+    i = i + 1
+
+R_1_value = find_closest_e_series_number(np.mean(R_1_nom), tolerance)
+
+C_out_value = find_closest_e_series_number(np.nanmax(np.concatenate((C_out_5V, C_out_9V, C_out_12V))), tolerance)
+C_s_value = find_closest_e_series_number(np.nanmax(np.concatenate((C_s_5V, C_s_9V, C_s_12V))), tolerance)
+
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(I_out_5V, bins = 'auto', label = r"$I_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(I_out_9V, bins = 'auto', label = r"$I_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(I_out_12V, bins = 'auto', label = r"$I_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'Count $\left(1\right)$')
+ax[2].set_xlabel(r'Output Current $\left(\unit{\ampere}\right)$')
+save_pythontex_figure(fig, 'psu_i_out_monte_carlo')
+
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(I_out_5V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(I_out_9V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(I_out_12V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'$P\left(I_{out} \leq I_{out_0}\right)$')
+ax[2].set_xlabel(r'Output Current $\left(\unit{\ampere}\right)$')
+save_pythontex_figure(fig, 'psu_i_out_monte_carlo_cum')
 
 fig, ax = plt.subplots(1, 1)
-ax.plot(frequency, noise_spec_9V, label=r'\pm 9V Supply')
-ax.plot(frequency, noise_spec_LV, label=r'+3.3V Supply')
-ax.set_xscale('log')
-ax.xaxis.set_major_formatter(eng_format(r'\unit{\hertz}'))
-ax.yaxis.set_major_formatter(eng_format(r'\unit{\deci\bel\volt}'))
-ax.set_ylim(-100, 0)
-ax.legend()
-save_pythontex_figure(fig, 'psu_noiselim')
-=>PYTHONTEX#py#default#default#1#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####494#
-V_POS = 12
-V_NEG = -12
-V_IN = 8.55
-V_FB1 = 0.8
-V_FB2 = 0.8
-V_REF = 1.6
-I_OUT1 = 200E-3
-I_OUT2 = -200E-3
-R_FT1 = 1E6
-R_FT2 = 1E6
-R_FB1 = R_FT1 / ( (V_POS / V_FB1) - 1 )
-R_FB2 = R_FT2 * (V_REF - V_FB2) / (V_FB2 - V_NEG)
-print(r"$$R_{FT1} = %s\Omega$$" %(R_FT1))
-print(r"$$R_{FB1} = %s\Omega$$" %(R_FB1))
-print(r"$$R_{FT2} = %s\Omega$$" %(R_FT2))
-print(r"$$R_{FB2} = %s\Omega$$" %(R_FB2))
-=>PYTHONTEX#py#default#default#2#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####554#
-C_OUT = 20E-6
-D_TEMP = 0.014
-D_BIAS = 0.120
-D_TOL = 0.200
-C_OUT_ESR = 2.5E-3
-C_OUT_EFF = C_OUT * ( 1 - D_TEMP ) * ( 1 - D_BIAS ) * ( 1 - D_TOL )
-print(r'$$C_{OUT_{EFF}} = %s$$' %(C_OUT_EFF))
-=>PYTHONTEX#py#default#default#3#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####570#
-C_PV_IN = 22E-6
-C_PV_INSYS = 22E-6
-=>PYTHONTEX#py#default#default#4#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####579#
-C_VREG = 1E-6
-=>PYTHONTEX#py#default#default#5#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####587#
-C_VREG = 1E-6
-=>PYTHONTEX#py#default#default#6#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####595#
+ax.hist(V_out, bins = 'auto', label = r"$V_{out}$")
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_ylabel(r'Count $\left(1\right)$')
+ax.set_xlabel(r'Output Voltage $\left(\unit{\volt}\right)$')
+save_pythontex_figure(fig, 'psu_v_out_monte_carlo')
 
 fig, ax = plt.subplots(1, 1)
-R_SOFT_START = np.linspace(50E3, 268E3, 800)
-t_SOFT_START = 38.4E-3 - 1.28E-7 * R_SOFT_START
+ax.hist(V_out, bins = 'auto', density = True, cumulative = True, label = r"$V_{out}$")
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_ylabel(r'$P\left(V_{out} \leq V_{out_0}\right)$')
+ax.set_xlabel(r'Output Voltage $\left(\unit{\volt}\right)$')
+save_pythontex_figure(fig, 'psu_v_out_monte_carlo_cum')
 
-ax.plot(R_SOFT_START, t_SOFT_START, label='Soft Start Resistor Values')
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_out_5V, bins = 'auto', label = r"$C_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(C_out_9V, bins = 'auto', label = r"$C_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(C_out_12V, bins = 'auto', label = r"$C_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'Count $\left(1\right)$')
+ax[2].set_xlabel(r'Output Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_out_monte_carlo')
 
-R_SOFT_START = 71.5E3
-t_SOFT_START = 38.4E-3 - 1.28E-7 * R_SOFT_START
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_out_5V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(C_out_9V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(C_out_12V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'$P\left(C_{out} \leq C_{out_0}\right)$')
+ax[2].set_xlabel(r'Output Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_out_monte_carlo_cum')
 
-ax.plot(R_SOFT_START, t_SOFT_START, '.', label='Selected Resistance')
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_s_5V, bins = 'auto', label = r"$C_{s}(V_{in}=5V)$")
+ax[1].hist(C_s_9V, bins = 'auto', label = r"$C_{s}(V_{in}=9V)$")
+ax[2].hist(C_s_12V, bins = 'auto', label = r"$C_{s}(V_{in}=12V)$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'Count $\left(1\right)$')
+ax[2].set_xlabel(r'Coupling Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_s_monte_carlo')
 
-ax.yaxis.set_major_formatter(eng_format(r'\unit{\second}'))
-ax.xaxis.set_major_formatter(eng_format(r'\unit{\ohm}'))
+fig, ax = plt.subplots(3, 1)
+ax[0].hist(C_s_5V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=5V)$")
+ax[1].hist(C_s_9V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=9V)$")
+ax[2].hist(C_s_12V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=12V)$")
+ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
+ax[0].legend(loc='upper left')
+ax[1].legend(loc='upper left')
+ax[2].legend(loc='upper left')
+ax[1].set_ylabel(r'$P\left(C_s \leq C_{s_0}\right)$')
+ax[2].set_xlabel(r'Coupling Capacitor Size $\left(\unit{\farad}\right)$')
+save_pythontex_figure(fig, 'psu_c_s_monte_carlo_cum')
 
-ax.legend()
-save_pythontex_figure(fig, 'psu_softstart')
+=>PYTHONTEX#py#default#default#1#i#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####460#
+r'\SI{%s}{%s}' % (signif(R_1_value/1000, 3), r'\kilo\ohm' )
+=>PYTHONTEX#py#default#default#2#i#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####461#
+r'\SI{%s}{%s}' % (signif(R_2_nom/1000, 3), r'\kilo\ohm' )
+=>PYTHONTEX#py#default#default#3#i#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####462#
+r'\SI{%s}{%s}' % (signif(np.min(V_out), 3), r'\volt')
+=>PYTHONTEX#py#default#default#4#i#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####481#
+r'\SI{%s}{%s}' % (signif(C_out_value*1e6, 3), r'\micro\farad')
+=>PYTHONTEX#py#default#default#5#i#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####493#
+r'\SI{%s}{%s}' % (signif(C_s_value*1e6, 3), r'\micro\farad')
+=>PYTHONTEX#py#default#default#6#code#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####516#
+V_out_nom = 12
+R_1 = np.zeros(ntrials)
+V_ref = np.zeros(ntrials)
+I_adj = np.zeros(ntrials)
+R_2 = np.zeros(ntrials)
+V_out = np.zeros(ntrials)
 
-=>PYTHONTEX#py#default#default#7#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####626#
-V_DF = 450E-3
-C_D = 90E-12
-=>PYTHONTEX#py#default#default#8#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####657#
-f_SW = 2.4E6
-DUTY_1 = ( V_POS - V_IN + V_DF ) / (V_POS + V_DF)
-I_IN = I_OUT1 / ( 1 - DUTY_1 )
-T_ON1 = DUTY_1 / f_SW
-L1 = V_IN * T_ON1 * ( 1 - DUTY_1) / ( 0.3 * I_OUT1)
-L1_MIN = 1E-6 * V_IN * ( ( 0.27 / (1 - DUTY_1)) - 0.33)
-print(r"$$L1 = %s$$" %(L1))
-print(r"$$L_{1_{MIN}} = %s$$" %(L1_MIN))
-=>PYTHONTEX#py#default#default#9#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####696#
-DUTY_2 = ( np.abs(V_NEG) + V_DF ) / ( V_IN + np.abs(V_NEG) + V_DF )
-I_L2 = I_OUT2 / ( 1 - DUTY_2 )
-t_ON2 = DUTY_2 / f_SW
-L2 = V_IN * t_ON2 * ( 1 - DUTY_2 ) / ( 0.3 * np.abs(I_OUT2) )
-L2_MIN = 1E-6 * V_IN * ( ( 0.27 / ( 1 - DUTY_2)) - 0.33 )
-print(r"$$L2 = %s$$" %(L2))
-print(r"$$L2_MIN = %s$$" %(L2_MIN))
-=>PYTHONTEX#py#default#default#10#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####767#
-R_LOAD1 = V_POS / I_OUT1
-f_Z1_RHP = ( R_LOAD1 * ( 1 - DUTY_1 )**2 ) / ( 2*np.pi * L1 )
-f_C1 = f_Z1_RHP * 95E-3
-V_FB1 = V_POS * R_FB1 / ( R_FB1 + R_FT1 )
-G_M1 = 300E-6 # from datasheet
-G_CS1 = 6.25 # from datasheet
-R_C1 = ( 2*np.pi * f_C1 * C_OUT_EFF * V_POS**2 ) / ( V_FB1 * V_IN * G_M1 * G_CS1 )
-C_C1 = 2 / ( np.pi * f_C1 * R_C1 )
-C_B1 = C_OUT_ESR * C_OUT / R_C1
-print("$$R_{C1} = %s$$" %(R_C1))
-print("$$C_{C1} = %s$$" %(C_C1))
-print("$$C_{B1} = %s$$" %(C_B1))
-=>PYTHONTEX#py#default#default#11#block#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/IosevkaAile(0)/m/n/24.88, sansboldfont=\TU/IosevkaAile(0)/b/n/24.88, sansitalicfont=\TU/IosevkaAile(0)/m/it/24.88, sansbolditalicfont=\TU/IosevkaAile(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/12, mathfontone=\OML/cmm/m/it/12, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/12, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/12, scsansfont = \TU/IosevkaAile(0)/m/n/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/IosevkaAile(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/IosevkaAile(0)/m/it/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/IosevkaAile(0)/b/it/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=6, scriptsize=8, footnotesize=10, small=10.95, normalsize=12, large=14.4, Large=17.28, LARGE=20.74, huge=24.88, Huge=24.88, baselineskip=14.5pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=18.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=12.0pt, ex=5.676pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####788#
-R_LOAD2 = V_NEG / I_OUT2
-f_Z2_RHP = ( R_LOAD2 * ( 1 - DUTY_2 )**2 ) / ( 2*np.pi * L2 * DUTY_2 )
-f_C2 = f_Z2_RHP * 95E-3
-V_FB2 = V_NEG * R_FT2 / ( R_FB2 + R_FT2 )
-G_M2 = 300E-6 # from datasheet
-G_CS2 = 6.25 # from datasheet
-R_C2 = ( 2*np.pi * f_C2 * C_OUT_EFF * np.abs(V_NEG) * ( V_IN + ( 2 * np.abs(V_NEG) ) ) )
-R_C2 = R_C2 / ( np.abs(V_FB2) * V_IN * G_M2 * G_CS2 )
-C_C2 = 2 / ( np.pi * f_C2 * R_C2 )
-C_B2 = C_OUT_ESR * C_OUT / R_C2
-print("$$R_{C2} = %s$$" %(R_C2))
-print("$$C_{C2} = %s$$" %(C_C2))
-print("$$C_{B2} = %s$$" %(C_B2))
+i = 0
+while i < ntrials:
+    R_1[i] = rng.triangular(1000*0.99, 1000, 1000*1.01)
+    V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
+    I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
+    R_2_nom = find_closest_e_series_number((V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]), '1%')
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
+    i += 1
+
+fig, ax = plt.subplots(1, 1)
+ax.hist(V_out, bins='auto', label=r"$V_{out}=\SI{12}{\volt}_{nom.}$")
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_xlabel(r'Post-Regulator Output Voltage')
+ax.set_ylabel(r'Count $\left(1\right)$')
+save_pythontex_figure(fig, 'analog_supply_post_reg_output_voltage')
+=>PYTHONTEX#py#default#default#7#code#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####551#
+V_out_nom = 3.3
+R_1 = np.zeros(ntrials)
+V_ref = np.zeros(ntrials)
+I_adj = np.zeros(ntrials)
+R_2 = np.zeros(ntrials)
+V_out = np.zeros(ntrials)
+
+i = 0
+while i < ntrials:
+    R_1[i] = rng.triangular(120*0.99, 120, 120*1.01)
+    V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
+    I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
+    R_2_nom = find_closest_e_series_number((V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]), '1%')
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
+    i += 1
+
+fig, ax = plt.subplots(1, 1)
+ax.hist(V_out, bins='auto', label=r"$V_{out}=\SI{12}{\volt}_{nom.}$" )
+ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
+ax.set_xlabel(r'Digital Supply Output Voltage')
+ax.set_ylabel(r'Count $\left(1\right)$')
+ax.legend(loc='upper left')
+save_pythontex_figure(fig, '3v3_reg_output_voltage')
+=>PYTHONTEX#py#default#default#8#i#romanfont=\TU/STIXTwoText-Regular.otf(0)/m/n/24.88, romanboldfont=\TU/STIXTwoText-Regular.otf(0)/b/n/24.88, romanitalicfont=\TU/STIXTwoText-Regular.otf(0)/m/it/24.88, romanbolditalicfont=\TU/STIXTwoText-Regular.otf(0)/b/it/24.88, sansfont=\TU/InterMedium(0)/m/n/24.88, sansboldfont=\TU/InterMedium(0)/b/n/24.88, sansitalicfont=\TU/InterMedium(0)/b/n/24.88, sansbolditalicfont=\TU/InterMedium(0)/b/it/24.88, monofont=\TU/IosevkaFixed(0)/m/n/24.88, monoboldfont=\TU/IosevkaFixed(0)/b/n/24.88, monoitalicfont=\TU/IosevkaFixed(0)/m/it/24.88, monobolditalicfont=\TU/IosevkaFixed(0)/b/it/24.88, mathfont=\TU/STIXTwoMath-Regular.otf(1)/m/n/10, mathfontone=\OML/cmm/m/it/10, mathfonttwo=\TU/STIXTwoMath-Regular.otf(2)/m/n/10, mathfontthree=\TU/STIXTwoMath-Regular.otf(3)/m/n/10, scsansfont = \TU/InterMedium(0)/m/sc/24.88, scromanfont = \TU/STIXTwoText-Regular.otf(0)/m/sc/24.88, scmonofont = \TU/IosevkaFixed(0)/m/sc/24.88, scsansboldfont = \TU/InterMedium(0)/b/sc/24.88, scromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/sc/24.88, scmonoboldfont = \TU/IosevkaFixed(0)/b/sc/24.88, slantedsansfont = \TU/InterMedium(0)/b/sc/24.88, slantedromanfont = \TU/STIXTwoText-Regular.otf(0)/m/it/24.88, slantedmonofont = \TU/IosevkaFixed(0)/m/it/24.88, slantedsansboldfont = \TU/InterMedium(0)/b/sl/24.88, slantedromanboldfont = \TU/STIXTwoText-Regular.otf(0)/b/it/24.88, slantedmonoboldfont = \TU/IosevkaFixed(0)/b/it/24.88, tiny=5, scriptsize=7, footnotesize=8, small=9, normalsize=10, large=12, Large=14.4, LARGE=17.28, huge=20.74, Huge=24.88, baselineskip=12.0pt, columnsep=10.0pt, columnwidth=469.75502pt, evensidemargin=0.0pt, linewidth=469.75502pt, oddsidemargin=0.0pt, paperwidth=614.295pt, paperheight=794.96999pt, parindent=15.0pt, parskip=0.0pt plus 1.0pt, textheight=650.43001pt, textwidth=469.75502pt, topmargin=-37.0pt, unitlength=1.0pt, in=72.26999pt, cm=28.45274pt, mm=2.84526pt, em=10.0pt, ex=4.73pt, bp=1.00374pt, dd=1.07pt, pc=12.0pt####578#
+r'\SI{%s}{\ohm}' % (round(R_2_nom))
 =>PYTHONTEX:SETTINGS#
 version=0.18
 outputdir=pythontex-files-drd

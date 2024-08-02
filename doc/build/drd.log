@@ -1,27 +1,28 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2024.1.31)  27 FEB 2024 13:51
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.5.28)  2 AUG 2024 01:38
  system commands enabled.
  file:line:error style messages enabled.
 **drd.tex
 (./drd.tex
-LaTeX2e <2022-11-01> patch level 1
-Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
-Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended c
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
 ollection.
-luaotfload | conf : Root cache directory is "/home/air/.texlive/texmf-var/luatex
--cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-res
-olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2022-10-03.lu
+luaotfload | conf : Root cache directory is "/home/air/.cache/texlive/texmf-var/
+luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lu
 a".
 Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.120
+luaotfload | init : Context OpenType loader version 3.134
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/air/.texlive/texmf-var/luatex
--cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/air/.cache/texlive/texmf-var/
+luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -38,190 +39,103 @@ Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'. L3 programm
-ing layer <2023-02-22>
-Inserting `tracingstacklevels' in `input_level_string'.
-(/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/air/.texlive/texmf-var/l
-uatex-cache/generic/names/luaotfload-names.luc.gz)
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (./tex-template.cls (/u
+sr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/air/.cache/texlive/texmf
+-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen139
 )
-(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+Document Class: tex-template 
+(/usr/share/texmf-dist/tex/latex/gitinfo2/gitinfo2.sty
+Package: gitinfo2 2015/11/22 v2.0.7 git revision information
 
-(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
 )
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count195
+\xs_countb=\count196
 )
-(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks16
-)
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
 (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
-
-(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count191
-)
-\@linkdim=\dimen140
-\Hy@linkcounter=\count192
-\Hy@pagecounter=\count193
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen140
+\ESO@tempdimb=\dimen141
 
-(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
-)
-(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count194
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count195
+Package xcolor Info: Driver file: luatex.def on input line 274.
 
-(/usr/share/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+(/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen141
-
-(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ))
-\Fld@menulength=\count196
-\Field@Width=\dimen142
-\Fld@charsize=\dimen143
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+Package gitinfo2 Info: gitinfo2 found : ../.git/gitHeadInfo.gin
+(gitinfo2)              on input line 128.
 
-(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count197
-\c@Item=\count198
-\c@Hfootnote=\count199
-)
-Package hyperref Info: Driver (autodetected): hluatex.
-
-(/usr/share/texmf-dist/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2023-02-07 v7.00v Hyperref driver for luaTeX
-
-(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
-)
-\Fld@listcount=\count266
-\c@bookmark@seq@number=\count267
-
-(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-
-(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-85.
-)
-\Hy@SectionHShift=\skip50
-)
+(../.git/gitHeadInfo.gin)
+(/usr/share/texmf-dist/tex/latex/gitinfo2/gitexinfo.sty
+Package: gitexinfo 2015/11/22 v2.0.7 Auxiliary package for gitinfo2
+))
 (/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
 Package: pythontex 2021/06/06 v0.18 execute and typeset Python code and other l
 anguages
 
 (/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
-Package: fvextra 2022/11/30 v1.5 fvextra - extensions and patches for fancyvrb
+Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvr
+b
 
-(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count268
-)
 (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
-\FV@CodeLineNo=\count269
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count197
 \FV@InFile=\read2
 \FV@TabBox=\box51
-\c@FancyVerbLine=\count270
-\FV@StepNumber=\count271
+\c@FancyVerbLine=\count198
+\FV@StepNumber=\count199
 \FV@OutFile=\write3
 )
 (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
@@ -232,53 +146,51 @@ tim
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2023/01/19 line numbers on paragraphs v5.1
-\linenopenalty=\count272
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count266
 \output=\toks18
-\linenoprevgraf=\count273
-\linenumbersep=\dimen144
-\linenumberwidth=\dimen145
-\c@linenumber=\count274
-\c@pagewiselinenumber=\count275
-\c@LN@truepage=\count276
-\c@internallinenumber=\count277
-\c@internallinenumbers=\count278
-\quotelinenumbersep=\dimen146
-\bframerule=\dimen147
-\bframesep=\dimen148
+\linenoprevgraf=\count267
+\linenumbersep=\dimen142
+\linenumberwidth=\dimen143
+\c@linenumber=\count268
+\c@pagewiselinenumber=\count269
+\c@LN@truepage=\count270
+\c@internallinenumber=\count271
+\c@internallinenumbers=\count272
+\quotelinenumbersep=\dimen144
+\bframerule=\dimen145
+\bframesep=\dimen146
 \bframebox=\box52
-LaTeX Info: Redefining \\ on input line 3131.
+LaTeX Info: Redefining \\ on input line 3180.
 )
-\c@FV@TrueTabGroupLevel=\count279
-\c@FV@TrueTabCounter=\count280
+\c@FancyVerbWriteLine=\count273
+\c@FancyVerbBufferIndex=\count274
+\c@FancyVerbBufferLength=\count275
+\c@FancyVerbBufferLine=\count276
+\c@FV@oldbufferlength=\count277
+\c@FV@TrueTabGroupLevel=\count278
+\c@FV@TrueTabCounter=\count279
 \FV@TabBox@Group=\box53
-\FV@TmpLength=\skip51
-\c@FV@HighlightLinesStart=\count281
-\c@FV@HighlightLinesStop=\count282
-\FV@LoopCount=\count283
+\FV@TmpLength=\skip50
+\c@FV@HighlightLinesStart=\count280
+\c@FV@HighlightLinesStop=\count281
+\FV@LoopCount=\count282
 \FV@NCharsBox=\box54
-\FV@BreakIndent=\dimen149
-\FV@BreakIndentNChars=\count284
-\FV@BreakSymbolSepLeft=\dimen150
-\FV@BreakSymbolSepLeftNChars=\count285
-\FV@BreakSymbolSepRight=\dimen151
-\FV@BreakSymbolSepRightNChars=\count286
-\FV@BreakSymbolIndentLeft=\dimen152
-\FV@BreakSymbolIndentLeftNChars=\count287
-\FV@BreakSymbolIndentRight=\dimen153
-\FV@BreakSymbolIndentRightNChars=\count288
-\c@FancyVerbLineBreakLast=\count289
+\FV@BreakIndent=\dimen147
+\FV@BreakIndentNChars=\count283
+\FV@BreakSymbolSepLeft=\dimen148
+\FV@BreakSymbolSepLeftNChars=\count284
+\FV@BreakSymbolSepRight=\dimen149
+\FV@BreakSymbolSepRightNChars=\count285
+\FV@BreakSymbolIndentLeft=\dimen150
+\FV@BreakSymbolIndentLeftNChars=\count286
+\FV@BreakSymbolIndentRight=\dimen151
+\FV@BreakSymbolIndentRightNChars=\count287
+\c@FancyVerbLineBreakLast=\count288
 \FV@LineBox=\box55
 \FV@LineIndentBox=\box56
-\c@FV@BreakBufferDepth=\count290
-\FV@LineWidth=\dimen154
-)
-(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count291
-\decimalpart=\count292
-)
-Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+\c@FV@BreakBufferDepth=\count289
+\FV@LineWidth=\dimen152
 )
 (/usr/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
@@ -295,16 +207,7 @@ x
 \pgfopts@list@add@a@toks=\toks22
 \pgfopts@list@add@b@toks=\toks23
 ) (/usr/share/texmf-dist/tex/latex/newfloat/newfloat.sty
-Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
-Package newfloat Info: Unsupported document class, or \@chapter 
-(newfloat)             was already redefined by another package.
-Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAu
-to {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anc
-horend }}\ifnum \c@secnumdepth >\m@ne \ltx@IfUndefined {if@mainmatter}\iftrue {
-\csname if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@
-chapter .
-Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
-pter [{#1}]{#2}.
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
 )
 (/usr/share/texmf-dist/tex/latex/currfile/currfile.sty
 Package: currfile 2022/10/10 v0.8 Provides the file path elements of the curren
@@ -316,60 +219,83 @@ Package: filehook 2022/10/25 v0.8b Hooks for input files
 (/usr/share/texmf-dist/tex/latex/filehook/filehook-2020.sty
 Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
 ))
-\c@currfiledepth=\count293
+\c@currfiledepth=\count290
 )
 \pytx@codefile=\write4
 
 \openout4 = drd.pytxcode
-\c@pytx@FancyVerbLineTemp=\count294
-\c@pytx@py@default@default=\count295
-\c@pytx@pycon@default@default=\count296
-\c@pytx@sympy@default@default=\count297
-\c@pytx@sympycon@default@default=\count298
-\c@pytx@pylab@default@default=\count299
-\c@pytx@pylabcon@default@default=\count300
+\c@pytx@FancyVerbLineTemp=\count291
+\c@pytx@py@default@default=\count292
+\c@pytx@pycon@default@default=\count293
+\c@pytx@sympy@default@default=\count294
+\c@pytx@sympycon@default@default=\count295
+\c@pytx@pylab@default@default=\count296
+\c@pytx@pylabcon@default@default=\count297
 )
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
 
-(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(/usr/share/texmf-dist/tex/generic/babel/luababel.def
+\bbl@readstream=\read3
+\l@dumylang=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@nohyphenation=\language3
+\l@vietnamese=\language4
+\l@hebrew=\language5
+\l@ukenglish=\language6
+\l@usenglishmax=\language7
+\babelcatcodetablenum=\catcodetable14
+\bbl@pattcodes=\catcodetable15
 )
-\Gm@cnth=\count301
-\Gm@cntv=\count302
-\c@Gm@tempcnt=\count303
-\Gm@bindingoffset=\dimen155
-\Gm@wd@mp=\dimen156
-\Gm@odd@mp=\dimen157
-\Gm@even@mp=\dimen158
-\Gm@layoutwidth=\dimen159
-\Gm@layoutheight=\dimen160
-\Gm@layouthoffset=\dimen161
-\Gm@layoutvoffset=\dimen162
-\Gm@dimlist=\toks24
+\babel@savecnt=\count298
+\U@D=\dimen153
+\l@unhyphenated=\language8
+
+(/usr/share/texmf-dist/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute4
+)
+(/usr/share/texmf-dist/tex/generic/babel-english/USenglish.ldf
+Language: USenglish 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language6). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language6). Reported on input line 108.
+)))
+(/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-usenglish.tex
+Package babel Info: Importing font and identification data for USenglish
+(babel)             from babel-en-US.ini. Reported on input line 11.
+)
+(/usr/share/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2022/01/09 v1.6f package for extended references (FMi)
+\c@vrcnt=\count299
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count304
-\calc@Bcount=\count305
-\calc@Adimen=\dimen163
-\calc@Bdimen=\dimen164
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count300
+\calc@Bcount=\count301
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count306
-\calc@Cskip=\skip54
+\calc@Ccount=\count302
+\calc@Cskip=\skip53
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip55
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -377,24 +303,24 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks25
-\ex@=\dimen165
+\@emptytoks=\toks24
+\ex@=\dimen156
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen166
+\pmbraise@=\dimen157
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count307
+\inf@bad=\count303
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count308
-\leftroot@=\count309
+\uproot@=\count304
+\leftroot@=\count305
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count310
-\DOTSCASE@=\count311
+\classnum@=\count306
+\DOTSCASE@=\count307
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -404,91 +330,92 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen167
+\big@size=\dimen158
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count312
+\macc@depth=\count308
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count313
-\dotsspace@=\muskip17
-\c@parentequation=\count314
-\dspbrk@lvl=\count315
-\tag@help=\toks26
-\row@=\count316
-\column@=\count317
-\maxfields@=\count318
-\andhelp@=\toks27
-\eqnshift@=\dimen168
-\alignsep@=\dimen169
-\tagshift@=\dimen170
-\tagwidth@=\dimen171
-\totwidth@=\dimen172
-\lineht@=\dimen173
-\@envbody=\toks28
-\multlinegap=\skip56
-\multlinetaggap=\skip57
-\mathdisplay@stack=\toks29
+\c@MaxMatrixCols=\count309
+\dotsspace@=\muskip16
+\c@parentequation=\count310
+\dspbrk@lvl=\count311
+\tag@help=\toks25
+\row@=\count312
+\column@=\count313
+\maxfields@=\count314
+\andhelp@=\toks26
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks27
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-\linenoamsmath@ams@eqpen=\count319
-\g_MT_multlinerow_int=\count320
-\l_MT_multwidth_dim=\dimen174
-\origjot=\skip58
-\l_MT_shortvdotswithinadjustabove_dim=\dimen175
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen176
-\l_MT_above_intertext_sep=\dimen177
-\l_MT_below_intertext_sep=\dimen178
-\l_MT_above_shortintertext_sep=\dimen179
-\l_MT_below_shortintertext_sep=\dimen180
+\linenoamsmath@ams@eqpen=\count315
+\g_MT_multlinerow_int=\count316
+\l_MT_multwidth_dim=\dimen165
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen166
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen167
+\l_MT_above_intertext_sep=\dimen168
+\l_MT_below_intertext_sep=\dimen169
+\l_MT_above_shortintertext_sep=\dimen170
+\l_MT_below_shortintertext_sep=\dimen171
 \xmathstrut@box=\box59
-\xmathstrut@dim=\dimen181
+\xmathstrut@dim=\dimen172
 )
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-02-22 L3 programming layer (loader) 
+Package: expl3 2024-02-20 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2023-01-16 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count321
+File: l3backend-luatex.def 2024-02-20 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count317
+Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box60
 ))
-Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty
-Package: unicode-math-luatex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaL
+Package: unicode-math-luatex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaL
 aTeX
 
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-02-02 L3 Experimental document command parser
+Package: xparse 2024-02-18 L3 Experimental document command parser
 )
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2024/02/13 2.9a Font selection for XeLaTeX and LuaLaTeX
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
+Package: fontspec-luatex 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count322
-\l__fontspec_language_int=\count323
-\l__fontspec_strnum_int=\count324
-\l__fontspec_tmp_int=\count325
-\l__fontspec_tmpa_int=\count326
-\l__fontspec_tmpb_int=\count327
-\l__fontspec_tmpc_int=\count328
-\l__fontspec_em_int=\count329
-\l__fontspec_emdef_int=\count330
-\l__fontspec_strong_int=\count331
-\l__fontspec_strongdef_int=\count332
-\l__fontspec_tmpa_dim=\dimen182
-\l__fontspec_tmpb_dim=\dimen183
-\l__fontspec_tmpc_dim=\dimen184
+\l__fontspec_script_int=\count318
+\l__fontspec_language_int=\count319
+\l__fontspec_strnum_int=\count320
+\l__fontspec_tmp_int=\count321
+\l__fontspec_tmpa_int=\count322
+\l__fontspec_tmpb_int=\count323
+\l__fontspec_tmpc_int=\count324
+\l__fontspec_em_int=\count325
+\l__fontspec_emdef_int=\count326
+\l__fontspec_strong_int=\count327
+\l__fontspec_strongdef_int=\count328
+\l__fontspec_tmpa_dim=\dimen173
+\l__fontspec_tmpb_dim=\dimen174
+\l__fontspec_tmpc_dim=\dimen175
 
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -506,232 +433,176 @@ Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
 h LuaLaTeX
 Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 h LuaLaTeX)
-\g__um_fam_int=\count333
-\g__um_fonts_used_int=\count334
-\l__um_primecount_int=\count335
-\g__um_primekern_muskip=\muskip18
+\g__um_fam_int=\count329
+\g__um_fonts_used_int=\count330
+\l__um_primecount_int=\count331
+\g__um_primekern_muskip=\muskip17
 
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2023-03-04 v3.2.2 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen185
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count332
+\l__siunitx_number_exponent_fixed_int=\count333
+\l__siunitx_number_min_decimal_int=\count334
+\l__siunitx_number_min_integer_int=\count335
+\l__siunitx_number_round_precision_int=\count336
+\l__siunitx_number_lower_threshold_int=\count337
+\l__siunitx_number_upper_threshold_int=\count338
+\l__siunitx_number_group_first_int=\count339
+\l__siunitx_number_group_size_int=\count340
+\l__siunitx_number_group_minimum_int=\count341
+\l__siunitx_angle_tmp_dim=\dimen176
 \l__siunitx_angle_marker_box=\box61
 \l__siunitx_angle_unit_box=\box62
-\l__siunitx_compound_count_int=\count336
+\l__siunitx_compound_count_int=\count342
 
 (/usr/share/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
+
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
-\l__siunitx_number_exponent_fixed_int=\count337
-\l__siunitx_number_min_decimal_int=\count338
-\l__siunitx_number_min_integer_int=\count339
-\l__siunitx_number_round_precision_int=\count340
-\l__siunitx_number_lower_threshold_int=\count341
-\l__siunitx_number_upper_threshold_int=\count342
-\l__siunitx_number_group_first_int=\count343
-\l__siunitx_number_group_size_int=\count344
-\l__siunitx_number_group_minimum_int=\count345
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks29
+))
 \l__siunitx_table_tmp_box=\box63
-\l__siunitx_table_tmp_dim=\dimen186
-\l__siunitx_table_column_width_dim=\dimen187
+\l__siunitx_table_tmp_dim=\dimen177
+\l__siunitx_table_column_width_dim=\dimen178
 \l__siunitx_table_integer_box=\box64
 \l__siunitx_table_decimal_box=\box65
 \l__siunitx_table_uncert_box=\box66
 \l__siunitx_table_before_box=\box67
 \l__siunitx_table_after_box=\box68
-\l__siunitx_table_before_dim=\dimen188
-\l__siunitx_table_carry_dim=\dimen189
-\l__siunitx_unit_tmp_int=\count346
-\l__siunitx_unit_position_int=\count347
-\l__siunitx_unit_total_int=\count348
+\l__siunitx_table_before_dim=\dimen179
+\l__siunitx_table_carry_dim=\dimen180
+\l__siunitx_unit_tmp_int=\count343
+\l__siunitx_unit_position_int=\count344
+\l__siunitx_unit_total_int=\count345
 
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
-Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen190
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen181
 \ar@mcellbox=\box69
-\extrarowheight=\dimen191
+\extrarowheight=\dimen182
 \NC@list=\toks30
-\extratabsurround=\skip59
-\backup@length=\skip60
+\extratabsurround=\skip58
+\backup@length=\skip59
 \ar@cellbox=\box70
 ))
 
 Package fontspec Info: Font family 'STIXTwoMath-Regular.otf(0)' created for
 (fontspec)             font 'STIXTwoMath-Regular.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,FontAdjustment={\__um_luatex_copy_fontdimens:
-(fontspec)             }].
+sFont={},Script=Math,RawFeature={mathfontdimen=xetex}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[STIXTwoMath-Regular.otf]:mode=base;script=math;lang
-uage=dflt;"
+uage=dflt;mathfontdimen=xetex;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
 
 
 Package fontspec Info: Font family 'STIXTwoMath-Regular.otf(1)' created for
 (fontspec)             font 'STIXTwoMath-Regular.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.5-10.2,Font=STIXTwoMath
--Regular.otf,Style=MathScript},{Size=-7.5,Font=STIXTwoMath-Regular.otf,Style=Ma
-thScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
-(fontspec)             }].
+sFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=STIXTwoMath-
+Regular.otf,Style=MathScript},{Size=-6.25,Font=STIXTwoMath-Regular.otf,Style=Ma
+thScriptScript}},RawFeature={mathfontdimen=xetex}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <10.2->"[STIXTwoMath-Regular.otf]:mode=base;script=math;
-language=dflt;"<7.5-10.2>"[STIXTwoMath-Regular.otf]:mode=base;script=math;langu
-age=dflt;+ssty=0;"<-7.5>"[STIXTwoMath-Regular.otf]:mode=base;script=math;langua
-ge=dflt;+ssty=1;"
+(fontspec)             <8.5->"[STIXTwoMath-Regular.otf]:mode=base;script=math;l
+anguage=dflt;mathfontdimen=xetex;"<6.25-8.5>"[STIXTwoMath-Regular.otf]:mode=bas
+e;script=math;language=dflt;mathfontdimen=xetex;+ssty=0;"<-6.25>"[STIXTwoMath-R
+egular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 52.
+(Font)              `operators' in the math version `normal' on input line 64.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/STIXTwoMath-Regular.otf(1)/m/n on in
-put line 52.
+put line 64.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 52.
+(Font)              `operators' in the math version `bold' on input line 64.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/STIXTwoMath-Regular.otf(1)/b/n on i
-nput line 52.
-
-Package fontspec Info: STIXTwoMath-Regular scale = 1.0001.
-
-
-Package fontspec Info: STIXTwoMath-Regular scale = 1.0001.
-
-
-Package fontspec Info: STIXTwoMath-Regular scale = 1.0001.
-
-
-Package fontspec Info: STIXTwoMath-Regular scale = 1.0001.
-
+nput line 64.
 
 Package fontspec Info: Font family 'STIXTwoMath-Regular.otf(2)' created for
 (fontspec)             font 'STIXTwoMath-Regular.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.5-10.2,Font=STIXTwoMath
--Regular.otf,Style=MathScript},{Size=-7.5,Font=STIXTwoMath-Regular.otf,Style=Ma
-thScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
-(fontspec)             },ScaleAgain=1.0001,FontAdjustment={\fontdimen 8\font
-(fontspec)             =7.68pt\relax \fontdimen 9\font =7.01999pt\relax
-(fontspec)             \fontdimen 10\font =5.64pt\relax \fontdimen 11\font
-(fontspec)             =7.68pt\relax \fontdimen 12\font =7.01999pt\relax
-(fontspec)             \fontdimen 13\font =4.31999pt\relax \fontdimen 14\font
-(fontspec)             =4.31999pt\relax \fontdimen 15\font =3.02399pt\relax
-(fontspec)             \fontdimen 16\font =2.51999pt\relax \fontdimen 17\font
-(fontspec)             =2.51999pt\relax \fontdimen 18\font =2.76pt\relax
-(fontspec)             \fontdimen 19\font =1.92pt\relax \fontdimen 22\font
-(fontspec)             =3.096pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax }].
+sFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=STIXTwoMath-
+Regular.otf,Style=MathScript},{Size=-6.25,Font=STIXTwoMath-Regular.otf,Style=Ma
+thScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={mathfontdimen=tex
+2}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <10.2->s*[1.0001]"[STIXTwoMath-Regular.otf]:mode=base;sc
-ript=math;language=dflt;"<7.5-10.2>s*[1.0001]"[STIXTwoMath-Regular.otf]:mode=ba
-se;script=math;language=dflt;+ssty=0;"<-7.5>s*[1.0001]"[STIXTwoMath-Regular.otf
-]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->"[STIXTwoMath-Regular.otf]:mode=base;script=math;l
+anguage=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<6.25-8.5>"[STIXTwoMath-Re
+gular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdime
+n=tex2;+ssty=0;"<-6.25>"[STIXTwoMath-Regular.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
-(fontspec)             =7.68pt\relax \fontdimen 9\font =7.01999pt\relax
-(fontspec)             \fontdimen 10\font =5.64pt\relax \fontdimen 11\font
-(fontspec)             =7.68pt\relax \fontdimen 12\font =7.01999pt\relax
-(fontspec)             \fontdimen 13\font =4.31999pt\relax \fontdimen 14\font
-(fontspec)             =4.31999pt\relax \fontdimen 15\font =3.02399pt\relax
-(fontspec)             \fontdimen 16\font =2.51999pt\relax \fontdimen 17\font
-(fontspec)             =2.51999pt\relax \fontdimen 18\font =2.76pt\relax
-(fontspec)             \fontdimen 19\font =1.92pt\relax \fontdimen 22\font
-(fontspec)             =3.096pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 52.
+(Font)              `symbols' in the math version `normal' on input line 64.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/STIXTwoMath-Regular.otf(2)/m/n on i
-nput line 52.
+nput line 64.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 52.
+(Font)              `symbols' in the math version `bold' on input line 64.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/STIXTwoMath-Regular.otf(2)/b/n on i
-nput line 52.
-
-Package fontspec Info: STIXTwoMath-Regular scale = 0.9999.
-
-
-Package fontspec Info: STIXTwoMath-Regular scale = 0.9999.
-
-
-Package fontspec Info: STIXTwoMath-Regular scale = 0.9999.
-
-
-Package fontspec Info: STIXTwoMath-Regular scale = 0.9999.
-
+nput line 64.
 
 Package fontspec Info: Font family 'STIXTwoMath-Regular.otf(3)' created for
 (fontspec)             font 'STIXTwoMath-Regular.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.5-10.2,Font=STIXTwoMath
--Regular.otf,Style=MathScript},{Size=-7.5,Font=STIXTwoMath-Regular.otf,Style=Ma
-thScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
-(fontspec)             },ScaleAgain=0.9999,FontAdjustment={\fontdimen 8\font
-(fontspec)             =0.816pt\relax \fontdimen 9\font =1.62pt\relax
-(fontspec)             \fontdimen 10\font =1.62pt\relax \fontdimen 11\font
-(fontspec)             =3.59999pt\relax \fontdimen 12\font =8.04pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax }].
+sFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=STIXTwoMath-
+Regular.otf,Style=MathScript},{Size=-6.25,Font=STIXTwoMath-Regular.otf,Style=Ma
+thScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={mathfontdimen=tex
+3}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <10.2->s*[0.9999]"[STIXTwoMath-Regular.otf]:mode=base;sc
-ript=math;language=dflt;"<7.5-10.2>s*[0.9999]"[STIXTwoMath-Regular.otf]:mode=ba
-se;script=math;language=dflt;+ssty=0;"<-7.5>s*[0.9999]"[STIXTwoMath-Regular.otf
-]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->"[STIXTwoMath-Regular.otf]:mode=base;script=math;l
+anguage=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<6.25-8.5>"[STIXTwoMath-Re
+gular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdime
+n=tex3;+ssty=0;"<-6.25>"[STIXTwoMath-Regular.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
-(fontspec)             =0.816pt\relax \fontdimen 9\font =1.62pt\relax
-(fontspec)             \fontdimen 10\font =1.62pt\relax \fontdimen 11\font
-(fontspec)             =3.59999pt\relax \fontdimen 12\font =8.04pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 5
-2.
+(Font)              `largesymbols' in the math version `normal' on input line 6
+4.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/STIXTwoMath-Regular.otf(3)/m/n on i
-nput line 52.
+nput line 64.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 52.
+(Font)              `largesymbols' in the math version `bold' on input line 64.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/STIXTwoMath-Regular.otf(3)/b/n on i
-nput line 52.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 52.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 52.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 6.60071pt on input line 52.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 52.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 52.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 6.59929pt on input line 52.
+nput line 64.
 
 Package fontspec Info: Font family 'STIXTwoText-Regular.otf(0)' created for
 (fontspec)             font 'STIXTwoText-Regular.otf' with options
@@ -804,139 +675,115 @@ anguage=dflt;+tlig;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/STIXTwoMath-Regular.otf(1)/m/n --> TU/STIXTwoText-Re
-gular.otf(1)/m/n on input line 57.
+gular.otf(1)/m/n on input line 69.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/STIXTwoText-Regular.otf(1)/m/it on 
-input line 57.
+input line 69.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/STIXTwoText-Regular.otf(1)/b/n on i
-nput line 57.
-luaotfload | cache : Lookup cache loaded from /home/air/.texlive/texmf-var/luate
-x-cache/generic/names/luaotfload-lookup-cache.luc.
+nput line 69.
+luaotfload | cache : Lookup cache loaded from /home/air/.cache/texlive/texmf-var
+/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
-Package fontspec Info: IosevkaAile scale = 0.9096115379536663.
+Package fontspec Info: InterMedium scale = 0.8664583339156588.
 
 
-Package fontspec Info: IosevkaAile scale = 0.9096115379536663.
+Package fontspec Info: Could not resolve font "InterMedium/BI" (it probably
+(fontspec)             doesn't exist).
 
-luaotfload | aux : font no 51 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: IosevkaAile/B scale = 0.9096115379536663.
+Package fontspec Info: Could not resolve font "InterMedium/B" (it probably
+(fontspec)             doesn't exist).
 
-luaotfload | aux : font no 52 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: IosevkaAile/I scale = 0.9096115379536663.
+Package fontspec Info: Could not resolve font "InterMedium/I" (it probably
+(fontspec)             doesn't exist).
 
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: IosevkaAile/BI scale = 0.9096115379536663.
+Package fontspec Info: InterMedium scale = 0.8664583339156588.
 
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: Font family 'IosevkaAile(0)' created for font 'Iosevka
-(fontspec)             Aile' with options
+Package fontspec Info: InterMedium scale = 0.8664583339156588.
+
+
+Package fontspec Info: Font family 'InterMedium(0)' created for font 'Inter
+(fontspec)             Medium' with options
 (fontspec)             [Ligatures=TeX,Ligatures=TeX,Scale=MatchLowercase].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile:mode=node;script=l
-atn;language=dflt;+tlig;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile/B:mode=node;script
-=latn;language=dflt;+tlig;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile/I:mode=node;script
-=latn;language=dflt;+tlig;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile/BI:mode=node;scrip
-t=latn;language=dflt;+tlig;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             <->s*[0.8664583339156588]"name:InterMedium:mode=node;scr
+ipt=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8664583339156588]"name:InterMedium:mode=node;scr
+ipt=latn;language=dflt;+tlig;+smcp;"
 
 
-Package fontspec Info: IosevkaAile scale = 0.9096115379536663.
+Package fontspec Info: InterMedium scale = 0.8664583339156588.
 
 
-Package fontspec Info: IosevkaAile scale = 0.9096115379536663.
+Package fontspec Info: Could not resolve font "InterMedium/BI" (it probably
+(fontspec)             doesn't exist).
 
-luaotfload | aux : font no 61 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: IosevkaAile/B scale = 0.9096115379536663.
+Package fontspec Info: Could not resolve font "InterMedium/B" (it probably
+(fontspec)             doesn't exist).
 
-luaotfload | aux : font no 62 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: IosevkaAile/I scale = 0.9096115379536663.
+Package fontspec Info: Could not resolve font "InterMedium/I" (it probably
+(fontspec)             doesn't exist).
 
-luaotfload | aux : font no 63 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: IosevkaAile/BI scale = 0.9096115379536663.
+Package fontspec Info: InterMedium scale = 0.8664583339156588.
 
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
 
-Package fontspec Info: Font family 'IosevkaAile(1)' created for font 'Iosevka
-(fontspec)             Aile' with options
+Package fontspec Info: InterMedium scale = 0.8664583339156588.
+
+
+Package fontspec Info: Font family 'InterMedium(1)' created for font 'Inter
+(fontspec)             Medium' with options
 (fontspec)             [Renderer=Basic,Ligatures=TeX,Scale=MatchLowercase].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile:mode=base;script=l
-atn;language=dflt;+tlig;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile/B:mode=base;script
-=latn;language=dflt;+tlig;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile/I:mode=base;script
-=latn;language=dflt;+tlig;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaAile/BI:mode=base;scrip
-t=latn;language=dflt;+tlig;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             <->s*[0.8664583339156588]"name:InterMedium:mode=base;scr
+ipt=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8664583339156588]"name:InterMedium:mode=base;scr
+ipt=latn;language=dflt;+tlig;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/IosevkaAile(1)/m/n on input line 61
+(Font)                  OT1/cmss/m/n --> TU/InterMedium(1)/m/n on input line 73
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/IosevkaAile(1)/b/n on input line 6
-1.
+(Font)                  OT1/cmss/bx/n --> TU/InterMedium(1)/b/n on input line 7
+3.
 
-Package fontspec Info: IosevkaFixed scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed scale = 0.9096124276676408.
 
 
-Package fontspec Info: IosevkaFixed scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed scale = 0.9096124276676408.
 
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 59 (nil) does not define feature smcp for script latn
  with language dflt
 
-Package fontspec Info: IosevkaFixed/B scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed/B scale = 0.9096124276676408.
 
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 60 (nil) does not define feature smcp for script latn
  with language dflt
 
-Package fontspec Info: IosevkaFixed/I scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed/I scale = 0.9096124276676408.
 
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 61 (nil) does not define feature smcp for script latn
  with language dflt
 
-Package fontspec Info: IosevkaFixed/BI scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed/BI scale = 0.9096124276676408.
 
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 62 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'IosevkaFixed(0)' created for font 'Iosevka
@@ -948,8 +795,8 @@ Space,Ligatures=TeX,Scale=MatchLowercase].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed:mode=node;script=
-latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed:mode=node;sc
+ript=latn;language=dflt;+tlig;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
@@ -957,8 +804,8 @@ latn;language=dflt;+tlig;"
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed/B:mode=node;scrip
-t=latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed/B:mode=node;
+script=latn;language=dflt;+tlig;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
@@ -966,8 +813,8 @@ t=latn;language=dflt;+tlig;"
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed/I:mode=node;scrip
-t=latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed/I:mode=node;
+script=latn;language=dflt;+tlig;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
@@ -975,8 +822,8 @@ t=latn;language=dflt;+tlig;"
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed/BI:mode=node;scri
-pt=latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed/BI:mode=node
+;script=latn;language=dflt;+tlig;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
@@ -985,27 +832,27 @@ pt=latn;language=dflt;+tlig;"
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
 
-Package fontspec Info: IosevkaFixed scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed scale = 0.9096124276676408.
 
 
-Package fontspec Info: IosevkaFixed scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed scale = 0.9096124276676408.
 
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
  with language dflt
 
-Package fontspec Info: IosevkaFixed/B scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed/B scale = 0.9096124276676408.
 
-luaotfload | aux : font no 82 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
  with language dflt
 
-Package fontspec Info: IosevkaFixed/I scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed/I scale = 0.9096124276676408.
 
-luaotfload | aux : font no 83 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
  with language dflt
 
-Package fontspec Info: IosevkaFixed/BI scale = 0.9096115379536663.
+Package fontspec Info: IosevkaFixed/BI scale = 0.9096124276676408.
 
-luaotfload | aux : font no 84 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'IosevkaFixed(1)' created for font 'Iosevka
@@ -1016,73 +863,37 @@ Package fontspec Info: Font family 'IosevkaFixed(1)' created for font 'Iosevka
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed:mode=base;script=
-latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed:mode=base;sc
+ript=latn;language=dflt;+tlig;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed/B:mode=base;scrip
-t=latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed/B:mode=base;
+script=latn;language=dflt;+tlig;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed/I:mode=base;scrip
-t=latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed/I:mode=base;
+script=latn;language=dflt;+tlig;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[0.9096115379536663]"IosevkaFixed/BI:mode=base;scri
-pt=latn;language=dflt;+tlig;"
+(fontspec)             <->s*[0.9096124276676408]"name:IosevkaFixed/BI:mode=base
+;script=latn;language=dflt;+tlig;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/IosevkaFixed(1)/m/n on input line 6
-5.
+(Font)                  OT1/cmtt/m/n --> TU/IosevkaFixed(1)/m/n on input line 7
+7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/IosevkaFixed(1)/b/n on input line 6
-5.
+(Font)                  OT1/cmtt/m/n --> TU/IosevkaFixed(1)/b/n on input line 7
+7.
 
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2023/02/13 3.86 The Babel package
-
-(/usr/share/texmf-dist/tex/generic/babel/luababel.def
-\bbl@readstream=\read3
-\l@dumylang=\language2
-Package babel Info: Non-standard hyphenation setup on input line 118.
-\l@nohyphenation=\language3
-\l@ukenglish=\language4
-\l@usenglishmax=\language5
-\babelcatcodetablenum=\catcodetable12
-\bbl@pattcodes=\catcodetable13
-)
-\babel@savecnt=\count349
-\U@D=\dimen192
-\l@unhyphenated=\language6
-
-(/usr/share/texmf-dist/tex/generic/babel/luababel.def
-\bbl@attr@locale=\attribute4
-)
-(/usr/share/texmf-dist/tex/generic/babel-english/USenglish.ldf
-Language: USenglish 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language4). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language4). Reported on input line 108.
-)))
-(/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-usenglish.tex
-Package babel Info: Importing font and identification data for USenglish
-(babel)             from babel-en-US.ini. Reported on input line 11.
-)
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count350
-\csq@gtype=\count351
-\csq@glevel=\count352
-\csq@qlevel=\count353
-\csq@maxlvl=\count354
-\csq@tshold=\count355
+\csq@reset=\count346
+\csq@gtype=\count347
+\csq@glevel=\count348
+\csq@qlevel=\count349
+\csq@maxlvl=\count350
+\csq@tshold=\count351
 \csq@ltx@everypar=\toks31
 
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -1096,145 +907,154 @@ File: csquotes.cfg
 )
 Package csquotes Info: Enabling multilingual quotes.
 )
-(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-\f@nch@headwidth=\skip61
-\f@nch@O@elh=\skip62
-\f@nch@O@erh=\skip63
-\f@nch@O@olh=\skip64
-\f@nch@O@orh=\skip65
-\f@nch@O@elf=\skip66
-\f@nch@O@erf=\skip67
-\f@nch@O@olf=\skip68
-\f@nch@O@orf=\skip69
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count352
+\Gm@cntv=\count353
+\c@Gm@tempcnt=\count354
+\Gm@bindingoffset=\dimen183
+\Gm@wd@mp=\dimen184
+\Gm@odd@mp=\dimen185
+\Gm@even@mp=\dimen186
+\Gm@layoutwidth=\dimen187
+\Gm@layoutheight=\dimen188
+\Gm@layouthoffset=\dimen189
+\Gm@layoutvoffset=\dimen190
+\Gm@dimlist=\toks32
 )
 (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box71
-\beforetitleunit=\skip70
-\aftertitleunit=\skip71
-\ttl@plus=\dimen193
-\ttl@minus=\dimen194
-\ttl@toksa=\toks32
-\titlewidth=\dimen195
-\titlewidthlast=\dimen196
-\titlewidthfirst=\dimen197
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen191
+\ttl@minus=\dimen192
+\ttl@toksa=\toks33
+\titlewidth=\dimen193
+\titlewidthlast=\dimen194
+\titlewidthfirst=\dimen195
 )
 (/usr/share/texmf-dist/tex/latex/titlesec/titletoc.sty
-Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen198
+Package: titletoc 2023/10/27 v2.16 TOC entries
+\ttl@leftsep=\dimen196
 )
-(/usr/share/texmf-dist/tex/latex/tabularray/tabularray.sty
-Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count356
-\l__tblr_c_int=\count357
-\l__tblr_r_int=\count358
-\l__tblr_d_dim=\dimen199
-\l__tblr_h_dim=\dimen256
-\l__tblr_o_dim=\dimen257
-\l__tblr_p_dim=\dimen258
-\l__tblr_q_dim=\dimen259
-\l__tblr_r_dim=\dimen260
-\l__tblr_s_dim=\dimen261
-\l__tblr_t_dim=\dimen262
-\l__tblr_v_dim=\dimen263
-\l__tblr_w_dim=\dimen264
-\l__tblr_a_box=\box72
-\l__tblr_b_box=\box73
-\l__tblr_c_box=\box74
-\l__tblr_d_box=\box75
-\g__tblr_table_count_int=\count359
-\c@rownum=\count360
-\c@colnum=\count361
-\c@rowcount=\count362
-\c@colcount=\count363
-\abovesep=\dimen265
-\belowsep=\dimen266
-\leftsep=\dimen267
-\rightsep=\dimen268
-\g_tblr_level_int=\count364
-\g__tblr_data_row_key_count_int=\count365
-\g__tblr_data_column_key_count_int=\count366
-\g__tblr_data_cell_key_count_int=\count367
-\g__tblr_array_int=\count368
-\l__tblr_key_count_int=\count369
-\l__tblr_key_quotient_int=\count370
-\l__tblr_key_quotient_two_int=\count371
-\l__tblr_key_remainder_int=\count372
-\g__tblr_data_str_value_count_int=\count373
-\rulewidth=\dimen269
-\l__tblr_strut_dp_dim=\dimen270
-\l__tblr_strut_ht_dim=\dimen271
-\g__tblr_cell_wd_dim=\dimen272
-\g__tblr_cell_ht_dim=\dimen273
-\g__tblr_cell_head_dim=\dimen274
-\g__tblr_cell_foot_dim=\dimen275
-\l__column_target_dim=\dimen276
-\l__tblr_caption_box=\box76
-\l__tblr_caption_left_box=\box77
-\l__tblr_row_head_box=\box78
-\l__tblr_row_foot_box=\box79
-\l__tblr_row_head_foot_dim=\dimen277
-\tablewidth=\dimen278
-\l__tblr_table_firsthead_box=\box80
-\l__tblr_table_middlehead_box=\box81
-\l__tblr_table_lasthead_box=\box82
-\l__tblr_table_firstfoot_box=\box83
-\l__tblr_table_middlefoot_box=\box84
-\l__tblr_table_lastfoot_box=\box85
-\l__tblr_remain_height_dim=\dimen279
-\l__tblr_long_from_int=\count374
-\l__tblr_long_to_int=\count375
-\l__tblr_curr_i_int=\count376
-\l__tblr_prev_i_int=\count377
-\l__tblr_table_page_int=\count378
-\l__tblr_table_head_box=\box86
-\l__tblr_table_foot_box=\box87
-\l__tblr_table_head_foot_dim=\dimen280
-\l__tblr_table_head_body_foot_dim=\dimen281
-\l__tblr_table_box=\box88
-\l__tblr_table_hlines_box=\box89
-\l__tblr_hline_box=\box90
-\l__tblr_row_box=\box91
-\l__tblr_col_o_wd_dim=\dimen282
-\l__tblr_col_b_wd_dim=\dimen283
-\l__tblr_hline_leftskip_dim=\dimen284
-\l__tblr_hline_rightskip_dim=\dimen285
-\l__tblr_row_ht_dim=\dimen286
-\l__tblr_row_dp_dim=\dimen287
-\l__tblr_row_abovesep_dim=\dimen288
-\l__tblr_row_belowsep_dim=\dimen289
-\l__tblr_row_vlines_box=\box92
-\l__tblr_vline_box=\box93
-\l__tblr_cell_box=\box94
-\l__row_upper_dim=\dimen290
-\l__row_lower_dim=\dimen291
-\l__row_vpace_dim=\dimen292
-\l__tblr_vline_aboveskip_dim=\dimen293
-\l__tblr_vline_belowskip_dim=\dimen294
-\l__tblr_cell_wd_dim=\dimen295
-\l__tblr_cell_ht_dim=\dimen296
-\l__tblr_diag_box=\box95
-)
-(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip72
-\enit@outerparindent=\dimen297
-\enit@toks=\toks33
-\enit@inbox=\box96
-\enit@count@id=\count379
-\enitdp@description=\count380
-)
+\inlength=\skip62
+\cmlength=\skip63
+\mmlength=\skip64
+\emlength=\skip65
+\exlength=\skip66
+\bplength=\skip67
+\ddlength=\skip68
+\pclength=\skip69
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 21.5574pt on input line 128.
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/n' will be
+(Font)              scaled to size 22.63101pt on input line 129.
+
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/b/n' undefined
+(Font)              using `TU/InterMedium(0)/m/n' instead on input line 131.
+
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/b/n' will be
+(Font)              scaled to size 21.5574pt on input line 131.
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/n' will be
+(Font)              scaled to size 22.63101pt on input line 132.
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/m/it' undefined
+(Font)              using `TU/InterMedium(0)/m/n' instead on input line 134.
+
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/it' will be
+(Font)              scaled to size 22.63101pt on input line 135.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/it' will be
+(Font)              scaled to size 21.5574pt on input line 137.
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/b/it' undefined
+(Font)              using `TU/InterMedium(0)/b/n' instead on input line 137.
+
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/b/it' will be
+(Font)              scaled to size 21.5574pt on input line 137.
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/it' will be
+(Font)              scaled to size 22.63101pt on input line 138.
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/m/scit' undefined
+(Font)              using `TU/InterMedium(0)/m/sc' instead on input line 140.
+
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/sc' will be
+(Font)              scaled to size 21.5574pt on input line 140.
+
+LaTeX Font Warning: Font shape `TU/IosevkaFixed(0)/m/sc' undefined
+(Font)              using `TU/IosevkaFixed(0)/m/n' instead on input line 141.
+
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/sc' will be
+(Font)              scaled to size 22.63101pt on input line 141.
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/b/sc' undefined
+(Font)              using `TU/InterMedium(0)/b/n' instead on input line 143.
+
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/b/sc' will be
+(Font)              scaled to size 21.5574pt on input line 143.
+
+LaTeX Font Warning: Font shape `TU/IosevkaFixed(0)/b/sc' undefined
+(Font)              using `TU/IosevkaFixed(0)/b/n' instead on input line 144.
+
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/sc' will be
+(Font)              scaled to size 22.63101pt on input line 144.
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/m/scsl' undefined
+(Font)              using `TU/InterMedium(0)/m/sl' instead on input line 146.
+
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/m/sl' undefined
+(Font)              using `TU/InterMedium(0)/m/n' instead on input line 146.
+
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/sl' in size <24.88> not av
+ailable
+(Font)              Font shape `TU/IosevkaFixed(0)/m/it' tried instead on input
+ line 147.
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/it' will be
+(Font)              scaled to size 22.63101pt on input line 147.
+LaTeX Font Info:    Font shape `TU/STIXTwoText-Regular.otf(0)/m/sl' in size <24
+.88> not available
+(Font)              Font shape `TU/STIXTwoText-Regular.otf(0)/m/it' tried inste
+ad on input line 148.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/sl' will be
+(Font)              scaled to size 21.5574pt on input line 149.
+
+LaTeX Font Warning: Font shape `TU/InterMedium(0)/b/sl' undefined
+(Font)              using `TU/InterMedium(0)/b/n' instead on input line 149.
+
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/b/sl' will be
+(Font)              scaled to size 21.5574pt on input line 149.
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/sl' in size <24.88> not av
+ailable
+(Font)              Font shape `TU/IosevkaFixed(0)/b/it' tried instead on input
+ line 150.
+LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/it' will be
+(Font)              scaled to size 22.63101pt on input line 150.
+LaTeX Font Info:    Font shape `TU/STIXTwoText-Regular.otf(0)/b/sl' in size <24
+.88> not available
+(Font)              Font shape `TU/STIXTwoText-Regular.otf(0)/b/it' tried inste
+ad on input line 151.
+\c@pytx@CC:py:begin@none@none=\count355
+\c@pytx@CC:py:begin@none@none@line=\count356
+) (/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2024/02/09{} The CircuiTikz circuit drawing package version
+ 1.6.7
+
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen298
-\pgfutil@tempdimb=\dimen299
+\pgfutil@tempdima=\dimen197
+\pgfutil@tempdimb=\dimen198
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box97
+\pgfutil@abb=\box72
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -1256,36 +1076,33 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 107.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
-))
-\Gin@req@height=\dimen300
-\Gin@req@width=\dimen301
+)
+\Gin@req@height=\dimen199
+\Gin@req@width=\dimen256
 )
 (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-\pgf@x=\dimen302
-\pgf@y=\dimen303
-\pgf@xa=\dimen304
-\pgf@ya=\dimen305
-\pgf@xb=\dimen306
-\pgf@yb=\dimen307
-\pgf@xc=\dimen308
-\pgf@yc=\dimen309
-\pgf@xd=\dimen310
-\pgf@yd=\dimen311
+\pgf@x=\dimen257
+\pgf@y=\dimen258
+\pgf@xa=\dimen259
+\pgf@ya=\dimen260
+\pgf@xb=\dimen261
+\pgf@yb=\dimen262
+\pgf@xc=\dimen263
+\pgf@yc=\dimen264
+\pgf@xd=\dimen265
+\pgf@yd=\dimen266
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count381
-\c@pgf@countb=\count382
-\c@pgf@countc=\count383
-\c@pgf@countd=\count384
+\c@pgf@counta=\count357
+\c@pgf@countb=\count358
+\c@pgf@countc=\count359
+\c@pgf@countd=\count360
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count385
+\pgf@sys@id@count=\count361
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -1300,40 +1117,21 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count386
-\pgfsyssoftpath@bigbuffer@items=\count387
+\pgfsyssoftpath@smallbuffer@items=\count362
+\pgfsyssoftpath@bigbuffer@items=\count363
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: luatex.def on input line 227.
-
-(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen312
-\pgfmath@count=\count388
-\pgfmath@box=\box98
+\pgfmath@dimen=\dimen267
+\pgfmath@count=\count364
+\pgfmath@box=\box73
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
 \pgfmath@stack@operation=\toks40
@@ -1350,52 +1148,52 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count389
+\c@pgfmathroundto@lastzeros=\count365
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen313
-\pgf@picmaxx=\dimen314
-\pgf@picminy=\dimen315
-\pgf@picmaxy=\dimen316
-\pgf@pathminx=\dimen317
-\pgf@pathmaxx=\dimen318
-\pgf@pathminy=\dimen319
-\pgf@pathmaxy=\dimen320
-\pgf@xx=\dimen321
-\pgf@xy=\dimen322
-\pgf@yx=\dimen323
-\pgf@yy=\dimen324
-\pgf@zx=\dimen325
-\pgf@zy=\dimen326
+\pgf@picminx=\dimen268
+\pgf@picmaxx=\dimen269
+\pgf@picminy=\dimen270
+\pgf@picmaxy=\dimen271
+\pgf@pathminx=\dimen272
+\pgf@pathmaxx=\dimen273
+\pgf@pathminy=\dimen274
+\pgf@pathmaxy=\dimen275
+\pgf@xx=\dimen276
+\pgf@xy=\dimen277
+\pgf@yx=\dimen278
+\pgf@yy=\dimen279
+\pgf@zx=\dimen280
+\pgf@zy=\dimen281
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen327
-\pgf@path@lasty=\dimen328
+\pgf@path@lastx=\dimen282
+\pgf@path@lasty=\dimen283
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen329
-\pgf@shorten@start@additional=\dimen330
+\pgf@shorten@end@additional=\dimen284
+\pgf@shorten@start@additional=\dimen285
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box99
-\pgf@hbox=\box100
-\pgf@layerbox@main=\box101
-\pgf@picture@serial@count=\count390
+\pgfpic=\box74
+\pgf@hbox=\box75
+\pgf@layerbox@main=\box76
+\pgf@picture@serial@count=\count366
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen331
+\pgflinewidth=\dimen286
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
 ex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen332
-\pgf@pt@y=\dimen333
-\pgf@pt@temp=\dimen334
+\pgf@pt@x=\dimen287
+\pgf@pt@y=\dimen288
+\pgf@pt@temp=\dimen289
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -1407,20 +1205,20 @@ x
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen335
+\pgfarrowsep=\dimen290
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen336
-\pgf@sys@shading@range@num=\count391
-\pgf@shadingcount=\count392
+\pgf@max=\dimen291
+\pgf@sys@shading@range@num=\count367
+\pgf@shadingcount=\count368
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box102
+\pgfexternal@startupbox=\box77
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1435,41 +1233,26 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box103
+\pgfnodeparttextbox=\box78
 )
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen337
-\pgf@nodesepend=\dimen338
+\pgf@nodesepstart=\dimen292
+\pgf@nodesepend=\dimen293
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/share/texmf-dist/tex/latex/blox/blox.sty
-Package: blox 2021/2/22 v2.51 Just an English translation of schemabloc
-
-* 
-blox: Just an English translation of schemabloc package.
-blox Copyright (C) 2014-2021 Ben Reish
-* 
-This program comes with ABSOLUTELY NO WARRANTY.
-This is free software, and you are welcome to redistribute it
-under certain conditions.
-* 
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen339
-\pgffor@skip=\dimen340
+\pgffor@iter=\dimen294
+\pgffor@skip=\dimen295
 \pgffor@stack=\toks41
 \pgffor@toks=\toks42
 ))
@@ -1479,164 +1262,47 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
 x
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count393
-\pgfplotmarksize=\dimen341
+\pgf@plot@mark@count=\count369
+\pgfplotmarksize=\dimen296
 )
-\tikz@lastx=\dimen342
-\tikz@lasty=\dimen343
-\tikz@lastxsaved=\dimen344
-\tikz@lastysaved=\dimen345
-\tikz@lastmovetox=\dimen346
-\tikz@lastmovetoy=\dimen347
-\tikzleveldistance=\dimen348
-\tikzsiblingdistance=\dimen349
-\tikz@figbox=\box104
-\tikz@figbox@bg=\box105
-\tikz@tempbox=\box106
-\tikz@tempbox@bg=\box107
-\tikztreelevel=\count394
-\tikznumberofchildren=\count395
-\tikznumberofcurrentchild=\count396
-\tikz@fig@count=\count397
+\tikz@lastx=\dimen297
+\tikz@lasty=\dimen298
+\tikz@lastxsaved=\dimen299
+\tikz@lastysaved=\dimen300
+\tikz@lastmovetox=\dimen301
+\tikz@lastmovetoy=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box79
+\tikz@figbox@bg=\box80
+\tikz@tempbox=\box81
+\tikz@tempbox@bg=\box82
+\tikztreelevel=\count370
+\tikznumberofchildren=\count371
+\tikznumberofcurrentchild=\count372
+\tikz@fig@count=\count373
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count398
-\pgfmatrixcurrentcolumn=\count399
-\pgf@matrix@numberofcolumns=\count400
+\pgfmatrixcurrentrow=\count374
+\pgfmatrixcurrentcolumn=\count375
+\pgf@matrix@numberofcolumns=\count376
 )
-\tikz@expandcount=\count401
+\tikz@expandcount=\count377
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.code.tex
-File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geomet
-ric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.c
-ode.tex
-File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbol
-s.code.tex
-File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows
-.code.tex
-File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.callouts.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callou
-ts.code.tex))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
-art.code.tex
-File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box108
-\pgfnodeparttwobox=\box109
-\pgfnodepartthreebox=\box110
-\pgfnodepartfourbox=\box111
-\pgfnodeparttwentybox=\box112
-\pgfnodepartnineteenbox=\box113
-\pgfnodeparteighteenbox=\box114
-\pgfnodepartseventeenbox=\box115
-\pgfnodepartsixteenbox=\box116
-\pgfnodepartfifteenbox=\box117
-\pgfnodepartfourteenbox=\box118
-\pgfnodepartthirteenbox=\box119
-\pgfnodeparttwelvebox=\box120
-\pgfnodepartelevenbox=\box121
-\pgfnodeparttenbox=\box122
-\pgfnodepartninebox=\box123
-\pgfnodeparteightbox=\box124
-\pgfnodepartsevenbox=\box125
-\pgfnodepartsixbox=\box126
-\pgfnodepartfivebox=\box127
-)))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-arrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen350
-)))
-(/usr/share/texmf-dist/tex/latex/tikz-timing/tikz-timing.sty
-Package: tikz-timing 2017/12/20 v0.7f Digital Timing Diagrams using TikZ
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 calc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-backgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box128
-\pgf@layerboxsaved@background=\box129
-)
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-decorations.pathmorphing.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-decorations.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen351
-\pgfdecoratedremainingdistance=\dimen352
-\pgfdecoratedinputsegmentcompleteddistance=\dimen353
-\pgfdecoratedinputsegmentremainingdistance=\dimen354
-\pgf@decorate@distancetomove=\dimen355
-\pgf@decorate@repeatstate=\count402
-\pgfdecorationsegmentamplitude=\dimen356
-\pgfdecorationsegmentlength=\dimen357
-)
-\tikz@lib@dec@box=\box130
-)
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
-ons.pathmorphing.code.tex))
-\tikztiming@numint=\count403
-\tikztiming@numfrac=\count404
-\tikztiming@xunit=\skip73
-\tikztiming@yunit=\skip74
-\tikztiming@debug=\count405
-\c@tikztiming@nrows=\count406
-\c@tikztimingrows=\count407
-\c@tikztimingtrans=\count408
-\c@tikztimingtranspos=\count409
-)
-(/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
-Package: circuitikz 2023/02/11{} The CircuiTikz circuit drawing package version
- 1.6.1
-
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen358
-\pgfarrowlength=\dimen359
-\pgfarrowwidth=\dimen360
-\pgfarrowlinewidth=\dimen361
+\pgfarrowinset=\dimen305
+\pgfarrowlength=\dimen306
+\pgfarrowwidth=\dimen307
+\pgfarrowlinewidth=\dimen308
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 bending.code.tex
@@ -1648,186 +1314,123 @@ File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformation
 s.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen362
+\pgftransformnonlinearflatness=\dimen309
 )
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen363
-\pgf@curvilinear@length@a=\dimen364
-\pgf@curvilinear@length@b=\dimen365
-\pgf@curvilinear@length@c=\dimen366
-\pgf@curvilinear@length@d=\dimen367
+\pgf@curvilinear@time@a=\dimen310
+\pgf@curvilinear@length@a=\dimen311
+\pgf@curvilinear@length@b=\dimen312
+\pgf@curvilinear@length@c=\dimen313
+\pgf@curvilinear@length@d=\dimen314
 )
-\pgf@arrows@the@rigidity=\dimen368
+\pgf@arrows@the@rigidity=\dimen315
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 fpu.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count410
-\pgf@circ@count@b=\count411
-\pgf@circ@count@c=\count412
-\pgf@circ@res@up=\dimen369
-\pgf@circ@res@down=\dimen370
-\pgf@circ@res@zero=\dimen371
-\pgf@circ@res@left=\dimen372
-\pgf@circ@res@right=\dimen373
-\pgf@circ@res@other=\dimen374
-\pgf@circ@res@step=\dimen375
-\pgf@circ@res@temp=\dimen376
-\pgf@circ@Rlen=\dimen377
-\pgf@circ@scaled@Rlen=\dimen378
-\pgfstartlinewidth=\dimen379
+\pgf@circ@count@a=\count378
+\pgf@circ@count@b=\count379
+\pgf@circ@count@c=\count380
+\pgf@circ@res@up=\dimen316
+\pgf@circ@res@down=\dimen317
+\pgf@circ@res@zero=\dimen318
+\pgf@circ@res@left=\dimen319
+\pgf@circ@res@right=\dimen320
+\pgf@circ@res@other=\dimen321
+\pgf@circ@res@step=\dimen322
+\pgf@circ@res@temp=\dimen323
+\pgf@circ@Rlen=\dimen324
+\pgf@circ@scaled@Rlen=\dimen325
+\pgfstartlinewidth=\dimen326
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
-\ctikz@scratchbox=\box131
+\ctikz@scratchbox=\box83
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count413
+\pgf@circ@res@count=\count381
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen380
+\pgfcirc@labelshift=\dimen327
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
 (/usr/share/texmf-dist/tex/generic/circuitikz/ctikzstyle-romano.tex)
-\inlength=\skip75
-\cmlength=\skip76
-\mmlength=\skip77
-\emlength=\skip78
-\exlength=\skip79
-\bplength=\skip80
-\ddlength=\skip81
-\pclength=\skip82
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/n' will be
-(Font)              scaled to size 22.63101pt on input line 141.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/n' will be
-(Font)              scaled to size 22.63101pt on input line 142.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/b/n' will be
-(Font)              scaled to size 22.63101pt on input line 144.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/n' will be
-(Font)              scaled to size 22.63101pt on input line 145.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/it' will be
-(Font)              scaled to size 22.63101pt on input line 147.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/it' will be
-(Font)              scaled to size 22.63101pt on input line 148.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/b/it' will be
-(Font)              scaled to size 22.63101pt on input line 150.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/it' will be
-(Font)              scaled to size 22.63101pt on input line 151.
-
-
-LaTeX Font Warning: Font shape `TU/IosevkaAile(0)/m/scit' undefined
-(Font)              using `TU/IosevkaAile(0)/m/sc' instead on input line 153.
-
-
-LaTeX Font Warning: Font shape `TU/IosevkaAile(0)/m/sc' undefined
-(Font)              using `TU/IosevkaAile(0)/m/n' instead on input line 153.
-
-
-LaTeX Font Warning: Font shape `TU/IosevkaFixed(0)/m/sc' undefined
-(Font)              using `TU/IosevkaFixed(0)/m/n' instead on input line 154.
-
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/sc' will be
-(Font)              scaled to size 22.63101pt on input line 154.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/sc' will be
-(Font)              scaled to size 22.63101pt on input line 156.
-
-LaTeX Font Warning: Font shape `TU/IosevkaAile(0)/b/sc' undefined
-(Font)              using `TU/IosevkaAile(0)/b/n' instead on input line 156.
-
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/b/sc' will be
-(Font)              scaled to size 22.63101pt on input line 156.
-
-LaTeX Font Warning: Font shape `TU/IosevkaFixed(0)/b/sc' undefined
-(Font)              using `TU/IosevkaFixed(0)/b/n' instead on input line 157.
-
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/sc' will be
-(Font)              scaled to size 22.63101pt on input line 157.
-
-LaTeX Font Warning: Font shape `TU/IosevkaAile(0)/m/scsl' undefined
-(Font)              using `TU/IosevkaAile(0)/m/sl' instead on input line 159.
-
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/sl' in size <24.88> not ava
-ilable
-(Font)              Font shape `TU/IosevkaAile(0)/m/it' tried instead on input 
-line 159.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/it' will be
-(Font)              scaled to size 22.63101pt on input line 159.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/sl' in size <24.88> not av
-ailable
-(Font)              Font shape `TU/IosevkaFixed(0)/m/it' tried instead on input
- line 160.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/it' will be
-(Font)              scaled to size 22.63101pt on input line 160.
-LaTeX Font Info:    Font shape `TU/STIXTwoText-Regular.otf(0)/m/sl' in size <24
-.88> not available
-(Font)              Font shape `TU/STIXTwoText-Regular.otf(0)/m/it' tried inste
-ad on input line 161.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/b/sl' in size <24.88> not ava
-ilable
-(Font)              Font shape `TU/IosevkaAile(0)/b/it' tried instead on input 
-line 162.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/b/it' will be
-(Font)              scaled to size 22.63101pt on input line 162.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/sl' in size <24.88> not av
-ailable
-(Font)              Font shape `TU/IosevkaFixed(0)/b/it' tried instead on input
- line 163.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/it' will be
-(Font)              scaled to size 22.63101pt on input line 163.
-LaTeX Font Info:    Font shape `TU/STIXTwoText-Regular.otf(0)/b/sl' in size <24
-.88> not available
-(Font)              Font shape `TU/STIXTwoText-Regular.otf(0)/b/it' tried inste
-ad on input line 164.
-\c@pytx@CC:py:begin@none@none=\count414
-\c@pytx@CC:py:begin@none@none@line=\count415
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
+
 (./build/drd.aux)
 \openout1 = drd.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 394.
-LaTeX Font Info:    ... okay on input line 394.
-Package hyperref Info: Link coloring OFF on input line 394.
- (./build/drd.out) (./build/drd.out)
-\@outlinefile=\write6
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count382
+\scratchdimen=\dimen328
+\scratchbox=\box84
+\nofMPsegments=\count383
+\nofMParguments=\count384
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count385
+\MPscratchDim=\dimen329
+\MPnumerator=\count386
+\makeMPintoPDFobject=\count387
+\everyMPtoPDFconversion=\toks44
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-\openout6 = drd.out
-Package newfloat Info: Trying Plan B...
+(/usr/share/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 (./build/pythontex-files-drd/drd.pytxmcr)
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
-ut line 394.
-\c@listing=\count416
-\newfloat@ftype=\count417
-Package newfloat Info: float type `listing'=8 on input line 394.
+ut line 10.
+\c@listing=\count388
+\newfloat@ftype=\count389
+Package newfloat Info: float type `listing'=8 on input line 10.
 
+(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
+lish.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -1845,14 +1448,14 @@ Package newfloat Info: float type `listing'=8 on input line 394.
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
-* \headheight=24.0pt
+* \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1862,187 +1465,88 @@ Package newfloat Info: float type `listing'=8 on input line 394.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
-(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
-lish.trsl
-File: translations-basic-dictionary-english.trsl (english translation file `tra
-nslations-basic-dictionary')
-) (/usr/share/texmf-dist/tex/latex/ninecolors/ninecolors.sty
-Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
-
+\f@nch@headwidth=\skip70
+\f@nch@O@elh=\skip71
+\f@nch@O@erh=\skip72
+\f@nch@O@olh=\skip73
+\f@nch@O@orh=\skip74
+\f@nch@O@elf=\skip75
+\f@nch@O@erf=\skip76
+\f@nch@O@olf=\skip77
+\f@nch@O@orf=\skip78
 )
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count418
-\scratchdimen=\dimen381
-\scratchbox=\box132
-\nofMPsegments=\count419
-\nofMParguments=\count420
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count421
-\MPscratchDim=\dimen382
-\MPnumerator=\count422
-\makeMPintoPDFobject=\count423
-\everyMPtoPDFconversion=\toks44
-) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 (./build/pythontex-files-drd/drd.pytxpyg)
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/n' will be
-(Font)              scaled to size 18.86525pt on input line 401.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/b/n' will be
-(Font)              scaled to size 18.86525pt on input line 401.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 401.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 401.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 401.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 401.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 401.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 401.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/n' will be
-(Font)              scaled to size 13.09833pt on input line 401.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 14.97234pt on input line 12.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/b/n' will be
+(Font)              scaled to size 14.97234pt on input line 12.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 10.39746pt on input line 12.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/n' will be
-(Font)              scaled to size 15.718pt on input line 402.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 12.47694pt on input line 15.
  (./build/drd.toc)
-\tf@toc=\write7
+\tf@toc=\write6
 
-\openout7 = drd.toc
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1]
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/n' will be
-(Font)              scaled to size 10.91528pt on input line 413.
-LaTeX Font Info:    Font shape `TU/IosevkaAile(0)/m/n' will be
-(Font)              scaled to size 9.96019pt on input line 413.
- [2] [3] [4]
-\c@pytx@py@default@default@line=\count424
-
-Overfull \hbox (2.70184pt too wide) in paragraph at lines 464--465
-[]\TU/STIXTwoText-Regular.otf(0)/m/n/12 The Base-board shall pro-vide a $\TU/ST
-IXTwoMath-Regular.otf(1)/m/n/12 ±9$$\TU/STIXTwoText-Regular.otf(1)/m/n/12 V$ \
-TU/STIXTwoText-Regular.otf(0)/m/n/12 ±1% power sup-ply ca-pa-ble of sourc-ing 
-±$\TU/STIXTwoMath-Regular.otf(1)/m/n/12 200$$[]$
- []
-
-(./build/../figures/pgf/psu_noiselim.pgf
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 117.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 117.
-) [5]
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/n' will be
-(Font)              scaled to size 10.91528pt on input line 511.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/n' will be
-(Font)              scaled to size 9.96019pt on input line 511.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/n' will be
-(Font)              scaled to size 5.45764pt on input line 511.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/m/it' will be
-(Font)              scaled to size 9.96019pt on input line 511.
-LaTeX Font Info:    Font shape `TU/IosevkaFixed(0)/b/it' will be
-(Font)              scaled to size 9.96019pt on input line 511.
-
-(./build/pythontex-files-drd/py_default_default_1.stdout) [6] [7]
-(./build/pythontex-files-drd/py_default_default_2.stdout)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 575.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 583.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 583.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 583.
-
-[8] (./build/../figures/pgf/psu_softstart.pgf) [9] [10]
-(./build/pythontex-files-drd/py_default_default_8.stdout) [11]
-(./build/pythontex-files-drd/py_default_default_9.stdout)
-
-LaTeX Font Warning: Font shape `TU/STIXTwoMath-Regular.otf(1)/b/n' undefined
-(Font)              using `TU/STIXTwoMath-Regular.otf(1)/m/n' instead on input 
-line 717.
-
-
-LaTeX Font Warning: Font shape `TU/STIXTwoMath-Regular.otf(2)/b/n' undefined
-(Font)              using `TU/STIXTwoMath-Regular.otf(2)/m/n' instead on input 
-line 717.
-
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/b/n' will be
-(Font)              scaled to size 7.00075pt on input line 717.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/b/n' will be
-(Font)              scaled to size 5.00053pt on input line 717.
-
-LaTeX Font Warning: Font shape `TU/STIXTwoMath-Regular.otf(3)/b/n' undefined
-(Font)              using `TU/STIXTwoMath-Regular.otf(3)/m/n' instead on input 
-line 717.
-
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/b/n' will be
-(Font)              scaled to size 6.99925pt on input line 717.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/b/n' will be
-(Font)              scaled to size 4.99947pt on input line 717.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(2)/b/n' will be
-(Font)              scaled to size 10.00107pt on input line 717.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath-Regular.otf(3)/b/n' will be
-(Font)              scaled to size 9.99893pt on input line 717.
-[12] (./build/pythontex-files-drd/py_default_default_10.stdout [13])
-(./build/pythontex-files-drd/py_default_default_11.stdout) [14]
+\openout6 = drd.toc
+ [2]
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 8.66455pt on input line 21.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 7.7981pt on input line 21.
+LaTeX Font Info:    Font shape `TU/InterMedium(0)/m/n' will be
+(Font)              scaled to size 6.93164pt on input line 21.
+ [3] [4] [5]
+\c@pytx@py@default@default@line=\count390
+ [6] [7]
+(./build/figures/pgf/psu_i_out_monte_carlo.pgf)
+(./build/figures/pgf/psu_i_out_monte_carlo_cum.pgf) [8]
+(./build/figures/pgf/psu_v_out_monte_carlo.pgf)
+(./build/figures/pgf/psu_v_out_monte_carlo_cum.pgf) [9]
+(./build/figures/pgf/psu_c_out_monte_carlo.pgf)
+(./build/figures/pgf/psu_c_out_monte_carlo_cum.pgf)
+(./build/figures/pgf/psu_c_s_monte_carlo.pgf)
+(./build/figures/pgf/psu_c_s_monte_carlo_cum.pgf)
+(./build/figures/pgf/analog_supply_post_reg_output_voltage.pgf) [10]
+(./build/figures/pgf/3v3_reg_output_voltage.pgf) [11] [12] [13] [14]
 (./build/drd.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `drd.out' has not changed.
-(rerunfilecheck)             Checksum: 6BDDD88F68234546CECE4610FF69BCD9;2621.
 )
 
 Here is how much of LuaTeX's memory you used:
- 60956 strings out of 478285
- 100000,2373549 words of node,token memory allocated
- 869 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 101 attribute, 72 glue_spe
-c, 52 attribute_list, 2 write nodes
-   avail lists: 2:8657,3:5708,4:122,5:825,6:67,7:5429,8:47,9:758,10:8,11:353
- 79529 multiletter control sequences out of 65536+600000
- 165 fonts using 485765895 bytes
- 95i,13n,120p,660b,1286s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 50556 strings out of 476447
+ 596161,2848258 words of node,token memory allocated
+ 644 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 69 glue_spec
+, 17 attribute_list, 2 write nodes
+   avail lists: 2:130157,3:62933,4:522,5:952,6:58,7:12524,8:24,9:1996,10:6,11:57
+7
+ 71802 multiletter control sequences out of 65536+600000
+ 132 fonts using 208006999 bytes
+ 125i,12n,135p,986b,1250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><
-/usr/share/fonts/TTF/iosevka-bold.ttc></usr/share/fonts/TTF/iosevka-regular.ttc>
-</usr/share/fonts/TTF/iosevka-regular.ttc></usr/share/texmf-dist/fonts/opentype/
-public/stix2-otf/STIXTwoText-Regular.otf></usr/share/texmf-dist/fonts/opentype/p
-ublic/stix2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/pu
-blic/stix2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/pub
-lic/stix2-otf/STIXTwoText-Regular.otf></usr/share/fonts/TTF/iosevka-aile-regular
-.ttc></usr/share/fonts/TTF/iosevka-aile-bold.ttc>
-Output written on drd.pdf (15 pages, 151261 bytes).
+/usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf></
+usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Italic.otf></us
+r/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Regular.otf></usr
+/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf></usr/
+share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Regular.otf></usr/s
+hare/texmf-dist/fonts/opentype/public/inter/Inter-Medium.otf>
+Output written on drd.pdf (14 pages, 148941 bytes).
 
-PDF statistics: 265 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 131072)
- 152 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 101 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

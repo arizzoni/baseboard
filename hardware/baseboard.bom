@@ -1,0 +1,47 @@
+Number	DNP	Reference	Value	Quantity	Datasheet	Footprint	Part Number	Manufacturer	Part Number (Alternate)	Manufacturer (Alternate)	Note 1	Note 2
+1		C308	10u	1		Capacitor_SMD:C_1206_3216Metric						
+2		C201,C202	150p	2		Capacitor_SMD:C_0805_2012Metric					C0G(NP0)	30V
+3		C203,C204	39n	2		Capacitor_SMD:C_0805_2012Metric					C0G(NP0)	30V
+4		C205,C206,C401-C406,C409,C410,C412,C413,C501-C506	100n	18		Capacitor_SMD:C_0603_1608Metric						
+5		C207,C209,C211,C301,C305,C309	1u	6		Capacitor_SMD:C_0805_2012Metric					30V	
+6		C208,C210,C212,C302,C306,C411,C414,C507-C509	1u	10		Capacitor_SMD:C_0805_2012Metric						
+7		C303,C304	680p	2		Capacitor_SMD:C_0603_1608Metric						
+8		C307,C310	10u	2		Capacitor_SMD:C_1206_3216Metric					30V	
+9		C407,C408	15p	2		Capacitor_SMD:C_0603_1608Metric						
+10		D302	CD-HD2004	1	https://www.bourns.com/docs/Product-Datasheets/cd-hd2xl.pdf	Library:BOURNS_CD_HD2x	CD-HD2004	Bourns	CD-HD2006	Bourns		
+11		D403	GREEN	1	https://www.we-online.com/components/products/datasheet/150060VS75000.pdf	LED_SMD:LED_0603_1608Metric	150060VS75000	Wurth	LTST-C193KGKT-5A	Lite-On Inc.		
+12		D405	YELLOW	1	https://www.we-online.com/components/products/datasheet/150060YS75000.pdf	LED_SMD:LED_0603_1608Metric	150060YS75000	Wurth	LTST-C193KSKT-5A	Lite-On Inc.		
+13		D301,D303,D304	DFLS240L-7	3	https://www.diodes.com/assets/Datasheets/DFLS240L.pdf	Diode_SMD:D_PowerDI-123	DFLS240L-7	Diodes Inc.	DFLS260L-7 	Diodes Inc.		
+14		D305,D306,D407,D507-D509	RED	6	https://www.we-online.com/components/products/datasheet/150060RS75000.pdf	LED_SMD:LED_0603_1608Metric	150060RS75000	Wurth	LTST-C193KRKT-5A	Lite-On Inc.		
+15		D401,D402,D404,D406,D501-D506,D510-D515	DESD3V3S1BL-7B	16	https://www.diodes.com/assets/Datasheets/DESD3V3S1BL.pdf	Diode_SMD:D_SOD-882D	DESD3V3S1BL-7B	Diodes Inc.	DESD3V3E1BL-7B 	Diodes Inc.		
+16		F301,F302	MF-USHT020KX-2	2	https://www.bourns.com/docs/product-datasheets/mf-usht.pdf?sfvrsn=99f06af6_26	Fuse:Fuse_1210_3225Metric	MF-USHT020KX-2	Bourns	MF-NSHT020KX-2	Bourns		
+17		FID201,FID301,FID401	FIDUCIAL	3	N/A	Fiducial:Fiducial_0.5mm_Mask1mm	N/A	N/A	N/A	N/A		
+18		G201,G202,G301	CHASSIS	3	https://cdn.harwin.com/pdfs/Harwin_Product_Catalog_page_281.pdf	Library:Harwin_EMI_Finger_S7061-46R	S7061-46R	Harwin	S7061-42R	Harwin		
+19		J301	PJ-063AH	1	https://www.cuidevices.com/product/resource/pj-063ah.pdf	Library:CUI_PJ-063AH	PJ-063AH	CUI	PJ-063BH	CUI		
+20		J401	2x2 PIN HEADER	1	https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf	Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD	GEC02DABN-M30	Sullins Connector Solutions	M20-8760246P	Harwin		
+21		J402	USB_C_Receptacle_USB2.0_14P	1	https://www.usb.org/sites/default/files/documents/usb_type-c.zip	Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A	GSB1C4621DS1HR	Amphenol	GSB1C4621DSHR	Amphenol		
+22		J201,J202	ACJS-IHS	2	https://www.amphenol-sine.com/pdf/datasheet/ACJS-IHS.pdf	Library:Amphenol_ACJS-IHS	ACJS-IHS	Amphenol	ACJS-MHS	Amphenol 		
+23		J203-J205	59453-121110ECHLF	3	https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/customerpresentation/fci_basics_ffc_fpc_productpresentation.pdf	Library:AMPHENOL_59453-121110ECHLF	59453-121110ECHLF	Amphenol ICC	59453-121110EDHLF	Amphenol ICC		
+24		J501-J503,J507-J509	6-440054-2	6	https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773713-2_HPI_QRG_EN&DocType=Data+Sheet&DocLang=English&DocFormat=pdf&PartCntxt=6-440054-2	Library:TE_HPI_2.0MM_PITCH_MALE_HEADER_2POS	6-440054-2	TE Connectivity AMP Connectors	B2B-PH-K-S	JST		
+25		L301,L302	22u	2	https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-drq-shielded-drum-core-power-inductors-data-sheet.pdf	Library:EATON_DRQ73-220-R	DRQ73-220-R	Eaton	N/A	N/A		
+26		Q501-Q503	DMN62D0LFB-7	3	https://www.diodes.com/assets/Datasheets/DMN62D0LFB.pdf	Package_DFN_QFN:Diodes_DFN1006-3	DMN62D0LFB-7	Diodes Inc.	DMN62D1LFB-7 	Diodes Inc.		
+27		R303	113k	1		Resistor_SMD:R_0603_1608Metric						
+28		R305	16.9k	1		Resistor_SMD:R_0603_1608Metric						
+29		R201,R202	1M	2		Resistor_SMD:R_0603_1608Metric					Metal Film	
+30		R301,R302,R304,R306,R401,R504-R506	10k	8		Resistor_SMD:R_0603_1608Metric						
+31		R307,R309,R407,R408,R411,R412,R501-R503,R507-R509	120	12		Resistor_SMD:R_0603_1608Metric						
+32		R308,R311	750	2		Resistor_SMD:R_0603_1608Metric						
+33		R310,R402,R403,R406	1k	4		Resistor_SMD:R_0603_1608Metric						
+34		R404,R405	27.4	2		Resistor_SMD:R_0402_1005Metric						
+35		R409,R410	5.1k	2		Resistor_SMD:R_0402_1005Metric						
+36		SW401,SW402	SW_PUSH	2	https://www.ckswitches.com/media/1480/kmr4.pdf	Library:KMR441NG LFS	KMR441NG LFS	C&K	KMR441G LFS	C&K		
+37		SW501-SW503	FOOTSWITCH	3	https://suntsu.com/wp-content/uploads/SSWFS-S01-AE05-HWH.pdf	N/A	SSWFS-S01-AE05-HWH	Suntsu	PA2-1B-DC-5	Switch Components		
+38		TP201-TP211,TP301-TP305,TP307,TP401	TEST POINT	18	N/A	TestPoint:TestPoint_Pad_D1.0mm	N/A	N/A	N/A	N/A		
+39		U303	LM317AMDTX/NOPB	1	https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm317a	Library:TO-252-2	LM317AMDTX/NOPB	Texas Instruments	LM317AMDT/NOPB 	Texas Instruments		
+40		U401	AT25SF128A-MHB-T	1	https://www.renesas.com/us/en/document/dst/at25sf128a-datasheet?r=1608781	Package_DFN_QFN:DFN-8-1EP_6x5mm_P1.27mm_EP4x4mm	AT25SF128A-MHB-T	Renesas	AT25QF128A-MHB-T 	Renesas		
+41		U402	RP2040	1	https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf	Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm	SC0914(13)	Raspberry Pi	N/A	N/A		
+42		U201,U202	TMUX4053BQBR	2	https://www.ti.com/lit/ds/symlink/tmux4053.pdf?ts=1715636648226&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTMUX4053	Library:Texas_BQB0016A_WQFN-16	TMUX4053BQBR	Texas Instruments	74HC4053BQ,115 	Nexperia		
+43		U301,U302	TPS61170	2	https://www.ti.com/lit/ds/symlink/tps61170.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1714356310390&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps61170	Library:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias	TPS61170DRVR	Texas Instruments	TPS61170DRVRQ1	Texas Instruments		
+44		W501-W503	RED/WHT	3	http://www.asapwire.com/ProductDetails.asp?ProductCode=UL1007%2D24%2DXXTP1%2D0500	N/A	UL1007 UL1569 CSA-TR64 24 AWG (7/30) 	ASAP Wire	UL1007 UL1569 CSA-TR64 24 AWG (7/30) 	N/A		
+45		W504-W506	BLU/WHT	3	http://www.asapwire.com/ProductDetails.asp?ProductCode=UL1007%2D24%2DXXTP1%2D0500	N/A	UL1007 UL1569 CSA-TR64 24 AWG (7/30) 	ASAP Wire	UL1007 UL1569 CSA-TR64 24 AWG (7/30) 	N/A		
+46		Y401	ABM8-272-T3	1	https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6128/ABM8-272-T3.pdf	Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm	ABM8-272-T3	Abracon	N/A	N/A		
