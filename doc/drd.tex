@@ -28,7 +28,7 @@
 \pagebreak
 
 \section{Introduction}
-The baseboard module contains all the signal and power IO for the effects pedal. Input voltage of \SI{9}{\volt} DC is regulated to 12V to drive an analog switch and the effects board and to \SI{3.3}{\volt} to drive the LED indicators and footswitches. A \SI{16}{\bit} microcontroller manages the switching logic, interfaces with peripherals, and supervises the power supply circuit. The audio input and output are routed to the effects modules via the switching circuitry through a cable.
+The baseboard module contains all the signal and power IO for the effects pedal. Input voltage of \SI{9}{\volt} DC is regulated to \SI{12}{\volt} to drive an analog switch and the effects board and to \SI{3.3}{\volt} to drive the LED indicators and footswitches. A \SI{16}{\bit} microcontroller manages the switching logic, interfaces with peripherals, and supervises the power supply circuit. The audio input and output are routed to the effects modules via the switching circuitry through a cable.
 
 \section{Specifications}
 \begin{enumerate}
@@ -235,57 +235,58 @@ The Baseboard requires two voltage rails: the analog voltage rail at \SI{12}{\vo
 \subsection{Analog Supply}
 
 \begin{pycode}
+
 rng = np.random.default_rng()
 
-ntrials = 100000
+NTRIALS = 100000
 
-L = np.zeros(ntrials)
-V_f = np.zeros(ntrials)
-f_s = np.zeros(ntrials)
-eta = np.zeros(ntrials)
-I_lim = np.zeros(ntrials)
-V_ref = np.zeros(ntrials)
-R_2 = np.zeros(ntrials)
-R_1 = np.zeros(ntrials)
-R_1_nom = np.zeros(ntrials)
-V_out = np.zeros(ntrials)
-C_3 = np.zeros(ntrials)
-C_2 = np.zeros(ntrials)
-R_load = np.zeros(ntrials)
-G_ea = np.zeros(ntrials)
-R_sense = np.zeros(ntrials)
-f_P1 = np.zeros(ntrials)
-f_P2 = np.zeros(ntrials)
-I_P_5V = np.zeros(ntrials)
-I_P_9V = np.zeros(ntrials)
-I_P_12V = np.zeros(ntrials)
-I_out_5V = np.zeros(ntrials)
-I_out_9V = np.zeros(ntrials)
-I_out_12V = np.zeros(ntrials)
-C_out_5V = np.zeros(ntrials)
-C_out_9V = np.zeros(ntrials)
-C_out_12V = np.zeros(ntrials)
-duty_5V = np.zeros(ntrials)
-duty_9V = np.zeros(ntrials)
-duty_12V = np.zeros(ntrials)
-C_s_5V = np.zeros(ntrials)
-C_s_9V = np.zeros(ntrials)
-C_s_12V = np.zeros(ntrials)
-f_RHPZ_5V = np.zeros(ntrials)
-f_RHPZ_9V = np.zeros(ntrials)
-f_RHPZ_12V = np.zeros(ntrials)
-A_5V = np.zeros(ntrials)
-A_9V = np.zeros(ntrials)
-A_12V = np.zeros(ntrials)
-V_outs = np.zeros(ntrials)
+L = np.zeros(NTRIALS)
+V_f = np.zeros(NTRIALS)
+f_s = np.zeros(NTRIALS)
+eta = np.zeros(NTRIALS)
+I_lim = np.zeros(NTRIALS)
+V_ref = np.zeros(NTRIALS)
+R_2 = np.zeros(NTRIALS)
+R_1 = np.zeros(NTRIALS)
+R_1_nom = np.zeros(NTRIALS)
+V_out = np.zeros(NTRIALS)
+C_3 = np.zeros(NTRIALS)
+C_2 = np.zeros(NTRIALS)
+R_load = np.zeros(NTRIALS)
+G_ea = np.zeros(NTRIALS)
+R_sense = np.zeros(NTRIALS)
+f_P1 = np.zeros(NTRIALS)
+f_P2 = np.zeros(NTRIALS)
+I_P_5V = np.zeros(NTRIALS)
+I_P_9V = np.zeros(NTRIALS)
+I_P_12V = np.zeros(NTRIALS)
+I_out_5V = np.zeros(NTRIALS)
+I_out_9V = np.zeros(NTRIALS)
+I_out_12V = np.zeros(NTRIALS)
+C_out_5V = np.zeros(NTRIALS)
+C_out_9V = np.zeros(NTRIALS)
+C_out_12V = np.zeros(NTRIALS)
+duty_5V = np.zeros(NTRIALS)
+duty_9V = np.zeros(NTRIALS)
+duty_12V = np.zeros(NTRIALS)
+C_s_5V = np.zeros(NTRIALS)
+C_s_9V = np.zeros(NTRIALS)
+C_s_12V = np.zeros(NTRIALS)
+f_RHPZ_5V = np.zeros(NTRIALS)
+f_RHPZ_9V = np.zeros(NTRIALS)
+f_RHPZ_12V = np.zeros(NTRIALS)
+A_5V = np.zeros(NTRIALS)
+A_9V = np.zeros(NTRIALS)
+A_12V = np.zeros(NTRIALS)
+V_outs = np.zeros(NTRIALS)
 
-tolerance = '1%'
-V_out_nom = 12
-R_2_nom = 10e3  # Texas Instruments TPS61170
+TOLERANCE = '1%'
+V_OUT_NOM = 12
+R_2_NOM = 10e3  # Texas Instruments TPS61170
 V_ripple = 0.010  # Target ripple voltage = 25mV
 
 i = 0
-while i < ntrials:
+while i < NTRIALS:
     # Eaton DRQ73-100-R
     L[i] = rng.triangular(0.8*10.3e-6, 10.3e-6, 1.2*10.3e-6)
 
@@ -299,10 +300,10 @@ while i < ntrials:
     V_ref[i] = rng.triangular(1.204, 1.229, 1.254)
 
     # Design Parameters
-    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    R_2[i] = rng.triangular(0.99*R_2_NOM, R_2_NOM, 1.01*R_2_NOM)
     R_1_nom[i] = find_closest_e_series_number(
-        R_2[i] * ((V_out_nom/V_ref[i]) - 1),
-        tolerance
+        R_2[i] * ((V_OUT_NOM/V_ref[i]) - 1),
+        TOLERANCE
         )
     R_1[i] = rng.triangular(0.99*R_1_nom[i], R_1_nom[i], 1.01*R_1_nom[i])
     V_out[i] = V_ref[i]*((R_1[i] / R_2[i]) + 1)
@@ -314,12 +315,12 @@ while i < ntrials:
         I_out = V_in * (I_lim[i] - 0.5*I_P) * eta[i] / V_out[i]
         C_out = find_closest_e_series_number(
             ((V_out[i] - V_in) * I_out) / (V_out[i] * f_s[i] * V_ripple),
-            tolerance
+            TOLERANCE
             )
         duty = (V_out[i] - V_in) / V_out[i]
         C_s = find_closest_e_series_number(
             (I_out * duty) / (f_s[i] * 0.1 * V_in),
-            tolerance
+            TOLERANCE
             )
         f_RHPZ = (R_load[i] / (2*np.pi*L[i])) * (V_in / V_out[i])**2
         A = 3.687e6*G_ea[i]*R_load[i]*(V_in/(V_out[i]*R_sense[i]))/V_out[i]
@@ -350,15 +351,15 @@ while i < ntrials:
             A_12V[i] = A
     i = i + 1
 
-R_1_value = find_closest_e_series_number(np.mean(R_1_nom), tolerance)
+R_1_value = find_closest_e_series_number(np.mean(R_1_nom), TOLERANCE)
 
 C_out_value = find_closest_e_series_number(
     np.nanmax(np.concatenate((C_out_5V, C_out_9V, C_out_12V))),
-    tolerance
+    TOLERANCE
     )
 C_s_value = find_closest_e_series_number(
     np.nanmax(np.concatenate((C_s_5V, C_s_9V, C_s_12V))),
-    tolerance
+    TOLERANCE
     )
 
 fig, ax = plt.subplots(3, 1)
@@ -499,7 +500,7 @@ $$ V_{out} = V_{ref} \left(\frac{R_1}{R_2} + 1 \right) $$
  The output voltage is a function of $R_1$ and $R_2$, and their tolerances determine the precision of the output voltage. The minimum possible output voltage, assuming all parts are within specifications, is \SI{13.2}{\volt}, so the values shall be chosen to yield an output above that so that \SI{14}{\volt} is beyond the lower tail of the output distribution. The value for $V_{ref}$ comes from the datasheet and is the internal feedback reference voltage of the TPS61170. The values chosen for the feedback resistors are below; a $1\%$ tolerance was chosen as the standard design tolerance to reduce variation.
 
 $$ R_1 = \py{r'\SI{%s}{%s}' % (signif(R_1_value/1000, 3), r'\kilo\ohm' )} \pm1\% $$
-$$ R_2 = \py{r'\SI{%s}{%s}' % (signif(R_2_nom/1000, 3), r'\kilo\ohm' )} \pm1\% $$
+$$ R_2 = \py{r'\SI{%s}{%s}' % (signif(R_2_NOM/1000, 3), r'\kilo\ohm' )} \pm1\% $$
 $$ V_{out,\ min.} \approx \py{r'\SI{%s}{%s}' % (signif(np.min(V_out), 3), r'\volt')} $$
 
 \begin{figure}[!ht]
@@ -555,23 +556,23 @@ $$ V_{out} = V_{ref}\left(1+\frac{R_2}{R_1}\right) + I_{adj}R_2 $$
 Setting $R_1=\SI{120}{\ohm}$ sets the current through the feedback network to \SI{10}{\milli\ampere}, which is nominally twice the required current to maintain regulation. With $R_1$ defined, the other parameters are determined from the datasheet and a value for $R_2$ is obtained.
 
 \begin{pycode}
-V_out_nom = 12
-R_1 = np.zeros(ntrials)
-V_ref = np.zeros(ntrials)
-I_adj = np.zeros(ntrials)
-R_2 = np.zeros(ntrials)
-V_out = np.zeros(ntrials)
+V_OUT_NOM = 12
+R_1 = np.zeros(NTRIALS)
+V_ref = np.zeros(NTRIALS)
+I_adj = np.zeros(NTRIALS)
+R_2 = np.zeros(NTRIALS)
+V_out = np.zeros(NTRIALS)
 
 i = 0
-while i < ntrials: 
+while i < NTRIALS:
     R_1[i] = rng.triangular(1000*0.99, 1000, 1000*1.01)
     V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
     I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
-    R_2_nom = find_closest_e_series_number(
-        (V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]),
-        tolerance
+    R_2_NOM = find_closest_e_series_number(
+        (V_OUT_NOM-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]),
+        TOLERANCE
         )
-    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    R_2[i] = rng.triangular(0.99*R_2_NOM, R_2_NOM, 1.01*R_2_NOM)
     V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
     i += 1
 
@@ -593,23 +594,23 @@ save_pythontex_figure(fig, 'analog_supply_post_reg_output_voltage')
 \subsubsection{Linear Regulator}
 
 \begin{pycode}
-V_out_nom = 3.3
-R_1 = np.zeros(ntrials)
-V_ref = np.zeros(ntrials)
-I_adj = np.zeros(ntrials)
-R_2 = np.zeros(ntrials)
-V_out = np.zeros(ntrials)
+V_OUT_NOM = 3.3
+R_1 = np.zeros(NTRIALS)
+V_ref = np.zeros(NTRIALS)
+I_adj = np.zeros(NTRIALS)
+R_2 = np.zeros(NTRIALS)
+V_out = np.zeros(NTRIALS)
 
 i = 0
-while i < ntrials: 
+while i < NTRIALS:
     R_1[i] = rng.triangular(120*0.99, 120, 120*1.01)
     V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
     I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
-    R_2_nom = find_closest_e_series_number(
-        (V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]),
-        tolerance
+    R_2_NOM = find_closest_e_series_number(
+        (V_OUT_NOM-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]),
+        TOLERANCE
         )
-    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    R_2[i] = rng.triangular(0.99*R_2_NOM, R_2_NOM, 1.01*R_2_NOM)
     V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
     i += 1
 
@@ -622,7 +623,7 @@ ax.legend(loc='upper left')
 save_pythontex_figure(fig, '3v3_reg_output_voltage')
 \end{pycode}
 
-The low voltage supply is provided by a linear voltage regulator for simplicity. In the future, a second switching converter may be designed to replace it, in the interest of efficiency. To consolidate the bill of materials the same regulator is used as for the analog supply. The output voltage is determined by the same relationship as that shown above. By letting $V_{out}=\SI{3.3}{\volt}$, $R_1=\SI{120}{\ohm}$, and $I_{adj}=\SI{120}{\micro\ampere}$, the above relationship yields approximately $R_2=\py{r'\SI{%s}{\ohm}' % (round(R_2_nom))}$. The low-voltage supply can be run at lower voltages. A study should be performed to determine how low - \SI{1.8}{\volt} is supported by all digital circuits in the system.
+The low voltage supply is provided by a linear voltage regulator for simplicity. In the future, a second switching converter may be designed to replace it, in the interest of efficiency. To consolidate the bill of materials the same regulator is used as for the analog supply. The output voltage is determined by the same relationship as that shown above. By letting $V_{out}=\SI{3.3}{\volt}$, $R_1=\SI{120}{\ohm}$, and $I_{adj}=\SI{120}{\micro\ampere}$, the above relationship yields approximately $R_2=\py{r'\SI{%s}{\ohm}' % (round(R_2_NOM))}$. The low-voltage supply can be run at lower voltages. A study should be performed to determine how low - \SI{1.8}{\volt} is supported by all digital circuits in the system.
 
 
 \begin{figure}[!ht]

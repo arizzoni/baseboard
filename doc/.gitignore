@@ -1,0 +1,4 @@
+build
+figures
+.venv
+*.pdf

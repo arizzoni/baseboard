@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.8.2)  3 AUG 2024 12:00
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.8.2)  6 AUG 2024 10:50
  system commands enabled.
  file:line:error style messages enabled.
 **drd.tex
@@ -1531,15 +1531,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 50496 strings out of 476447
- 596164,2848258 words of node,token memory allocated
+ 50475 strings out of 476447
+ 596130,2848258 words of node,token memory allocated
  644 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 69 glue_spec
 , 17 attribute_list, 2 write nodes
-   avail lists: 1:4,2:123896,3:59684,4:506,5:938,6:58,7:12456,8:24,9:1996,10:6,1
+   avail lists: 1:1,2:126767,3:60441,4:498,5:938,6:58,7:12464,8:24,9:1996,10:6,1
 1:577
- 71752 multiletter control sequences out of 65536+600000
- 132 fonts using 208006775 bytes
+ 71731 multiletter control sequences out of 65536+600000
+ 132 fonts using 208006663 bytes
  125i,12n,135p,986b,1250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><
 /usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf></
@@ -1548,7 +1548,7 @@ r/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Regular.otf></usr
 /share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf></usr/
 share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Regular.otf></usr/s
 hare/texmf-dist/fonts/opentype/public/inter/Inter-Medium.otf>
-Output written on drd.pdf (14 pages, 145560 bytes).
+Output written on drd.pdf (14 pages, 146871 bytes).
 
 PDF statistics: 101 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
