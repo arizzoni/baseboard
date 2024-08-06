@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.5.28)  2 AUG 2024 01:38
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.8.2)  3 AUG 2024 12:00
  system commands enabled.
  file:line:error style messages enabled.
 **drd.tex
@@ -40,8 +40,9 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (./tex-template.cls (/u
-sr/share/texmf-dist/tex/latex/base/article.cls
+Inserting `tracingstacklevels' in `input_level_string'. (/home/air/projects/lat
+ex-template/tex-template.cls
+(/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -59,6 +60,11 @@ luaotfload | db : Font names database loaded from /home/air/.cache/texlive/texmf
 \belowcaptionskip=\skip49
 \bibindent=\dimen139
 )
+
+LaTeX Warning: You have requested document class `/home/air/projects/latex-temp
+late/tex-template',
+               but the document class provides `tex-template'.
+
 Document Class: tex-template 
 (/usr/share/texmf-dist/tex/latex/gitinfo2/gitinfo2.sty
 Package: gitinfo2 2015/11/22 v2.0.7 git revision information
@@ -114,14 +120,11 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ))
-Package gitinfo2 Info: gitinfo2 found : ../.git/gitHeadInfo.gin
-(gitinfo2)              on input line 128.
 
-(../.git/gitHeadInfo.gin)
-(/usr/share/texmf-dist/tex/latex/gitinfo2/gitexinfo.sty
-Package: gitexinfo 2015/11/22 v2.0.7 Auxiliary package for gitinfo2
-))
-(/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
+Package gitinfo2 Warning: I can't find the file '.git/gitHeadInfo.gin'.
+(gitinfo2)                All git metadata has been set to '(None)'.
+
+) (/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
 Package: pythontex 2021/06/06 v0.18 execute and typeset Python code and other l
 anguages
 
@@ -242,14 +245,12 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \l@nohyphenation=\language3
 \l@vietnamese=\language4
 \l@hebrew=\language5
-\l@ukenglish=\language6
-\l@usenglishmax=\language7
 \babelcatcodetablenum=\catcodetable14
 \bbl@pattcodes=\catcodetable15
 )
 \babel@savecnt=\count298
 \U@D=\dimen153
-\l@unhyphenated=\language8
+\l@unhyphenated=\language6
 
 (/usr/share/texmf-dist/tex/generic/babel/luababel.def
 \bbl@attr@locale=\attribute4
@@ -259,12 +260,16 @@ Language: USenglish 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language6). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language6). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 )))
 (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-usenglish.tex
 Package babel Info: Importing font and identification data for USenglish
@@ -1526,15 +1531,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 50556 strings out of 476447
- 596161,2848258 words of node,token memory allocated
+ 50496 strings out of 476447
+ 596164,2848258 words of node,token memory allocated
  644 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 69 glue_spec
 , 17 attribute_list, 2 write nodes
-   avail lists: 2:130157,3:62933,4:522,5:952,6:58,7:12524,8:24,9:1996,10:6,11:57
-7
- 71802 multiletter control sequences out of 65536+600000
- 132 fonts using 208006999 bytes
+   avail lists: 1:4,2:123896,3:59684,4:506,5:938,6:58,7:12456,8:24,9:1996,10:6,1
+1:577
+ 71752 multiletter control sequences out of 65536+600000
+ 132 fonts using 208006775 bytes
  125i,12n,135p,986b,1250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><
 /usr/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf></
@@ -1543,7 +1548,7 @@ r/share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Regular.otf></usr
 /share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf></usr/
 share/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Regular.otf></usr/s
 hare/texmf-dist/fonts/opentype/public/inter/Inter-Medium.otf>
-Output written on drd.pdf (14 pages, 148941 bytes).
+Output written on drd.pdf (14 pages, 145560 bytes).
 
 PDF statistics: 101 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream

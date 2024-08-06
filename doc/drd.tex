@@ -1,4 +1,4 @@
-\documentclass[12pt, titlepage]{tex-template}
+\documentclass[12pt, titlepage]{/home/air/projects/latex-template/tex-template}
 \newcommand{\theauthor}{Alessandro Rizzoni}
 \newcommand{\thedoctitle}{Baseboard Design Reference Document}
 
@@ -281,31 +281,48 @@ V_outs = np.zeros(ntrials)
 
 tolerance = '1%'
 V_out_nom = 12
-R_2_nom = 10e3 # Texas Instruments TPS61170
-V_ripple = 0.010 # Target ripple voltage = 25mV
+R_2_nom = 10e3  # Texas Instruments TPS61170
+V_ripple = 0.010  # Target ripple voltage = 25mV
 
 i = 0
 while i < ntrials:
-    L[i] = rng.triangular(0.80*10.3e-6, 10.3e-6, 1.2*10.3e-6) # Eaton DRQ73-100-R
-    V_f[i] = rng.normal(0.20, 0.05/6) # Diodes Inc. DFLS240L-7 or DFLS260L-7
-    f_s[i] = rng.triangular(1e6, 1.25e6, 1.5e6) # Texas Instruments TPS611705
-    eta[i] = rng.normal(0.85, 0.07/3) # Texas Instruments TPS61170
-    I_lim[i] = rng.triangular(0.96, 1.2, 1.44) # Texas Instruments TPS61170
-    V_ref[i] = rng.triangular(1.204, 1.229, 1.254) # Texas Instruments TPS61170
-    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
-    R_1_nom[i] = find_closest_e_series_number(R_2[i] * ( (V_out_nom/V_ref[i]) - 1), tolerance)
-    R_1[i] = rng.triangular(0.99*R_1_nom[i], R_1_nom[i], 1.01*R_1_nom[i])
-    V_out[i] = V_ref[i] * ( ( R_1[i] / R_2[i] ) + 1 )
+    # Eaton DRQ73-100-R
+    L[i] = rng.triangular(0.8*10.3e-6, 10.3e-6, 1.2*10.3e-6)
 
-    V_ins = [ 5, 9, 12 ]
+    # Diodes Inc. DFLS240L-7 or DFLS260L-7
+    V_f[i] = rng.normal(0.20, 0.05/6)
+
+    # Texas Instruments TPS611705
+    f_s[i] = rng.triangular(1e6, 1.25e6, 1.5e6)
+    eta[i] = rng.normal(0.85, 0.07/3)
+    I_lim[i] = rng.triangular(0.96, 1.2, 1.44)
+    V_ref[i] = rng.triangular(1.204, 1.229, 1.254)
+
+    # Design Parameters
+    R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
+    R_1_nom[i] = find_closest_e_series_number(
+        R_2[i] * ((V_out_nom/V_ref[i]) - 1),
+        tolerance
+        )
+    R_1[i] = rng.triangular(0.99*R_1_nom[i], R_1_nom[i], 1.01*R_1_nom[i])
+    V_out[i] = V_ref[i]*((R_1[i] / R_2[i]) + 1)
+
+    # Monte Carlo
+    V_ins = [5, 9, 12]
     for V_in in V_ins:
-        I_P = 1 / ( L[i] * f_s[i] * ( 1 / ( V_out[i] + V_f[i] - V_in ) + 1 / V_in ) )
-        I_out = V_in * ( I_lim[i] - 0.5*I_P ) * eta[i] / V_out[i]
-        C_out = find_closest_e_series_number(( (V_out[i] - V_in) * I_out ) / ( V_out[i] * f_s[i] * V_ripple ), tolerance)
-        duty = ( V_out[i] - V_in ) / V_out[i]
-        C_s = find_closest_e_series_number(( I_out * duty ) / ( f_s[i] * 0.1 * V_in ), tolerance)
-        f_RHPZ = ( R_load[i] / (2*np.pi*L[i])) * ( V_in / V_out[i] )**2
-        A = ( 1.229 / V_out[i] ) * G_ea[i] * 6e6 * ( V_in / ( V_out[i] * R_sense[i] ) ) * R_load[i] * 1/2
+        I_P = 1 / (L[i] * f_s[i] * (1 / (V_out[i] + V_f[i] - V_in) + 1 / V_in))
+        I_out = V_in * (I_lim[i] - 0.5*I_P) * eta[i] / V_out[i]
+        C_out = find_closest_e_series_number(
+            ((V_out[i] - V_in) * I_out) / (V_out[i] * f_s[i] * V_ripple),
+            tolerance
+            )
+        duty = (V_out[i] - V_in) / V_out[i]
+        C_s = find_closest_e_series_number(
+            (I_out * duty) / (f_s[i] * 0.1 * V_in),
+            tolerance
+            )
+        f_RHPZ = (R_load[i] / (2*np.pi*L[i])) * (V_in / V_out[i])**2
+        A = 3.687e6*G_ea[i]*R_load[i]*(V_in/(V_out[i]*R_sense[i]))/V_out[i]
 
         if V_in == 5:
             I_P_5V[i] = I_P
@@ -335,13 +352,19 @@ while i < ntrials:
 
 R_1_value = find_closest_e_series_number(np.mean(R_1_nom), tolerance)
 
-C_out_value = find_closest_e_series_number(np.nanmax(np.concatenate((C_out_5V, C_out_9V, C_out_12V))), tolerance)
-C_s_value = find_closest_e_series_number(np.nanmax(np.concatenate((C_s_5V, C_s_9V, C_s_12V))), tolerance)
+C_out_value = find_closest_e_series_number(
+    np.nanmax(np.concatenate((C_out_5V, C_out_9V, C_out_12V))),
+    tolerance
+    )
+C_s_value = find_closest_e_series_number(
+    np.nanmax(np.concatenate((C_s_5V, C_s_9V, C_s_12V))),
+    tolerance
+    )
 
 fig, ax = plt.subplots(3, 1)
-ax[0].hist(I_out_5V, bins = 'auto', label = r"$I_{out}(V_{in}=\SI{5}{\volt})$")
-ax[1].hist(I_out_9V, bins = 'auto', label = r"$I_{out}(V_{in}=\SI{9}{\volt})$")
-ax[2].hist(I_out_12V, bins = 'auto', label = r"$I_{out}(V_{in}\SI{12}{\volt})$")
+ax[0].hist(I_out_5V, bins='auto', label=r"$I_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(I_out_9V, bins='auto', label=r"$I_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(I_out_12V, bins='auto', label=r"$I_{out}(V_{in}\SI{12}{\volt})$")
 ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
 ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
 ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
@@ -352,10 +375,16 @@ ax[1].set_ylabel(r'Count $\left(1\right)$')
 ax[2].set_xlabel(r'Output Current $\left(\unit{\ampere}\right)$')
 save_pythontex_figure(fig, 'psu_i_out_monte_carlo')
 
-fig, ax = plt.subplots(3, 1)
-ax[0].hist(I_out_5V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}=\SI{5}{\volt})$")
-ax[1].hist(I_out_9V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}=\SI{9}{\volt})$")
-ax[2].hist(I_out_12V, bins = 'auto', density = True, cumulative = True, label = r"$I_{out}(V_{in}\SI{12}{\volt})$")
+fig, ax=plt.subplots(3, 1)
+ax[0].hist(I_out_5V, bins='auto', density=True, cumulative=True,
+           label=r"$I_{out}(V_{in}=\SI{5}{\volt})$"
+           )
+ax[1].hist(I_out_9V, bins='auto', density=True, cumulative=True,
+           label=r"$I_{out}(V_{in}=\SI{9}{\volt})$"
+           )
+ax[2].hist(I_out_12V, bins='auto', density=True, cumulative=True,
+           label=r"$I_{out}(V_{in}\SI{12}{\volt})$"
+           )
 ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
 ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
 ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\ampere}'))
@@ -366,24 +395,24 @@ ax[1].set_ylabel(r'$P\left(I_{out} \leq I_{out_0}\right)$')
 ax[2].set_xlabel(r'Output Current $\left(\unit{\ampere}\right)$')
 save_pythontex_figure(fig, 'psu_i_out_monte_carlo_cum')
 
-fig, ax = plt.subplots(1, 1)
-ax.hist(V_out, bins = 'auto', label = r"$V_{out}$")
+fig, ax=plt.subplots(1, 1)
+ax.hist(V_out, bins='auto', label=r"$V_{out}$")
 ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
 ax.set_ylabel(r'Count $\left(1\right)$')
 ax.set_xlabel(r'Output Voltage $\left(\unit{\volt}\right)$')
 save_pythontex_figure(fig, 'psu_v_out_monte_carlo')
 
-fig, ax = plt.subplots(1, 1)
-ax.hist(V_out, bins = 'auto', density = True, cumulative = True, label = r"$V_{out}$")
+fig, ax=plt.subplots(1, 1)
+ax.hist(V_out, bins='auto', density=True, cumulative=True, label=r"$V_{out}$")
 ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
 ax.set_ylabel(r'$P\left(V_{out} \leq V_{out_0}\right)$')
 ax.set_xlabel(r'Output Voltage $\left(\unit{\volt}\right)$')
 save_pythontex_figure(fig, 'psu_v_out_monte_carlo_cum')
 
-fig, ax = plt.subplots(3, 1)
-ax[0].hist(C_out_5V, bins = 'auto', label = r"$C_{out}(V_{in}=\SI{5}{\volt})$")
-ax[1].hist(C_out_9V, bins = 'auto', label = r"$C_{out}(V_{in}=\SI{9}{\volt})$")
-ax[2].hist(C_out_12V, bins = 'auto', label = r"$C_{out}(V_{in}\SI{12}{\volt})$")
+fig, ax=plt.subplots(3, 1)
+ax[0].hist(C_out_5V, bins='auto', label=r"$C_{out}(V_{in}=\SI{5}{\volt})$")
+ax[1].hist(C_out_9V, bins='auto', label=r"$C_{out}(V_{in}=\SI{9}{\volt})$")
+ax[2].hist(C_out_12V, bins='auto', label=r"$C_{out}(V_{in}\SI{12}{\volt})$")
 ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
@@ -394,10 +423,16 @@ ax[1].set_ylabel(r'Count $\left(1\right)$')
 ax[2].set_xlabel(r'Output Capacitor Size $\left(\unit{\farad}\right)$')
 save_pythontex_figure(fig, 'psu_c_out_monte_carlo')
 
-fig, ax = plt.subplots(3, 1)
-ax[0].hist(C_out_5V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}=\SI{5}{\volt})$")
-ax[1].hist(C_out_9V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}=\SI{9}{\volt})$")
-ax[2].hist(C_out_12V, bins = 'auto', density = True, cumulative = True, label = r"$C_{out}(V_{in}\SI{12}{\volt})$")
+fig, ax=plt.subplots(3, 1)
+ax[0].hist(C_out_5V, bins='auto', density=True, cumulative=True,
+           label=r"$C_{out}(V_{in}=\SI{5}{\volt})$"
+           )
+ax[1].hist(C_out_9V, bins='auto', density=True, cumulative=True,
+           label=r"$C_{out}(V_{in}=\SI{9}{\volt})$"
+           )
+ax[2].hist(C_out_12V, bins='auto', density=True, cumulative=True,
+           label=r"$C_{out}(V_{in}\SI{12}{\volt})$"
+           )
 ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
@@ -408,10 +443,10 @@ ax[1].set_ylabel(r'$P\left(C_{out} \leq C_{out_0}\right)$')
 ax[2].set_xlabel(r'Output Capacitor Size $\left(\unit{\farad}\right)$')
 save_pythontex_figure(fig, 'psu_c_out_monte_carlo_cum')
 
-fig, ax = plt.subplots(3, 1)
-ax[0].hist(C_s_5V, bins = 'auto', label = r"$C_{s}(V_{in}=5V)$")
-ax[1].hist(C_s_9V, bins = 'auto', label = r"$C_{s}(V_{in}=9V)$")
-ax[2].hist(C_s_12V, bins = 'auto', label = r"$C_{s}(V_{in}=12V)$")
+fig, ax=plt.subplots(3, 1)
+ax[0].hist(C_s_5V, bins='auto', label=r"$C_{s}(V_{in}=5V)$")
+ax[1].hist(C_s_9V, bins='auto', label=r"$C_{s}(V_{in}=9V)$")
+ax[2].hist(C_s_12V, bins='auto', label=r"$C_{s}(V_{in}=12V)$")
 ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
@@ -422,10 +457,16 @@ ax[1].set_ylabel(r'Count $\left(1\right)$')
 ax[2].set_xlabel(r'Coupling Capacitor Size $\left(\unit{\farad}\right)$')
 save_pythontex_figure(fig, 'psu_c_s_monte_carlo')
 
-fig, ax = plt.subplots(3, 1)
-ax[0].hist(C_s_5V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=5V)$")
-ax[1].hist(C_s_9V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=9V)$")
-ax[2].hist(C_s_12V, bins = 'auto', density = True, cumulative = True, label = r"$C_{s}(V_{in}=12V)$")
+fig, ax=plt.subplots(3, 1)
+ax[0].hist(C_s_5V, bins='auto', density=True, cumulative=True,
+           label=r"$C_{s}(V_{in}=5V)$"
+           )
+ax[1].hist(C_s_9V, bins='auto', density=True, cumulative=True,
+           label=r"$C_{s}(V_{in}=9V)$"
+           )
+ax[2].hist(C_s_12V, bins='auto', density=True, cumulative=True,
+           label=r"$C_{s}(V_{in}=12V)$"
+           )
 ax[0].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[1].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
 ax[2].xaxis.set_major_formatter(eng_format(r'\unit{\farad}'))
@@ -526,7 +567,10 @@ while i < ntrials:
     R_1[i] = rng.triangular(1000*0.99, 1000, 1000*1.01)
     V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
     I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
-    R_2_nom = find_closest_e_series_number((V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]), '1%')
+    R_2_nom = find_closest_e_series_number(
+        (V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]),
+        tolerance
+        )
     R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
     V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
     i += 1
@@ -561,13 +605,16 @@ while i < ntrials:
     R_1[i] = rng.triangular(120*0.99, 120, 120*1.01)
     V_ref[i] = rng.triangular(1.25*0.99, 1.25, 1.25*1.01)
     I_adj[i] = rng.triangular(0.99*52e-6, 52e-6, 1.01*52e-6)
-    R_2_nom = find_closest_e_series_number((V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]), '1%')
+    R_2_nom = find_closest_e_series_number(
+        (V_out_nom-V_ref[i]) / (I_adj[i]+V_ref[i]/R_1[i]),
+        tolerance
+        )
     R_2[i] = rng.triangular(0.99*R_2_nom, R_2_nom, 1.01*R_2_nom)
     V_out[i] = V_ref[i]*(1+(R_2[i]/R_1[i])) + I_adj[i]*R_2[i]
     i += 1
 
 fig, ax = plt.subplots(1, 1)
-ax.hist(V_out, bins='auto', label=r"$V_{out}=\SI{12}{\volt}_{nom.}$" )
+ax.hist(V_out, bins='auto', label=r"$V_{out}=\SI{12}{\volt}_{nom.}$")
 ax.xaxis.set_major_formatter(eng_format(r'\unit{\volt}'))
 ax.set_xlabel(r'Digital Supply Output Voltage')
 ax.set_ylabel(r'Count $\left(1\right)$')

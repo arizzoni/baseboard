@@ -48,7 +48,7 @@ INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-tounicode.lua
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-case.lua
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-bcp47.lua
 INPUT /usr/share/texmf-dist/tex/latex/l3kernel/expl3.lua
-INPUT ./tex-template.cls
+INPUT /home/air/projects/latex-template/tex-template.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/size10.clo
 INPUT /home/air/.cache/texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
@@ -65,8 +65,6 @@ INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
 INPUT /usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx
-INPUT ../.git/gitHeadInfo.gin
-INPUT /usr/share/texmf-dist/tex/latex/gitinfo2/gitexinfo.sty
 INPUT /usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
 INPUT /usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
 INPUT /usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
